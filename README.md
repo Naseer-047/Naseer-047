@@ -23,11 +23,9 @@
 
 <br>
 
-<div align="center">
-<table>
-  <tr>
-    <td valign="top" width="35%">
-      <h3><img src="https://cdn.simpleicons.org/react/2563eb" width="22" height="22" /> About Me</h3>
+
+### <img src="https://cdn.simpleicons.org/react/2563eb" width="22" height="22" /> About Me
+
 <pre lang="js">
 const naseer = {
   role: "Full Stack Engineer",
@@ -51,20 +49,24 @@ const naseer = {
   ],
 
   philosophy:
-    "Design systems that feel simple, even when the engineering 
+    "Design systems that feel simple,
+    even when the engineering
     behind them is complex."
 };
 </pre>
-    </td>
-    <td valign="top" width="65%">
-      <h3><img src="https://cdn.simpleicons.org/github/2563eb" width="22" height="22" /> GitHub Stats</h3>
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Naseer-047&amp;bg_color=ffffff&amp;title_color=2563eb&amp;text_color=0f172a&amp;icon_color=2563eb&amp;hide_border=true&amp;border_radius=8&amp;show_icons=true&amp;v=999" width="100%" alt="GitHub Stats" />
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Naseer-047&background=ffffff&ring=2563eb&fire=2563eb&currStreakNum=2563eb&currStreakLabel=0f172a&sideNums=0f172a&sideLabels=64748b&dates=64748b&hide_border=true&border_radius=8&v=999" width="100%" alt="GitHub Streak" />
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Naseer-047&bg_color=ffffff&title_color=2563eb&text_color=0f172a&hide_border=true&border_radius=8&layout=compact&v=999" width="100%" alt="Top Languages" />
-    </td>
-  </tr>
-</table>
+
+<br>
+
+### <img src="https://cdn.simpleicons.org/github/2563eb" width="22" height="22" /> GitHub Stats
+
+<div align="center">
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Naseer-047&bg_color=ffffff&title_color=2563eb&text_color=0f172a&icon_color=2563eb&hide_border=true&border_radius=8&show_icons=true&v=999" width="49%" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Naseer-047&background=ffffff&ring=2563eb&fire=2563eb&currStreakNum=2563eb&currStreakLabel=0f172a&sideNums=0f172a&sideLabels=64748b&dates=64748b&hide_border=true&border_radius=8&v=999" width="49%" alt="GitHub Streak" />
 </div>
+<div align="center">
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Naseer-047&bg_color=ffffff&title_color=2563eb&text_color=0f172a&hide_border=true&border_radius=8&layout=compact&v=999" width="60%" alt="Top Languages" />
+</div>
+
 
 <br>
 
