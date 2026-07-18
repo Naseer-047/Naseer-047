@@ -52,16 +52,10 @@
       @keyframes decode2 { 0%, 10% { opacity: 0; } 11%, 20% { opacity: 1; } 21%, 100% { opacity: 0; } }
       @keyframes decode3 { 0%, 20% { opacity: 0; } 21%, 30% { opacity: 1; } 31%, 100% { opacity: 0; } }
       @keyframes decode4 { 0%, 30% { opacity: 0; } 31%, 40% { opacity: 1; } 41%, 100% { opacity: 0; } }
-      @keyframes revealImage { 
-        0%, 40% { opacity: 0; }
-        45%, 90% { opacity: 1; }
-        95%, 100% { opacity: 0; }
-      }
       .matrix-layer-1 { animation: decode1 8s infinite; }
       .matrix-layer-2 { animation: decode2 8s infinite; }
       .matrix-layer-3 { animation: decode3 8s infinite; }
       .matrix-layer-4 { animation: decode4 8s infinite; }
-      .profile-image { animation: revealImage 8s infinite; }
     </style>
     
     <clipPath id="type-clip">
@@ -232,114 +226,116 @@
         
         <!-- The ASCII Layers wrapped in the circular mask -->
         <g clip-path="url(#circle-clip-dark)">
-          <g class="matrix-layer matrix-layer-1"><text x="5" y="10" font-size="10" class="mono text-green">@ % : # 1 0 = 1 % % 0 + 0 : ! 1 0 % : - % # 0 * 1 </text>
-<text x="5" y="22" font-size="10" class="mono text-green"># = | = 0 : + - 0 * # 1 1 # @ 0 + * 1 + + @ % 1 % </text>
-<text x="5" y="34" font-size="10" class="mono text-green"># ! = 0 = 1 0 * 0 + ! : * 1 - @ @ ! | ! ! 1 1 * 1 </text>
-<text x="5" y="46" font-size="10" class="mono text-green">1 0 : $ : : 1 + : 1 ! 1 | : 1 | ! : 0 : 0 0 $ * : </text>
-<text x="5" y="58" font-size="10" class="mono text-green">: : | = 0 % - 0 | * | @ @ 1 # * ! $ $ 1 = % | $ $ </text>
-<text x="5" y="70" font-size="10" class="mono text-green">= : # % @ + 0 + @ $ * * + + # = | # $ = # @ : 1 0 </text>
-<text x="5" y="82" font-size="10" class="mono text-green">1 1 : + * = * ! 1 1 0 0 @ + = @ @ 1 $ 0 @ 0 # @ 0 </text>
-<text x="5" y="94" font-size="10" class="mono text-green">= | 1 - @ # 0 $ 1 * 1 # # @ * # # - 1 # $ # * # @ </text>
-<text x="5" y="106" font-size="10" class="mono text-green">| - 0 1 - 1 * | + = : + 1 | 0 + 0 ! ! $ 1 0 - 1 | </text>
-<text x="5" y="118" font-size="10" class="mono text-green">= ! | ! % ! : = * @ @ $ ! * 1 # - | 0 - = 1 @ : % </text>
-<text x="5" y="130" font-size="10" class="mono text-green">= 1 + 1 1 ! $ * + + @ * 0 1 | 0 # ! % - 0 % ! $ # </text>
-<text x="5" y="142" font-size="10" class="mono text-green">$ = = 1 @ @ = ! | ! 1 $ | - = - 0 ! = 1 % : 0 # 1 </text>
-<text x="5" y="154" font-size="10" class="mono text-green">* * 0 = = - % @ : = = + : = | | | - | - + + 1 + * </text>
-<text x="5" y="166" font-size="10" class="mono text-green">@ @ 1 + * - @ * : $ % 0 1 - 1 @ 1 0 ! @ + : - * 0 </text>
-<text x="5" y="178" font-size="10" class="mono text-green"># | + * $ = @ @ 1 1 - = $ - 1 = ! | * = $ 0 - 0 = </text>
-<text x="5" y="190" font-size="10" class="mono text-green">- 1 @ 0 ! - + | : + | @ 1 # : $ @ 1 : 0 = 0 1 1 # </text>
-<text x="5" y="202" font-size="10" class="mono text-green">0 ! + 1 ! * ! @ % : 1 # $ 0 @ @ + # 1 + 0 0 0 : 0 </text>
-<text x="5" y="214" font-size="10" class="mono text-green">0 @ ! ! - 1 ! $ 1 + 1 0 # % @ + % 1 1 = 0 = = 0 @ </text>
-<text x="5" y="226" font-size="10" class="mono text-green">= 1 = ! # 0 * * 1 # ! $ 0 + 0 + 1 1 1 ! 0 | $ ! 1 </text>
-<text x="5" y="238" font-size="10" class="mono text-green">: 1 0 : 1 + + # $ # $ ! : : 1 * | : 1 = 1 = 1 1 * </text>
-<text x="5" y="250" font-size="10" class="mono text-green">: 0 @ 0 0 * = # 0 0 * % # % 0 : 1 + * * * + - % 0 </text>
-<text x="5" y="262" font-size="10" class="mono text-green">0 = 0 0 + % = # * 1 : 0 : $ 1 ! @ * 0 : ! 1 ! # 1 </text>
-<text x="5" y="274" font-size="10" class="mono text-green">! ! $ 0 = + : @ 0 @ + 1 + 1 1 1 0 @ 0 1 1 = * 1 ! </text>
-<text x="5" y="286" font-size="10" class="mono text-green">% 1 1 $ % 0 % + * * # 1 # @ + : @ # $ | % = + 0 $ </text>
-<text x="5" y="298" font-size="10" class="mono text-green"># | + 0 * | - 1 ! 0 | - % % | - # ! | 0 0 | @ * ! </text>
+          <g class="matrix-layer matrix-layer-1"><text x="5" y="10" font-size="10" class="mono text-green">$ - 1 | 0 - = # * % 0 1 0 # 0 1 * + + = | $ * % # </text>
+<text x="5" y="22" font-size="10" class="mono text-green">$ - @ 1 * - @ 1 | % + + * 1 0 = % : | % 0 % @ $ + </text>
+<text x="5" y="34" font-size="10" class="mono text-green">+ # - = # # = : * * % 1 = - : 1 - : + # = = $ 0 * </text>
+<text x="5" y="46" font-size="10" class="mono text-green">+ : 0 0 0 - @ 1 1 : + @ ! # + - + * 0 ! | # - # ! </text>
+<text x="5" y="58" font-size="10" class="mono text-green">1 - @ ! 1 - ! # + * : = + : = 0 - @ 0 1 - 0 = * 1 </text>
+<text x="5" y="70" font-size="10" class="mono text-green">: : ! 0 = 1 # 0 * | = = = * $ 1 # # : = 0 1 - = % </text>
+<text x="5" y="82" font-size="10" class="mono text-green">0 # 0 0 # # 1 0 % - * 1 ! * | + 1 # ! 0 * % @ # ! </text>
+<text x="5" y="94" font-size="10" class="mono text-green">+ = @ * : % : % $ 1 @ = : ! 0 * 1 % : $ ! 0 % $ $ </text>
+<text x="5" y="106" font-size="10" class="mono text-green">0 | 0 $ : 1 $ 1 % 0 0 # * $ 0 1 = = 1 1 ! 1 = = = </text>
+<text x="5" y="118" font-size="10" class="mono text-green">$ = * = - - 1 1 + $ @ % * 0 1 * @ @ : @ 1 $ @ + % </text>
+<text x="5" y="130" font-size="10" class="mono text-green">+ @ * : - @ | ! ! ! : ! 1 ! : * 0 0 # @ - = @ : @ </text>
+<text x="5" y="142" font-size="10" class="mono text-green">| 1 1 @ = # 0 0 @ : % | * | 0 # ! @ + 1 * | # + | </text>
+<text x="5" y="154" font-size="10" class="mono text-green">| 0 % 0 * ! * 0 - ! % $ 1 * ! ! : 1 # * : : ! - % </text>
+<text x="5" y="166" font-size="10" class="mono text-green">| # % : ! $ @ % 0 % $ ! % # % % @ @ 1 * + ! 0 % | </text>
+<text x="5" y="178" font-size="10" class="mono text-green">= # 1 * * $ * - ! @ * 0 + = 1 $ - : 0 % % | 0 = : </text>
+<text x="5" y="190" font-size="10" class="mono text-green">+ + = ! * | $ 1 + + # # $ : + = + = % @ * # + @ # </text>
+<text x="5" y="202" font-size="10" class="mono text-green">0 | = 0 : + ! @ | + 1 : : : - 0 1 # ! % 0 = @ * = </text>
+<text x="5" y="214" font-size="10" class="mono text-green">! 1 $ | : 0 0 | : | ! 1 1 = - 0 1 - + = 1 : 0 0 = </text>
+<text x="5" y="226" font-size="10" class="mono text-green">! + # - | $ 0 | * $ @ 0 : 1 - % - + 1 $ # $ : * - </text>
+<text x="5" y="238" font-size="10" class="mono text-green"># 0 | | 1 - % 0 * % % 0 0 $ * = 1 - $ 1 1 $ 0 - = </text>
+<text x="5" y="250" font-size="10" class="mono text-green">1 0 $ : 0 | + * @ ! + % 0 # = ! 1 0 0 % : # % : | </text>
+<text x="5" y="262" font-size="10" class="mono text-green">0 | * + 0 0 # * + # 1 % @ 0 : 1 0 * + : @ # 1 = 1 </text>
+<text x="5" y="274" font-size="10" class="mono text-green">+ $ 0 | $ 0 - | * ! 0 0 * = 0 % : # 0 ! # 0 | 0 $ </text>
+<text x="5" y="286" font-size="10" class="mono text-green">% + * - % : 1 - 0 - + - = $ 1 | * 0 + % : @ 0 | + </text>
+<text x="5" y="298" font-size="10" class="mono text-green">! 0 = @ | # # : % : % 0 $ ! # 0 - 0 ! # # 1 * $ | </text>
 </g>
-<g class="matrix-layer matrix-layer-2"><text x="5" y="10" font-size="10" class="mono text-green">* 0 1 % - = - $ : 0 0 = 1 - 0 0 = 1 1 $ 0 $ = 1 * </text>
-<text x="5" y="22" font-size="10" class="mono text-green">: @ 0 = @ ! % : # * + 0 + % % % $ $ - % : 0 0 1 1 </text>
-<text x="5" y="34" font-size="10" class="mono text-green"># 1 | | @ # 0 - # 1 % * % = 0 * : 1 # ! - = @ 1 $ </text>
-<text x="5" y="46" font-size="10" class="mono text-green">* ! - 1 $ % | + @ 0 = # 1 * - $ $ = : 1 : * @ 0 + </text>
-<text x="5" y="58" font-size="10" class="mono text-green">- % 1 ! 0 1 | | ! % | 1 # 1 0 ! 0 # 0 # % : = ! | </text>
-<text x="5" y="70" font-size="10" class="mono text-green">| + ! * : * 1 @ @ # 0 # 1 0 = $ # : 0 : 1 % * % * </text>
-<text x="5" y="82" font-size="10" class="mono text-green">0 @ - 0 $ 1 1 | $ = : % # = * # 1 - $ @ 0 1 0 = : </text>
-<text x="5" y="94" font-size="10" class="mono text-green"># ! % | * * 1 = 0 @ ! | - @ : 0 | = - % = | ! 1 @ </text>
-<text x="5" y="106" font-size="10" class="mono text-green">* * 0 | 1 | 1 # % 0 1 1 1 | * - 0 | = % 0 + = + : </text>
-<text x="5" y="118" font-size="10" class="mono text-green">| - - ! * 1 ! % ! 0 @ : ! : 0 0 % 0 1 ! 0 0 % 0 % </text>
-<text x="5" y="130" font-size="10" class="mono text-green">@ - : # 0 : * @ $ 0 @ = * | | % % : = 0 ! 0 @ # - </text>
-<text x="5" y="142" font-size="10" class="mono text-green">* # 1 % % 1 : # ! * 0 1 @ $ 1 - 1 0 : - + 1 : # : </text>
-<text x="5" y="154" font-size="10" class="mono text-green">- @ 0 0 | 1 % @ : - 1 + % - ! * 1 # + - # : % * @ </text>
-<text x="5" y="166" font-size="10" class="mono text-green">! ! 0 * = = = + 0 : 1 @ % 1 1 : * ! % 0 | = = : | </text>
-<text x="5" y="178" font-size="10" class="mono text-green">- @ * 1 % 0 0 @ 1 : : 0 1 @ * 1 1 $ 1 | @ 0 : # % </text>
-<text x="5" y="190" font-size="10" class="mono text-green"># $ 0 # - 1 1 # 0 1 % ! @ $ 0 : * * # @ @ * 0 = ! </text>
-<text x="5" y="202" font-size="10" class="mono text-green">1 = = 1 | 0 # ! 0 % # ! $ * : | 1 + # : $ $ ! % % </text>
-<text x="5" y="214" font-size="10" class="mono text-green">= 1 * ! 1 @ * $ 0 $ + : 0 1 - # @ + ! + : * 1 # # </text>
-<text x="5" y="226" font-size="10" class="mono text-green">0 0 $ # | | | # $ * 1 1 0 0 % * : ! - 1 : = 0 * $ </text>
-<text x="5" y="238" font-size="10" class="mono text-green">- # - ! : 1 # ! + = ! - | * $ % | 0 1 ! 0 1 1 - 0 </text>
-<text x="5" y="250" font-size="10" class="mono text-green">0 1 ! - @ % 1 1 | - 0 + | 0 1 1 @ $ - ! | | 1 | % </text>
-<text x="5" y="262" font-size="10" class="mono text-green">! @ 1 + 1 ! * - 1 : 0 % = 1 ! 0 : 0 : ! = $ - 0 # </text>
-<text x="5" y="274" font-size="10" class="mono text-green"># @ = - # @ - @ 0 - | 1 : * 0 * @ $ % 0 @ % 1 % $ </text>
-<text x="5" y="286" font-size="10" class="mono text-green"># - = 1 | 1 - 1 $ @ 0 * ! 1 % 1 0 0 + | ! ! - * + </text>
-<text x="5" y="298" font-size="10" class="mono text-green">0 * * 1 1 ! # = + $ 1 ! 1 = % # 1 0 $ : * | + 0 : </text>
+<g class="matrix-layer matrix-layer-2"><text x="5" y="10" font-size="10" class="mono text-green">+ # 1 ! + 0 @ # 0 $ * - | | + 1 # % 0 + $ 0 @ : $ </text>
+<text x="5" y="22" font-size="10" class="mono text-green">: ! + 0 % = + @ + 0 1 @ - % ! = - 1 : 0 0 0 # # = </text>
+<text x="5" y="34" font-size="10" class="mono text-green"># = 0 = 0 1 1 = $ @ # 1 : 0 ! ! - 0 1 : | % * % : </text>
+<text x="5" y="46" font-size="10" class="mono text-green">@ 0 - 0 * 1 + = : @ = 0 - # 0 0 # + - 1 % % = @ : </text>
+<text x="5" y="58" font-size="10" class="mono text-green">1 - @ : | % * + + ! $ - * ! % # $ : = * + : % 1 * </text>
+<text x="5" y="70" font-size="10" class="mono text-green">= 0 0 - 1 1 1 - * $ 1 # % + : + 0 # 0 0 : * = : * </text>
+<text x="5" y="82" font-size="10" class="mono text-green">0 % # @ 0 - ! + 0 | - 0 0 | + | $ 1 # $ $ 0 + 0 : </text>
+<text x="5" y="94" font-size="10" class="mono text-green">! # = * 1 1 - % | 1 0 - 1 = = % * - 0 = % | ! | - </text>
+<text x="5" y="106" font-size="10" class="mono text-green">| - - @ @ - 1 : = 1 # 0 $ : | # | % - | - 1 % : - </text>
+<text x="5" y="118" font-size="10" class="mono text-green">0 0 0 * = 1 | $ | * | 0 + ! # - : 0 * # - * % # 0 </text>
+<text x="5" y="130" font-size="10" class="mono text-green">0 @ ! 1 % # 0 1 # : % 0 1 % = $ 0 | % = ! # + - ! </text>
+<text x="5" y="142" font-size="10" class="mono text-green">* - $ * 0 : % 0 * | - - 0 @ * 1 0 0 * * # 1 # * ! </text>
+<text x="5" y="154" font-size="10" class="mono text-green">@ # # % # % % ! # 1 | + 1 - 0 0 % * 0 = - * $ % : </text>
+<text x="5" y="166" font-size="10" class="mono text-green">: = * 1 @ ! : # - * * # @ + # - + + @ 1 % | = 1 0 </text>
+<text x="5" y="178" font-size="10" class="mono text-green">+ - - 1 - # + 1 @ 0 ! 0 0 : 0 $ $ # @ 0 $ * # % # </text>
+<text x="5" y="190" font-size="10" class="mono text-green">@ 0 - @ - - : 0 1 1 | 0 0 + $ @ : + + | | @ % * | </text>
+<text x="5" y="202" font-size="10" class="mono text-green">% 0 1 = + $ + | 0 ! ! 0 1 * ! 1 ! 0 1 @ = - 0 1 @ </text>
+<text x="5" y="214" font-size="10" class="mono text-green">0 $ + # - 1 0 0 # - = - = 1 1 $ # | - 0 # * = 1 + </text>
+<text x="5" y="226" font-size="10" class="mono text-green">| $ : # = | + # % * : | $ = 1 0 ! * 0 : 0 1 ! 0 + </text>
+<text x="5" y="238" font-size="10" class="mono text-green">= 1 % - @ % ! * = # 1 0 = : 0 0 = + $ 1 * 0 + ! 1 </text>
+<text x="5" y="250" font-size="10" class="mono text-green">: ! $ % - % 1 = 0 # + 1 1 : - # 0 1 + 0 % 0 0 | 1 </text>
+<text x="5" y="262" font-size="10" class="mono text-green">* : + 0 % + % ! # : 0 + = 0 $ 1 | 0 # @ $ : - = * </text>
+<text x="5" y="274" font-size="10" class="mono text-green">$ 1 0 - $ - = + 0 = * : % $ * @ $ 1 = $ + @ 1 * : </text>
+<text x="5" y="286" font-size="10" class="mono text-green"># - % : * % # # * # = 0 - - 1 % + 0 1 * ! $ % 1 1 </text>
+<text x="5" y="298" font-size="10" class="mono text-green">$ 0 ! 1 1 | # - * @ $ 0 | + @ 0 @ % % 1 $ = ! 1 ! </text>
 </g>
-<g class="matrix-layer matrix-layer-3"><text x="5" y="10" font-size="10" class="mono text-green"># | : $ $ # 0 1 0 * ! 0 ! 0 0 0 : 0 : 1 ! * # + @ </text>
-<text x="5" y="22" font-size="10" class="mono text-green">1 * 0 * 1 | | # 0 1 - | + - % 1 $ # # : - 0 = 1 ! </text>
-<text x="5" y="34" font-size="10" class="mono text-green">0 1 # # 0 0 | @ | ! : 1 = 1 1 | @ + ! 0 ! @ # # % </text>
-<text x="5" y="46" font-size="10" class="mono text-green">@ : 0 1 | | 1 # = = $ # 1 + ! 0 0 = 0 = = # : = : </text>
-<text x="5" y="58" font-size="10" class="mono text-green">+ 1 | 0 + 1 = - + : + @ ! @ 1 1 - : $ # $ # @ | @ </text>
-<text x="5" y="70" font-size="10" class="mono text-green">1 0 1 * - % 1 1 + 1 1 1 % % 0 = $ - 0 = 1 | = ! 0 </text>
-<text x="5" y="82" font-size="10" class="mono text-green">1 : 1 @ $ 1 0 @ 0 - @ 1 # : - # | : ! 0 | ! | + 1 </text>
-<text x="5" y="94" font-size="10" class="mono text-green">$ 1 # - # = ! * ! 0 - - $ # | | = % 1 1 | : * % # </text>
-<text x="5" y="106" font-size="10" class="mono text-green">= + - : 1 # | 1 + @ | # : 0 | 1 1 | $ # ! : @ - 1 </text>
-<text x="5" y="118" font-size="10" class="mono text-green">* : $ | 1 0 - = - 0 : | | - @ * 0 * 0 $ = | : = - </text>
-<text x="5" y="130" font-size="10" class="mono text-green">+ # : # $ @ @ # * * + 1 0 # = - # # $ | ! + % $ $ </text>
-<text x="5" y="142" font-size="10" class="mono text-green">- ! ! @ | : 0 % + 1 1 + 0 = % # 1 0 $ : 1 ! 1 0 0 </text>
-<text x="5" y="154" font-size="10" class="mono text-green">0 0 % | : ! 1 @ ! | % : % * | @ = * = ! @ @ # 1 - </text>
-<text x="5" y="166" font-size="10" class="mono text-green">* | @ : - : : = = * * ! $ = 1 1 # * + * $ $ @ 0 + </text>
-<text x="5" y="178" font-size="10" class="mono text-green">- % : + ! + + % | = # * * 0 1 @ 0 % * $ * # @ ! - </text>
-<text x="5" y="190" font-size="10" class="mono text-green">* 1 : = 0 $ : + # + | = + 1 # | 1 0 1 ! 1 @ % % 1 </text>
-<text x="5" y="202" font-size="10" class="mono text-green">1 | % = 1 @ % + $ ! 1 0 0 1 : $ - = : = 1 = 1 = - </text>
-<text x="5" y="214" font-size="10" class="mono text-green">* * : 0 ! = = 1 $ 0 - % = 0 0 % 0 @ * ! | # ! - ! </text>
-<text x="5" y="226" font-size="10" class="mono text-green">| 1 $ - | + * $ 1 1 0 1 + 0 $ | = 1 0 0 = = * = | </text>
-<text x="5" y="238" font-size="10" class="mono text-green">: ! 1 1 1 1 1 ! 1 - * @ 1 ! : * | 1 ! ! - # : - $ </text>
-<text x="5" y="250" font-size="10" class="mono text-green">* $ ! % $ = - % + @ $ # @ : = ! * @ + ! | ! @ = | </text>
-<text x="5" y="262" font-size="10" class="mono text-green">+ # % 0 = 0 = * * $ # 1 1 1 ! | # 0 ! $ - - * + | </text>
-<text x="5" y="274" font-size="10" class="mono text-green">1 $ = * : 1 0 # ! ! @ 1 0 @ = + 0 ! * : + : * $ % </text>
-<text x="5" y="286" font-size="10" class="mono text-green">@ ! 0 % ! - : ! 0 | 1 : 0 1 : + : % % | % * # # - </text>
-<text x="5" y="298" font-size="10" class="mono text-green"># # = 1 # % - 0 @ ! - 0 - - * 1 0 = @ : * % @ % | </text>
+<g class="matrix-layer matrix-layer-3"><text x="5" y="10" font-size="10" class="mono text-green">! ! = # 1 0 | 0 | 0 % % | | % 0 * | | 0 @ - 1 : % </text>
+<text x="5" y="22" font-size="10" class="mono text-green">| 1 ! $ 0 1 # = = # @ @ # ! 1 - @ # @ = 0 1 * : $ </text>
+<text x="5" y="34" font-size="10" class="mono text-green">1 # : # $ $ 1 1 ! + $ @ : 1 | # % # - 0 # 1 % | | </text>
+<text x="5" y="46" font-size="10" class="mono text-green">+ 0 : : | % # $ 1 + * # - * @ : 0 0 | 0 + | * ! 1 </text>
+<text x="5" y="58" font-size="10" class="mono text-green">- @ # - % $ + + 0 $ 0 = @ 1 | @ # : | - | | + : 1 </text>
+<text x="5" y="70" font-size="10" class="mono text-green">$ + $ = 0 | @ 0 - 1 ! $ ! 1 @ 0 - * - 0 = ! $ | + </text>
+<text x="5" y="82" font-size="10" class="mono text-green">: - # + @ % $ 1 0 | + 1 : @ = - | $ @ = = - % = = </text>
+<text x="5" y="94" font-size="10" class="mono text-green">0 + + 0 * - 0 0 @ 0 1 0 - - - # % = # = 0 - : # 0 </text>
+<text x="5" y="106" font-size="10" class="mono text-green">1 1 0 0 # * - * # $ 1 # : 0 @ + 0 = : ! ! - % 1 = </text>
+<text x="5" y="118" font-size="10" class="mono text-green">% 0 $ 0 0 - $ 0 : # | # | : # 0 + ! # 1 + 0 : @ @ </text>
+<text x="5" y="130" font-size="10" class="mono text-green">$ @ 0 : = @ | # - @ ! 0 + - $ 0 $ # * * 1 # + ! ! </text>
+<text x="5" y="142" font-size="10" class="mono text-green">$ 1 1 | | 0 @ * + # + | # ! * + % ! # 1 @ * - 1 0 </text>
+<text x="5" y="154" font-size="10" class="mono text-green">@ | = $ 1 1 0 @ * 1 0 = | ! 0 % * | % 1 - : % % : </text>
+<text x="5" y="166" font-size="10" class="mono text-green">+ 0 * ! % $ $ | ! 1 % @ @ $ @ # - = : % # 1 $ ! $ </text>
+<text x="5" y="178" font-size="10" class="mono text-green">$ | | % 1 + = $ % @ $ % | # + = # 0 - - % | : # $ </text>
+<text x="5" y="190" font-size="10" class="mono text-green">1 - 0 | | @ $ * = # $ ! = # 0 ! 0 : * % + : 1 0 $ </text>
+<text x="5" y="202" font-size="10" class="mono text-green">| # % : = 0 + $ 1 + @ : @ + * @ | - % | @ 0 % 0 1 </text>
+<text x="5" y="214" font-size="10" class="mono text-green">0 - = ! @ = 0 1 @ | = 0 1 - $ - - | 1 ! 1 0 - @ 0 </text>
+<text x="5" y="226" font-size="10" class="mono text-green">@ = + 1 0 @ # * 0 % 0 = # = 1 + : ! # - 1 0 ! @ ! </text>
+<text x="5" y="238" font-size="10" class="mono text-green">1 - 0 @ = | = : ! = | 0 1 1 0 0 1 - $ 0 $ * # 1 # </text>
+<text x="5" y="250" font-size="10" class="mono text-green">! | % 1 # | 1 = @ $ ! 1 1 * % 0 $ @ : % $ + + $ 1 </text>
+<text x="5" y="262" font-size="10" class="mono text-green">$ # + 1 0 ! = : 0 : 1 = @ - 0 ! : 0 0 0 1 * 0 @ # </text>
+<text x="5" y="274" font-size="10" class="mono text-green">0 1 ! # * : = : 1 $ + : = 1 # : 0 = # % = 0 = ! % </text>
+<text x="5" y="286" font-size="10" class="mono text-green">@ $ : 0 0 - - = @ # 0 = @ % - % 1 % : 1 | # - = * </text>
+<text x="5" y="298" font-size="10" class="mono text-green">- | # 0 ! | # - 0 0 + % 1 $ * ! % 0 1 1 1 0 + - ! </text>
 </g>
-<g class="matrix-layer matrix-layer-4"><text x="5" y="10" font-size="10" class="mono text-green">$ $ $ = = - - 0 = 1 0 | : : - - - 1 1 | ! 1 1 = $ </text>
-<text x="5" y="22" font-size="10" class="mono text-green">+ + - - * 0 @ - 0 - $ @ ! ! 1 % $ # # % : @ 1 1 1 </text>
-<text x="5" y="34" font-size="10" class="mono text-green"># % | * 0 0 - = 1 1 ! = ! $ * 1 | * 0 * : 1 0 0 ! </text>
-<text x="5" y="46" font-size="10" class="mono text-green">0 - @ % = - = * $ | = 0 0 # ! 0 ! - 1 % | 0 | | | </text>
-<text x="5" y="58" font-size="10" class="mono text-green">- @ # 1 + ! $ @ = $ : # 0 1 : 0 ! - # @ 0 0 % # = </text>
-<text x="5" y="70" font-size="10" class="mono text-green">@ $ ! * 0 % 1 - * 0 @ 1 1 * 1 + - = # $ : ! 0 | ! </text>
-<text x="5" y="82" font-size="10" class="mono text-green">- = 0 $ % 1 ! # ! ! + ! + 0 ! # 0 $ - % - ! 1 @ | </text>
-<text x="5" y="94" font-size="10" class="mono text-green">$ 1 @ = # - 1 % 0 1 1 ! 1 = 1 = - ! 0 $ 1 | : @ = </text>
-<text x="5" y="106" font-size="10" class="mono text-green">: : + 1 @ 1 = = * 1 + 1 % * - + % = ! = @ ! + : $ </text>
-<text x="5" y="118" font-size="10" class="mono text-green">! ! : % $ 1 0 # 1 $ = - $ | @ | ! $ = # @ - | # @ </text>
-<text x="5" y="130" font-size="10" class="mono text-green">@ : ! + + | @ | - 1 0 - 1 + - + @ $ 0 = % 0 1 ! 0 </text>
-<text x="5" y="142" font-size="10" class="mono text-green">- $ % * : # $ : 1 % % ! # : - # % % 1 | 1 # % 1 0 </text>
-<text x="5" y="154" font-size="10" class="mono text-green"># 0 * + = 1 * $ 0 @ ! | 0 $ 0 0 0 0 - - : - $ * - </text>
-<text x="5" y="166" font-size="10" class="mono text-green">1 % : 0 % @ @ ! | @ = ! # $ | 1 % 1 + * % $ : @ = </text>
-<text x="5" y="178" font-size="10" class="mono text-green">= 1 - 0 # # 1 0 = = 0 = ! $ @ : # 0 | # + ! $ = @ </text>
-<text x="5" y="190" font-size="10" class="mono text-green">- - | 0 $ - ! | @ = | + % ! ! % + ! @ = 0 0 0 : | </text>
-<text x="5" y="202" font-size="10" class="mono text-green">+ 1 * | % + 0 1 # 1 @ 0 ! $ 0 1 $ 0 $ * 0 ! % @ 0 </text>
-<text x="5" y="214" font-size="10" class="mono text-green">% @ % 0 0 $ + = = 1 @ $ * @ % - : + 1 : | $ - 1 0 </text>
-<text x="5" y="226" font-size="10" class="mono text-green">$ 0 1 % | 1 $ 0 1 1 $ * 0 % + $ $ + * = % 0 $ + 0 </text>
-<text x="5" y="238" font-size="10" class="mono text-green">* % % - | = = * = 1 ! @ : | 1 ! @ 1 = + @ % - + # </text>
-<text x="5" y="250" font-size="10" class="mono text-green">0 ! # + 1 1 % 0 # ! 0 - - * | @ ! | # 1 # * * = 0 </text>
-<text x="5" y="262" font-size="10" class="mono text-green">+ % - - 1 * + = : 0 0 $ : + $ : @ 1 = = * # @ 0 = </text>
-<text x="5" y="274" font-size="10" class="mono text-green">+ % % % % @ % $ 0 0 @ # 1 # ! ! @ 0 = @ % * $ + 1 </text>
-<text x="5" y="286" font-size="10" class="mono text-green">= 1 $ + + $ : % % 0 $ % + | $ $ 0 % 0 + @ 0 - 0 @ </text>
-<text x="5" y="298" font-size="10" class="mono text-green">: 1 * = | 0 % @ | 1 + 1 0 1 * * - 1 $ 1 * ! 1 0 % </text>
+<g class="matrix-layer matrix-layer-4"><text x="5" y="10" font-size="10" class="mono text-green">0 : 0 % | = % 1 | @ = * = = ! 0 : + 1 1 # @ * 1 0 </text>
+<text x="5" y="22" font-size="10" class="mono text-green">! @ 0 1 0 # = ! 0 1 1 - 0 $ + @ : | ! = $ 1 1 1 0 </text>
+<text x="5" y="34" font-size="10" class="mono text-green">| $ 0 ! - | + # 0 ! - 0 % = : | $ @ = - 0 0 0 1 : </text>
+<text x="5" y="46" font-size="10" class="mono text-green">+ : | 1 @ 0 : % @ % # % + * $ ! = * ! 1 % + : : * </text>
+<text x="5" y="58" font-size="10" class="mono text-green">| 1 - * 1 1 1 0 0 1 - - : * = % @ - ! $ # = 1 + 1 </text>
+<text x="5" y="70" font-size="10" class="mono text-green">= 1 | | * $ * ! % + $ 1 * 0 * 1 - ! 1 + - # - $ $ </text>
+<text x="5" y="82" font-size="10" class="mono text-green">| : * ! ! 0 * : @ 1 % ! | : * | | % - $ = 1 # | ! </text>
+<text x="5" y="94" font-size="10" class="mono text-green">0 # * % 1 - 1 - 0 * | 0 @ 1 0 ! 1 - $ * 1 # 0 | | </text>
+<text x="5" y="106" font-size="10" class="mono text-green">0 1 : % - : : | = + @ - 0 $ % % @ 0 0 - 0 @ * % | </text>
+<text x="5" y="118" font-size="10" class="mono text-green">0 : % $ 0 1 @ 1 $ ! * ! 1 - | + ! * * ! $ + * ! 1 </text>
+<text x="5" y="130" font-size="10" class="mono text-green"># 1 + @ | : | 0 ! * 0 $ 0 | 0 + 0 % 0 * 1 - * + ! </text>
+<text x="5" y="142" font-size="10" class="mono text-green">0 0 ! 0 1 + 0 | * 0 * * 1 % 1 | : 1 1 % 0 % 1 @ = </text>
+<text x="5" y="154" font-size="10" class="mono text-green">1 $ 0 : @ = : # ! 0 0 1 * 0 0 * * - 1 0 # @ = * $ </text>
+<text x="5" y="166" font-size="10" class="mono text-green">* * $ | % $ % = ! ! = 1 @ $ % - - * : + ! 0 # : | </text>
+<text x="5" y="178" font-size="10" class="mono text-green">@ * + ! 0 ! ! | * 1 1 - - 1 0 : $ % : | 0 + 1 + # </text>
+<text x="5" y="190" font-size="10" class="mono text-green">% * | $ : = = = % $ 0 - + $ 1 $ - 1 * # 1 1 1 * % </text>
+<text x="5" y="202" font-size="10" class="mono text-green">= : ! - | - 0 % | ! : : 1 - : 0 1 1 * 1 * 1 * @ ! </text>
+<text x="5" y="214" font-size="10" class="mono text-green"># + - % = * ! : ! $ $ $ 1 = @ @ 0 + 1 | = + + $ % </text>
+<text x="5" y="226" font-size="10" class="mono text-green">| @ 1 @ ! + + = : % 0 0 1 0 0 # = : + $ @ | 1 1 | </text>
+<text x="5" y="238" font-size="10" class="mono text-green">0 0 1 @ 0 @ $ | 1 1 * @ $ + 0 * | % 1 * 0 @ @ 0 @ </text>
+<text x="5" y="250" font-size="10" class="mono text-green">! 0 @ ! 0 % = # - 1 % : + $ % : $ 0 % = * ! 1 @ + </text>
+<text x="5" y="262" font-size="10" class="mono text-green">* - 0 # + 1 - + 0 @ 0 1 0 - ! $ 1 @ + 0 # # 1 @ $ </text>
+<text x="5" y="274" font-size="10" class="mono text-green">% | 0 : % + - ! $ 0 * 0 1 : * $ * 1 0 1 @ + 1 $ = </text>
+<text x="5" y="286" font-size="10" class="mono text-green">: 0 @ % $ ! ! | 1 = # : 0 @ 1 ! - - 1 * $ % : 1 : </text>
+<text x="5" y="298" font-size="10" class="mono text-green">1 - * 1 + 0 % 0 * ! : = % * - $ 0 = * @ $ # 1 = $ </text>
 </g>
 
           
-          <!-- The actual high-res profile picture that morphs/fades in -->
-          <image xlink:href="data:image/jpeg;base64,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" href="data:image/jpeg;base64,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" x="0" y="0" width="300" height="300" preserveAspectRatio="xMidYMid slice" class="profile-image" />
+          <!-- The actual high-res profile picture that morphs/fades in (uses native SVG animate) -->
+          <image href="data:image/jpeg;base64,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" x="0" y="0" width="300" height="300" preserveAspectRatio="xMidYMid slice">
+            <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.40; 0.45; 0.90; 0.95; 1" dur="8s" repeatCount="indefinite" />
+          </image>
         </g>
         
         <!-- Terminal Loading text below the photo -->

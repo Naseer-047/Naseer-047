@@ -82,16 +82,10 @@ async function generateTerminalHero() {
       @keyframes decode2 { 0%, 10% { opacity: 0; } 11%, 20% { opacity: 1; } 21%, 100% { opacity: 0; } }
       @keyframes decode3 { 0%, 20% { opacity: 0; } 21%, 30% { opacity: 1; } 31%, 100% { opacity: 0; } }
       @keyframes decode4 { 0%, 30% { opacity: 0; } 31%, 40% { opacity: 1; } 41%, 100% { opacity: 0; } }
-      @keyframes revealImage { 
-        0%, 40% { opacity: 0; }
-        45%, 90% { opacity: 1; }
-        95%, 100% { opacity: 0; }
-      }
       .matrix-layer-1 { animation: decode1 8s infinite; }
       .matrix-layer-2 { animation: decode2 8s infinite; }
       .matrix-layer-3 { animation: decode3 8s infinite; }
       .matrix-layer-4 { animation: decode4 8s infinite; }
-      .profile-image { animation: revealImage 8s infinite; }
     </style>
     
     <clipPath id="type-clip">
@@ -264,8 +258,10 @@ async function generateTerminalHero() {
         <g clip-path="url(#circle-clip-dark)">
           ${matrixLayers}
           
-          <!-- The actual high-res profile picture that morphs/fades in -->
-          <image xlink:href="${userImageBase64}" href="${userImageBase64}" x="0" y="0" width="300" height="300" preserveAspectRatio="xMidYMid slice" class="profile-image" />
+          <!-- The actual high-res profile picture that morphs/fades in (uses native SVG animate) -->
+          <image href="${userImageBase64}" x="0" y="0" width="300" height="300" preserveAspectRatio="xMidYMid slice">
+            <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.40; 0.45; 0.90; 0.95; 1" dur="8s" repeatCount="indefinite" />
+          </image>
         </g>
         
         <!-- Terminal Loading text below the photo -->
