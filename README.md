@@ -131,5 +131,5 @@ const naseer = {
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=Naseer-047&color=2563eb&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
   <br><br>
-  <img src="assets/footer.svg?v=999" width="100%" alt="Footer" />
+  <img src="assets/footer.svg?v=1000" width="100%" alt="Footer" />
 </div>

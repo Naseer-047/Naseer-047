@@ -6,6 +6,7 @@
       
       :root {
         --bg: #ffffff;
+        --text-main: #0f172a;
         --accent: #2563eb;
         --wave1: rgba(37, 99, 235, 0.1);
         --wave2: rgba(37, 99, 235, 0.2);
@@ -13,10 +14,23 @@
         --wave4: rgba(37, 99, 235, 1);
       }
       
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0d1117;
+          --text-main: #c9d1d9;
+          --accent: #58a6ff;
+          --wave1: rgba(88, 166, 255, 0.1);
+          --wave2: rgba(88, 166, 255, 0.2);
+          --wave3: rgba(88, 166, 255, 0.4);
+          --wave4: rgba(88, 166, 255, 1);
+        }
+      }
+      
       .bg { fill: var(--bg); }
       .mono { font-family: 'JetBrains Mono', monospace; }
       .text-green { fill: var(--accent); }
       .text-grey { fill: #64748b; }
+      .text-main { fill: var(--text-main); }
       
       @keyframes move_wave {
         0% { transform: translateX(0) translateZ(0) scaleY(1); }
@@ -54,7 +68,7 @@
       &lt;/&gt;
     </text>
     <text x="0" y="30" font-size="16" class="mono text-grey">
-      crafted with <tspan class="text-green">code</tspan> by <tspan font-weight="700" fill="#fff">Naseer Pasha</tspan>
+      crafted with <tspan class="text-green">code</tspan> by <tspan font-weight="700" class="text-main">Naseer Pasha</tspan>
     </text>
   </g>
 
