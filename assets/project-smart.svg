@@ -3,14 +3,16 @@
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
-      .bg { fill: #121212; stroke: #27272a; stroke-width: 2; rx: 8; }
-      .text-green { fill: #a3e635; font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: bold; }
-      .text-grey { fill: #a1a1aa; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
-      .emoji { font-size: 24px; }
+      .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; rx: 6; }
+      .text-green { fill: #58a6ff; font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: bold; }
+      .text-grey { fill: #8b949e; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+      .icon { fill: #58a6ff; }
     </style>
   </defs>
   <rect x="2" y="2" width="396" height="116" class="bg" />
-  <text x="20" y="40" class="emoji">🧠</text>
+  <g transform="translate(20, 25) scale(1.2)">
+    <path class="icon" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93Zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39Z" />
+  </g>
   <text x="60" y="40" class="text-green">> Smart Study Buddy</text>
   <text x="20" y="75" class="text-grey">AI-powered learning assistant for</text>
   <text x="20" y="95" class="text-grey">students and self-learners.</text>

@@ -1,104 +1,99 @@
 <div align="center">
-  <img src="assets/terminal-hero.svg?v=3" width="100%" alt="Naseer Pasha - Terminal Profile">
+  <img src="assets/terminal-hero.svg?v=4" width="100%" alt="Naseer Pasha - Terminal Profile">
 </div>
 
 <br>
-
-<h3 align="left"><code>## TECH STACK</code></h3>
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=js,ts,react,nodejs,express,mongodb,tailwind,python,cpp,git,docker,aws&theme=dark" />
-</p>
-
-<br>
-
-<h3 align="left"><code>## FEATURED PROJECTS</code></h3>
-
-<table width="100%" style="border: none; background: transparent; ">
-  <tr style="border: none;">
-    <td width="50%" align="center" style="border: none;">
-      <a href="https://github.com/Naseer-047/CNS">
-        <img src="assets/project-cns.svg" width="100%" alt="CNS Cloud Nexus Stream" />
-      </a>
-    </td>
-    <td width="50%" align="center" style="border: none;">
-      <a href="https://github.com/Naseer-047/GCC-Developer-OS">
-        <img src="assets/project-gcc.svg" width="100%" alt="GCC Developer OS" />
-      </a>
-    </td>
-  </tr>
-  <tr style="border: none;">
-    <td width="50%" align="center" style="border: none;">
-      <a href="https://github.com/Naseer-047/Smart-Study-Buddy">
-        <img src="assets/project-smart.svg" width="100%" alt="Smart Study Buddy" />
-      </a>
-    </td>
-    <td width="50%" align="center" style="border: none;">
-      <a href="https://github.com/Naseer-047/AI-Resume-Analyzer">
-        <img src="assets/project-resume.svg" width="100%" alt="AI Resume Analyzer" />
-      </a>
-    </td>
-  </tr>
-</table>
-
-<br>
-
-<h3 align="left"><code>## GITHUB STATS</code></h3>
-
-<div align="center"style="border: none; background: #0000;">
-  <img src="https://github-readme-stats.vercel.app/api?username=naseer-047&title_color=A3E635&text_color=c9d1d9&icon_color=A3E635&bg_color=09090b&hide_border=true&border_radius=8&show_icons=true" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=naseer-047&layout=donut&title_color=A3E635&text_color=c9d1d9&bg_color=09090b&hide_border=true&border_radius=8" height="170" />
-</div>
-
-<br>
-
-<h3 align="left"><code>## ENGINEERING JOURNEY</code></h3>
 
 <div align="center">
-  <img src="assets/timeline.svg" width="100%" alt="Engineering Journey" />
+  <a href="https://naseerpasha.me"><img src="https://img.shields.io/badge/Portfolio-121212?style=for-the-badge&logo=vercel&logoColor=A3E635&labelColor=0d1117&color=121212" alt="Portfolio" /></a>
+  <a href="https://linkedin.com/in/naseer-pasha"><img src="https://img.shields.io/badge/LinkedIn-121212?style=for-the-badge&logo=linkedin&logoColor=A3E635&labelColor=0d1117&color=121212" alt="LinkedIn" /></a>
+  <a href="mailto:contact@naseerpasha.com"><img src="https://img.shields.io/badge/Email-121212?style=for-the-badge&logo=minutemailer&logoColor=A3E635&labelColor=0d1117&color=121212" alt="Email" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/Based_In-121212?style=for-the-badge&logo=googlemaps&logoColor=A3E635&labelColor=0d1117&color=121212" alt="Location" /></a>
 </div>
 
 <br>
 
-<h3 align="left"><code>## CURRENTLY</code></h3>
-
-<table width="100%" style="border: none; background: #0000;">
-  <tr style="border: none;">
-    <td width="60%" valign="top" style="border: none; padding-top: 15px;">
-      <ul style="list-style-type: none;">
-        <li>🔍 <b><code>Building </code></b> CNS v2 - The ultimate personal cloud</li>
-        <li>📚 <b><code>Learning </code></b> System Design, AI Engineering, Advanced Go</li>
-        <li>⚡ <b><code>Exploring</code></b> WebGL, UI/UX, Motion Design</li>
-        <li>🎯 <b><code>Goal     </code></b> Build products that millions of people love</li>
-      </ul>
+<div align="center">
+<table>
+  <tr>
+    <td valign="top" width="50%">
+      <h3>👨‍💻 About Me</h3>
+<pre lang="js">
+const naseer = {
+  pronouns: "he" | "him",
+  location: "Earth",
+  
+  education: {
+    degree: "Computer Science",
+    focus: "Software Engineering"
+  },
+  
+  roles: [
+    "Full Stack Developer",
+    "Open Source Contributor",
+    "Problem Solver"
+  ],
+  
+  philosophy: "Make it work, make it right, make it fast."
+};
+</pre>
     </td>
-    <td width="40%" valign="top" align="center" style="border: none;">
-      <img src="assets/quote-retro.svg" width="100%" />
+    <td valign="top" width="50%">
+      <h3>📈 GitHub Stats</h3>
+      <img src="https://github-readme-stats.vercel.app/api?username=Naseer-047&theme=tokyonight&hide_border=true&border_radius=8&show_icons=true" width="100%" alt="GitHub Stats" />
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Naseer-047&theme=tokyonight&hide_border=true&border_radius=8" width="100%" alt="GitHub Streak" />
     </td>
   </tr>
 </table>
+</div>
 
 <br>
 
-<h3 align="left"><code>## LET'S CONNECT</code></h3>
+### ⚔️ Tech Arsenal
 
-<p style="color: #a1a1aa;">I'm always open to collaborate on exciting ideas and projects.</p>
+<div align="center">
+  <p><b>Languages</b></p>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++" />
+  
+  <p><b>Frameworks & Tools</b></p>
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  
+  <p><b>Infrastructure & DB</b></p>
+  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" alt="AWS" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+</div>
 
-<table style="border: none; background: transparent;">
-  <tr style="border: none;">
-    <td style="border: none;">🟢 <a href="https://naseerpasha.me">Portfolio</a></td>
-    <td style="border: none;">: naseerpasha.me</td>
-    <td style="border: none; padding-left: 30px;">🟢 <a href="https://linkedin.com/in/naseer-pasha">LinkedIn</a></td>
-    <td style="border: none;">: linkedin.com/in/naseer-pasha</td>
-  </tr>
-  <tr style="border: none;">
-    <td style="border: none;">🟢 <a href="https://github.com/Naseer-047">GitHub</a></td>
-    <td style="border: none;">: github.com/Naseer-047</td>
-    <td style="border: none; padding-left: 30px;">🟢 <a href="mailto:naseer047@example.com">Email</a></td>
-    <td style="border: none;">: naseer047@example.com</td>
-  </tr>
-</table>
+<br>
 
-<p align="center" style="margin-top: 40px;">
-  <code>&gt; Thanks for visiting! Have a great day! 🚀</code>
-</p>
+### 💻 Open Source Journey
+
+<div align="center">
+  <a href="https://github.com/Naseer-047/CNS"><img src="assets/project-cns.svg?v=3" width="48%" /></a>
+  <a href="https://github.com/Naseer-047/GCC-Developer-OS"><img src="assets/project-gcc.svg?v=3" width="48%" /></a>
+  <br><br>
+  <a href="https://github.com/Naseer-047/Smart-Study-Buddy"><img src="assets/project-smart.svg?v=3" width="48%" /></a>
+  <a href="https://github.com/Naseer-047/AI-Resume-Analyzer"><img src="assets/project-resume.svg?v=3" width="48%" /></a>
+</div>
+
+<br>
+
+### 📊 Analytics & Metrics
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Naseer-047&theme=tokyo-night&bg_color=09090b&color=A3E635&line=A3E635&point=A3E635&hide_border=true" width="100%" alt="Contribution Graph" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=Naseer-047&color=a3e635&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
+</div>
