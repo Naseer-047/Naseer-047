@@ -28,9 +28,9 @@ async function run() {
       @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&amp;display=swap');
       
       :root {
-        --bg: #0a0a0a;
-        --accent: #a3e635;
-        --border: #27272a;
+        --bg: #ffffff;
+        --accent: #2563eb;
+        --border: #e2e8f0;
       }
       
       .bg { fill: var(--bg); }

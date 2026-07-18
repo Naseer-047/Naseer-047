@@ -5,13 +5,13 @@
       @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
       
       :root {
-        --bg: #0a0a0a;
-        --card-bg: #121212;
-        --text-main: #ffffff;
-        --text-muted: #a1a1aa;
-        --accent: #a3e635; /* Neon green */
-        --accent-dark: #4d7c0f;
-        --border: #27272a;
+        --bg: #ffffff;
+        --card-bg: #f8fafc;
+        --text-main: #0f172a;
+        --text-muted: #64748b;
+        --accent: #2563eb; /* Portfolio Blue */
+        --accent-dark: #1d4ed8;
+        --border: #e2e8f0;
       }
       
       .bg { fill: var(--bg); }
@@ -226,109 +226,109 @@
         
         <!-- The ASCII Layers wrapped in the circular mask -->
         <g clip-path="url(#circle-clip-dark)">
-          <g class="matrix-layer matrix-layer-1"><text x="5" y="10" font-size="10" class="mono text-green">+ 1 + * | # # 1 % $ * | + $ % = - % = : | $ ! | = </text>
-<text x="5" y="22" font-size="10" class="mono text-green">+ ! 0 1 + # 1 | @ @ - | ! ! 1 # + @ 1 ! 0 0 % @ * </text>
-<text x="5" y="34" font-size="10" class="mono text-green">@ ! ! : % 0 0 1 - # 1 * @ 1 1 0 = * % - + = # # * </text>
-<text x="5" y="46" font-size="10" class="mono text-green">1 = @ 0 ! 1 1 0 % % $ $ % 0 * | @ - * 0 0 # $ # @ </text>
-<text x="5" y="58" font-size="10" class="mono text-green">: - + = + * | % 0 @ 1 % $ 1 0 $ : $ = 0 : + : 0 # </text>
-<text x="5" y="70" font-size="10" class="mono text-green">1 @ 1 | 0 + + : 0 # - - @ + + $ % ! : - # @ $ : % </text>
-<text x="5" y="82" font-size="10" class="mono text-green">$ ! + | 1 $ = * ! $ : 1 + ! | | 1 ! | + + % * 0 0 </text>
-<text x="5" y="94" font-size="10" class="mono text-green">@ | 0 : : + * ! - | % * = 1 # : 0 ! : $ ! 1 : # 1 </text>
-<text x="5" y="106" font-size="10" class="mono text-green">$ 1 % # % | % 0 1 - + $ 1 1 @ $ - : = ! - 1 0 | : </text>
-<text x="5" y="118" font-size="10" class="mono text-green">! 0 1 0 % @ 1 # = - - % 0 - 0 : : = % $ = * # 0 * </text>
-<text x="5" y="130" font-size="10" class="mono text-green">= * + * ! % 1 1 1 : + - 1 * 0 ! % ! % = @ 0 % : $ </text>
-<text x="5" y="142" font-size="10" class="mono text-green">0 : ! % $ $ : ! # * 0 $ 1 @ - 0 1 1 : * + # + | ! </text>
-<text x="5" y="154" font-size="10" class="mono text-green">0 * : - * | % 0 1 | - * | - 0 0 $ % + @ # 1 - 0 = </text>
-<text x="5" y="166" font-size="10" class="mono text-green">% % $ % * ! = 1 0 0 0 0 1 $ = | : = : @ * + $ # + </text>
-<text x="5" y="178" font-size="10" class="mono text-green">0 : 0 1 @ @ 1 # 1 0 : 0 ! # @ % * + $ 0 0 1 0 ! + </text>
-<text x="5" y="190" font-size="10" class="mono text-green"># $ | ! = = $ | * 0 @ ! 1 $ 0 $ @ @ @ = @ | + % 0 </text>
-<text x="5" y="202" font-size="10" class="mono text-green">1 0 + = * @ % + = 0 1 % 1 @ | ! + ! % @ 0 = = @ : </text>
-<text x="5" y="214" font-size="10" class="mono text-green">- 0 : = 0 % - 1 1 @ # $ # ! 0 @ * ! % 0 0 1 # - 0 </text>
-<text x="5" y="226" font-size="10" class="mono text-green">0 1 ! $ 0 $ $ # ! : 1 $ % % * 0 % % 0 0 * : = 0 # </text>
-<text x="5" y="238" font-size="10" class="mono text-green">0 | | @ ! + 0 0 1 1 $ - : 1 0 * $ @ 1 0 = 1 : : 1 </text>
-<text x="5" y="250" font-size="10" class="mono text-green">- % ! @ : 0 0 % 0 - $ + + $ = 0 * 0 ! @ : % : $ 1 </text>
-<text x="5" y="262" font-size="10" class="mono text-green">1 ! 1 $ 1 # 1 0 % $ 0 = 1 | 1 $ 1 1 0 1 : 0 ! 0 0 </text>
-<text x="5" y="274" font-size="10" class="mono text-green">= | - | 0 : # 0 1 = * 1 $ * 0 ! % 0 | - # $ : 0 - </text>
-<text x="5" y="286" font-size="10" class="mono text-green">| % 1 : $ : + @ 1 - 1 - 1 0 ! $ * - 0 1 $ @ | @ 0 </text>
-<text x="5" y="298" font-size="10" class="mono text-green">* | = 0 - 1 ! 1 * @ % : ! : 0 $ 1 % $ 0 - - 1 ! % </text>
+          <g class="matrix-layer matrix-layer-1"><text x="5" y="10" font-size="10" class="mono text-green"># @ ! # - - * 1 - = = - 0 * + 1 $ | = | 0 0 : = * </text>
+<text x="5" y="22" font-size="10" class="mono text-green">! @ 0 * * 1 : $ 0 : | @ 0 1 : * ! $ - @ | - : 0 = </text>
+<text x="5" y="34" font-size="10" class="mono text-green">@ $ 0 1 ! * = 0 * = @ | : * @ = @ - 0 ! 1 % ! ! % </text>
+<text x="5" y="46" font-size="10" class="mono text-green">1 * | | 0 ! + : @ = # 0 : | 0 $ 0 $ $ @ : # 0 ! 0 </text>
+<text x="5" y="58" font-size="10" class="mono text-green">: 0 1 + | * - 1 - # % @ $ 0 ! ! # % + ! - = - $ % </text>
+<text x="5" y="70" font-size="10" class="mono text-green">1 1 0 1 ! # = # + | % : * ! 1 0 % * 1 : 0 $ | | % </text>
+<text x="5" y="82" font-size="10" class="mono text-green">% = + | $ : : | 0 % | # ! @ * + $ $ 1 ! 1 : = ! % </text>
+<text x="5" y="94" font-size="10" class="mono text-green">| 0 1 : 1 0 1 : @ @ % $ * 1 1 1 + | | 1 = : | 1 = </text>
+<text x="5" y="106" font-size="10" class="mono text-green">- : + @ @ 0 0 - # @ 0 % + # : 1 : 1 1 1 ! % ! = | </text>
+<text x="5" y="118" font-size="10" class="mono text-green"># 1 0 % | @ ! 1 = * = 1 % 0 + 0 0 + 0 = * : * @ $ </text>
+<text x="5" y="130" font-size="10" class="mono text-green">! - ! @ 1 0 1 0 0 $ ! ! $ @ * = : % # % 0 1 | + : </text>
+<text x="5" y="142" font-size="10" class="mono text-green">: 0 0 # | * | 0 - | 1 + % 1 = @ - - 0 | # @ @ 0 1 </text>
+<text x="5" y="154" font-size="10" class="mono text-green">* 1 | @ = : # 0 @ ! 1 @ = 0 ! % = : : - $ = 0 * @ </text>
+<text x="5" y="166" font-size="10" class="mono text-green">+ 0 # 1 0 : * | $ = | = 1 @ = + % 1 1 # = @ + * : </text>
+<text x="5" y="178" font-size="10" class="mono text-green"># 1 # 0 : - | # 1 1 : @ # 1 # $ % ! # # 1 ! | - $ </text>
+<text x="5" y="190" font-size="10" class="mono text-green">1 ! - = * 0 % | 1 1 - @ % # + = * 0 * | $ | ! % | </text>
+<text x="5" y="202" font-size="10" class="mono text-green"># @ 0 + + $ = 1 1 + $ : @ * # | % 1 = + 0 0 1 - | </text>
+<text x="5" y="214" font-size="10" class="mono text-green">! 0 1 % % 0 1 ! # @ * - : = - - : @ = @ 1 @ 0 + @ </text>
+<text x="5" y="226" font-size="10" class="mono text-green">- % | 0 + $ ! $ % $ | | ! $ * 1 * $ = % 0 - 0 ! # </text>
+<text x="5" y="238" font-size="10" class="mono text-green">: 0 % = ! - | $ + 0 : | : % @ 1 % + * - $ ! 0 ! = </text>
+<text x="5" y="250" font-size="10" class="mono text-green">: 0 % 0 % % | + + = 1 | 0 = = : $ * : * : = | $ - </text>
+<text x="5" y="262" font-size="10" class="mono text-green">| 0 : $ @ 1 = 1 $ 0 1 1 1 : : * * @ $ @ ! - 1 - + </text>
+<text x="5" y="274" font-size="10" class="mono text-green">$ 0 1 | - = 1 0 + - $ = + 1 | 1 * 0 1 - + - 1 1 # </text>
+<text x="5" y="286" font-size="10" class="mono text-green">: | 1 $ 0 * 1 # @ % 1 + 1 - - * 1 = # ! $ $ + 1 1 </text>
+<text x="5" y="298" font-size="10" class="mono text-green">! @ - | 0 1 % | = : = - * : % * ! ! 1 1 0 + 0 * | </text>
 </g>
-<g class="matrix-layer matrix-layer-2"><text x="5" y="10" font-size="10" class="mono text-green">= @ + 1 # $ % 1 : # 0 - 1 0 1 ! | | % * : ! # 1 # </text>
-<text x="5" y="22" font-size="10" class="mono text-green"># @ 1 1 # @ 0 0 + | ! | = 0 - 0 ! | * @ 1 0 % @ : </text>
-<text x="5" y="34" font-size="10" class="mono text-green">* $ 1 : @ 1 0 ! | @ * % $ @ % 0 1 1 * = % 0 0 | - </text>
-<text x="5" y="46" font-size="10" class="mono text-green">$ 1 ! = * + @ % $ : % # 0 + 1 1 0 = + * ! - + $ # </text>
-<text x="5" y="58" font-size="10" class="mono text-green">0 0 # ! 1 ! ! ! 0 * 0 ! 1 : 0 1 % % 0 * $ + * - % </text>
-<text x="5" y="70" font-size="10" class="mono text-green">0 * | # + $ $ : # 1 = * = 0 @ @ % = % = 1 = + $ | </text>
-<text x="5" y="82" font-size="10" class="mono text-green"># 0 % 1 0 1 + : ! @ = : + ! - $ $ 0 1 0 | % 0 - + </text>
-<text x="5" y="94" font-size="10" class="mono text-green">1 | @ % @ - * # ! = ! 1 | | $ 1 | - | - 0 ! 0 - $ </text>
-<text x="5" y="106" font-size="10" class="mono text-green">0 $ = % $ + ! - 1 : 1 - | = * 1 | = - 0 $ * | : - </text>
-<text x="5" y="118" font-size="10" class="mono text-green">= * 0 + % # 0 1 + + + % * % % - = 1 + = 0 % @ + % </text>
-<text x="5" y="130" font-size="10" class="mono text-green">| 0 : 1 * : % # : 1 0 0 : @ 1 | 0 0 0 0 $ 1 - * + </text>
-<text x="5" y="142" font-size="10" class="mono text-green">@ $ 1 - 1 1 * - 0 0 % : @ | ! $ $ $ 1 | = 0 = ! 0 </text>
-<text x="5" y="154" font-size="10" class="mono text-green">% : % - = % $ # - = - - 0 ! * * 1 % @ + : - # % $ </text>
-<text x="5" y="166" font-size="10" class="mono text-green"># + $ 0 * ! : 0 % 0 % : 0 @ | - @ : % ! # = * + $ </text>
-<text x="5" y="178" font-size="10" class="mono text-green">- # ! 0 $ @ 1 = # 1 + + 0 $ $ 1 0 = $ # $ : = + 1 </text>
-<text x="5" y="190" font-size="10" class="mono text-green">= 0 1 : + | = + 0 # | ! = - * | - = - * @ # $ | % </text>
-<text x="5" y="202" font-size="10" class="mono text-green">0 : $ 1 ! 0 0 - - 0 $ 1 1 - * - 1 - + - - + + = * </text>
-<text x="5" y="214" font-size="10" class="mono text-green">% % + @ | * 0 % % $ | # # % 1 ! 0 0 1 0 % @ % % $ </text>
-<text x="5" y="226" font-size="10" class="mono text-green">| @ @ = $ 0 % % * - @ # 0 1 % # $ 0 1 # | 1 0 # ! </text>
-<text x="5" y="238" font-size="10" class="mono text-green">0 * : 1 * ! | 1 # * % | - - % 1 $ | | = # + ! | * </text>
-<text x="5" y="250" font-size="10" class="mono text-green"># # 0 + * ! ! : : 1 ! : 1 ! 0 @ % 0 1 0 1 1 1 ! + </text>
-<text x="5" y="262" font-size="10" class="mono text-green">$ # - + 0 # % - 0 1 % @ 0 $ 1 + $ | 1 + $ @ % = 1 </text>
-<text x="5" y="274" font-size="10" class="mono text-green"># = * = % | 1 : * = + $ # # $ @ ! - $ ! : @ = # @ </text>
-<text x="5" y="286" font-size="10" class="mono text-green">* = * 1 % % $ + 0 | | 0 = | * @ @ 0 * = | @ % * = </text>
-<text x="5" y="298" font-size="10" class="mono text-green"># : $ % # + @ $ 0 1 # * * = $ * 1 1 = - + + 1 # | </text>
+<g class="matrix-layer matrix-layer-2"><text x="5" y="10" font-size="10" class="mono text-green">- @ # | % $ 1 % * % - ! + $ $ - + 0 $ = $ $ 1 * % </text>
+<text x="5" y="22" font-size="10" class="mono text-green">0 1 % : 0 # - = $ % | - = = % $ - - : 1 1 - | + = </text>
+<text x="5" y="34" font-size="10" class="mono text-green">- 0 % : = @ : 0 | ! % : - 0 % : $ % : ! 0 : @ @ # </text>
+<text x="5" y="46" font-size="10" class="mono text-green">0 $ + $ = # $ % 1 1 - - % = * % + % ! 1 : * + 0 # </text>
+<text x="5" y="58" font-size="10" class="mono text-green">0 ! + 1 @ = ! ! % + + % 1 = | | * 0 = | - @ % + | </text>
+<text x="5" y="70" font-size="10" class="mono text-green">1 % 1 : @ 0 0 $ # - 1 | @ * : 1 # % 1 % - 1 @ $ $ </text>
+<text x="5" y="82" font-size="10" class="mono text-green">+ # 0 * * * 1 + % @ 1 $ - 1 1 0 # % + : @ : $ 0 @ </text>
+<text x="5" y="94" font-size="10" class="mono text-green">= : ! 1 1 0 $ % | 0 1 - + @ = # 0 ! ! : : 0 - 0 1 </text>
+<text x="5" y="106" font-size="10" class="mono text-green"># : * # 1 - % 1 $ 1 1 @ * : $ % ! 0 = + 1 * % | ! </text>
+<text x="5" y="118" font-size="10" class="mono text-green">+ 0 : | # = 0 0 | = % | | 1 # 1 1 @ * ! # | ! = : </text>
+<text x="5" y="130" font-size="10" class="mono text-green">@ 0 + 0 % = * % # % + @ $ % = : - # 1 # % : @ + * </text>
+<text x="5" y="142" font-size="10" class="mono text-green">| 1 # * 1 $ ! * 0 1 : 0 | * 0 = % : + 0 1 1 0 % 0 </text>
+<text x="5" y="154" font-size="10" class="mono text-green">+ * # + * % # 0 : $ 0 0 | : 0 @ @ * # | * | $ % 0 </text>
+<text x="5" y="166" font-size="10" class="mono text-green"># $ + $ = 1 = : $ = 1 * 0 + - | # # | - # : * = @ </text>
+<text x="5" y="178" font-size="10" class="mono text-green">: 1 1 1 | 0 @ 0 - * = # @ # + % 0 = : * 1 0 + 0 0 </text>
+<text x="5" y="190" font-size="10" class="mono text-green"># @ + 1 1 1 = $ 0 @ ! 0 @ - * % : - = 0 $ ! $ 1 0 </text>
+<text x="5" y="202" font-size="10" class="mono text-green">% | 0 0 0 ! = | @ # - 0 0 % * % 1 @ | | = # @ * $ </text>
+<text x="5" y="214" font-size="10" class="mono text-green">| $ : : 1 0 @ 1 1 + $ 1 | 0 # % : | = # ! 1 + $ + </text>
+<text x="5" y="226" font-size="10" class="mono text-green">: @ + 0 1 * : 0 0 0 $ $ 1 | 1 - * % # 1 + - 1 | 0 </text>
+<text x="5" y="238" font-size="10" class="mono text-green">: 0 * ! @ $ 0 | # $ * 1 : - @ # ! 1 | : ! $ - * 1 </text>
+<text x="5" y="250" font-size="10" class="mono text-green">0 0 1 * @ | % @ = % # $ * = 0 = + | | 1 # * 1 1 ! </text>
+<text x="5" y="262" font-size="10" class="mono text-green">% = - | : $ ! - # + ! # | ! + * 0 # ! : + % + @ 0 </text>
+<text x="5" y="274" font-size="10" class="mono text-green">+ | - = 1 | ! % % 1 + % @ : | 1 1 - % 1 + * @ % - </text>
+<text x="5" y="286" font-size="10" class="mono text-green"># * 0 1 # | $ % + : * + 1 1 @ 1 @ 1 1 1 : % % % ! </text>
+<text x="5" y="298" font-size="10" class="mono text-green">+ 0 0 | * @ - = = = 0 1 # : + = 0 | | 1 = ! = + 1 </text>
 </g>
-<g class="matrix-layer matrix-layer-3"><text x="5" y="10" font-size="10" class="mono text-green"># $ % + 1 + $ * 0 # : * = 1 # * # # $ 0 @ = # % : </text>
-<text x="5" y="22" font-size="10" class="mono text-green">$ + 1 0 0 @ @ @ 0 % 1 * | % ! + @ 0 0 1 - = ! 1 | </text>
-<text x="5" y="34" font-size="10" class="mono text-green">1 0 = 0 # 0 | # 0 - : 1 - % 1 # $ # # @ @ + + 1 ! </text>
-<text x="5" y="46" font-size="10" class="mono text-green">+ : 0 % * + ! ! ! | + ! ! - : # - - $ 0 # | = - 1 </text>
-<text x="5" y="58" font-size="10" class="mono text-green">0 | @ = + : * ! @ 0 | | $ 0 - + : 0 % % 1 1 0 1 @ </text>
-<text x="5" y="70" font-size="10" class="mono text-green">! $ $ @ 1 0 : @ @ 0 0 ! % : 1 1 = 1 0 = # * @ 0 @ </text>
-<text x="5" y="82" font-size="10" class="mono text-green">= = + - 0 % ! | 0 = ! | 0 # # | + * 1 : @ | | ! 1 </text>
-<text x="5" y="94" font-size="10" class="mono text-green">! @ $ * | - = ! + + = $ * % % $ % = 0 $ @ 0 0 0 0 </text>
-<text x="5" y="106" font-size="10" class="mono text-green">$ # * - - 1 : 1 $ 1 % % 0 : 0 % = | - 1 : 0 @ 0 : </text>
-<text x="5" y="118" font-size="10" class="mono text-green">! 0 = 0 | # - * * * $ ! = + % 0 - | * % * % = 1 @ </text>
-<text x="5" y="130" font-size="10" class="mono text-green">@ 1 1 1 + - @ ! = | @ = @ ! 1 * 1 $ 1 0 + : % | % </text>
-<text x="5" y="142" font-size="10" class="mono text-green">- + 0 * $ $ ! @ @ 1 * - 1 - = @ - - : 0 - * 1 0 = </text>
-<text x="5" y="154" font-size="10" class="mono text-green">0 % 1 | # 1 ! | 1 = 0 0 @ @ 1 | + = 1 = 0 0 ! 0 - </text>
-<text x="5" y="166" font-size="10" class="mono text-green">! ! * | 0 : : - 1 # - 1 = - : # 1 % $ = 0 % | * 1 </text>
-<text x="5" y="178" font-size="10" class="mono text-green">! $ # + 1 % 1 : | 1 $ $ = % + 0 0 + : 1 * # + 0 - </text>
-<text x="5" y="190" font-size="10" class="mono text-green">* - + + | = ! 0 1 1 | 1 1 0 0 : | ! ! : = $ 0 % 0 </text>
-<text x="5" y="202" font-size="10" class="mono text-green">= | - $ - + * % + # : * : % + + 0 0 0 0 $ : : 1 * </text>
-<text x="5" y="214" font-size="10" class="mono text-green">= - = # 0 % - 1 + * # @ 0 * - = : % 1 : 0 ! 0 1 $ </text>
-<text x="5" y="226" font-size="10" class="mono text-green">+ 1 % 1 $ 1 + 0 # | ! + : = @ : = $ : = @ : * # # </text>
-<text x="5" y="238" font-size="10" class="mono text-green">1 $ - 1 : | # 0 $ - $ 0 1 0 - # + 0 1 1 ! 1 : # - </text>
-<text x="5" y="250" font-size="10" class="mono text-green">0 : 1 | + 1 1 = + : | 1 ! ! | @ 0 % 1 1 # = 0 % 1 </text>
-<text x="5" y="262" font-size="10" class="mono text-green">$ 1 $ + # # # : : + - % 1 1 0 0 % # 0 1 | ! : - : </text>
-<text x="5" y="274" font-size="10" class="mono text-green">% = + 0 0 * = 1 = = 0 + 1 1 1 $ + ! | | ! @ = $ + </text>
-<text x="5" y="286" font-size="10" class="mono text-green">+ 0 : @ 1 = | 1 @ # @ 0 * : + - 1 - - 1 1 = - : # </text>
-<text x="5" y="298" font-size="10" class="mono text-green">- 0 1 0 0 # : $ : # 0 + 1 | 0 + | + @ # * = 1 0 - </text>
+<g class="matrix-layer matrix-layer-3"><text x="5" y="10" font-size="10" class="mono text-green">+ % # 1 + # $ # * % 0 # 1 1 = 0 % 1 1 @ ! = 0 $ * </text>
+<text x="5" y="22" font-size="10" class="mono text-green"># | = 0 = ! 1 0 1 0 1 = @ 1 $ ! % 1 0 # + 0 ! * + </text>
+<text x="5" y="34" font-size="10" class="mono text-green">1 + % | 0 @ * 1 * 0 : # - 1 : @ 0 % 0 # 1 @ 1 ! | </text>
+<text x="5" y="46" font-size="10" class="mono text-green">| ! @ 1 0 + : $ # 0 + + 0 $ 0 | | + # % 0 1 ! * @ </text>
+<text x="5" y="58" font-size="10" class="mono text-green">1 0 % 1 0 % 0 0 : + 1 | * 0 # # - | * + 1 * 0 $ ! </text>
+<text x="5" y="70" font-size="10" class="mono text-green">$ @ : * | 1 0 ! = - 0 0 1 = 0 : - 1 $ + ! = # 0 @ </text>
+<text x="5" y="82" font-size="10" class="mono text-green">0 0 $ 0 % 1 = 0 = 1 # 1 * - ! : ! 1 1 ! @ 1 ! - ! </text>
+<text x="5" y="94" font-size="10" class="mono text-green"># * | # = # @ = # ! | - = $ ! # $ | % % : 1 * | * </text>
+<text x="5" y="106" font-size="10" class="mono text-green">0 0 1 : + - 1 | | - % @ 0 - 1 = $ 1 $ $ % | | * @ </text>
+<text x="5" y="118" font-size="10" class="mono text-green">1 * * 1 % - 0 : % * @ * + @ 1 | = $ = = $ : | : # </text>
+<text x="5" y="130" font-size="10" class="mono text-green">= = $ # - ! | + # 1 1 1 - @ $ 1 # 0 | : @ = % 0 $ </text>
+<text x="5" y="142" font-size="10" class="mono text-green">+ % @ @ 1 0 | 0 + | 1 $ @ : - | % $ # + | % : 1 $ </text>
+<text x="5" y="154" font-size="10" class="mono text-green">0 * % : % # 1 # @ : | % - 0 ! @ | : $ : 1 + ! # - </text>
+<text x="5" y="166" font-size="10" class="mono text-green">- 0 @ = @ 1 + 0 1 $ # ! 1 = 0 % @ 0 : 1 ! = @ ! | </text>
+<text x="5" y="178" font-size="10" class="mono text-green">% | 0 # % % : + @ * 0 % | - 0 1 # * $ ! 0 = # ! * </text>
+<text x="5" y="190" font-size="10" class="mono text-green">! 1 $ # $ @ - @ % | + = 1 ! * - = | # - $ 1 1 0 = </text>
+<text x="5" y="202" font-size="10" class="mono text-green">+ ! % : $ + + % 1 : = | = + * 0 $ : - + - * 0 1 # </text>
+<text x="5" y="214" font-size="10" class="mono text-green">$ 1 | - 0 $ 1 1 ! 1 0 * 1 0 * : ! + @ % - 0 @ # ! </text>
+<text x="5" y="226" font-size="10" class="mono text-green">+ 0 @ * ! 1 0 * - * % * $ 0 0 % $ = 0 @ 1 @ * # 0 </text>
+<text x="5" y="238" font-size="10" class="mono text-green">= ! % 0 + % 0 % + $ : 1 | 0 - 0 1 = 0 = 1 1 1 @ 1 </text>
+<text x="5" y="250" font-size="10" class="mono text-green">1 0 1 @ 0 $ 1 @ 0 * 1 | - % | | ! $ 0 = : 1 + % | </text>
+<text x="5" y="262" font-size="10" class="mono text-green">= 0 1 @ $ 1 @ # 1 + $ $ 0 - | # % @ % 1 1 @ 0 | + </text>
+<text x="5" y="274" font-size="10" class="mono text-green"># - 1 $ 1 % 1 : - | * 0 @ @ $ 1 | 0 1 | * 0 % - 0 </text>
+<text x="5" y="286" font-size="10" class="mono text-green">@ # | + | ! | - + + | | = % 0 @ - 1 * # # % 0 ! 0 </text>
+<text x="5" y="298" font-size="10" class="mono text-green">| ! ! - * 1 * | 0 # $ | - # @ # ! @ : ! # ! $ 0 $ </text>
 </g>
-<g class="matrix-layer matrix-layer-4"><text x="5" y="10" font-size="10" class="mono text-green">0 * $ : : + 1 : $ 1 $ % | 0 = = # 1 0 | | 0 + * = </text>
-<text x="5" y="22" font-size="10" class="mono text-green">: 1 1 @ 1 * * * $ ! 1 - * 1 * | $ : * 1 1 | - | | </text>
-<text x="5" y="34" font-size="10" class="mono text-green">0 = = * : $ : 1 0 # $ : 1 : @ 1 + 0 # - 1 + : 1 1 </text>
-<text x="5" y="46" font-size="10" class="mono text-green">0 = = # * 0 1 = ! @ @ = ! | : 0 1 | - | 0 @ 1 0 * </text>
-<text x="5" y="58" font-size="10" class="mono text-green">0 @ = + $ 0 - 1 + 1 1 + 0 # - 1 * 1 0 | * 0 0 0 1 </text>
-<text x="5" y="70" font-size="10" class="mono text-green">- # $ * $ - | 0 1 % $ 0 : # # = @ @ % 0 # $ | * 0 </text>
-<text x="5" y="82" font-size="10" class="mono text-green">| 1 * 0 $ * $ = = 1 1 * * : - 1 1 @ 1 ! ! # : | 0 </text>
-<text x="5" y="94" font-size="10" class="mono text-green">| % % - % # 0 $ % 0 1 @ % 0 - : - 1 1 - : * 1 1 @ </text>
-<text x="5" y="106" font-size="10" class="mono text-green">* = 0 ! 1 1 | = 1 + $ $ * ! 0 0 # = ! % ! @ | @ 1 </text>
-<text x="5" y="118" font-size="10" class="mono text-green">! 0 1 # 0 1 0 = + ! @ ! # % 0 * : + * : # | % # | </text>
-<text x="5" y="130" font-size="10" class="mono text-green">* + % 0 0 @ ! 0 % $ 1 + + 1 | # * 0 | ! * | # 1 1 </text>
-<text x="5" y="142" font-size="10" class="mono text-green"># : ! = ! + % : : * $ @ + 1 = 1 % $ 1 : 0 + 1 = 1 </text>
-<text x="5" y="154" font-size="10" class="mono text-green">= + = % @ # 0 0 1 - ! + @ | 0 ! - + $ * # 0 : 0 @ </text>
-<text x="5" y="166" font-size="10" class="mono text-green">+ # = # + ! : * ! : | ! @ | ! : 0 % ! | 0 = + % - </text>
-<text x="5" y="178" font-size="10" class="mono text-green">0 1 $ : # ! @ : = % * | 1 * * 1 1 ! - - = @ @ | $ </text>
-<text x="5" y="190" font-size="10" class="mono text-green">$ + # 1 0 # 0 0 ! | : : * = 1 0 @ ! ! 0 : 1 * = + </text>
-<text x="5" y="202" font-size="10" class="mono text-green">- ! * 1 0 | 1 0 @ $ = | $ = ! 1 0 1 $ 1 - % ! 1 0 </text>
-<text x="5" y="214" font-size="10" class="mono text-green">0 * - | = : | | 0 0 0 # % 0 + 1 0 0 ! 0 : | # ! | </text>
-<text x="5" y="226" font-size="10" class="mono text-green">: % @ * @ 1 1 | 1 # $ 0 + + ! + - - - 1 1 = : * ! </text>
-<text x="5" y="238" font-size="10" class="mono text-green">1 @ # ! 0 0 # $ 1 @ 0 % 1 1 $ ! % 1 0 = | : : $ 0 </text>
-<text x="5" y="250" font-size="10" class="mono text-green">% ! 1 ! $ 1 $ ! | 1 + | 0 - ! $ # ! : * : 1 1 * @ </text>
-<text x="5" y="262" font-size="10" class="mono text-green">% | = + | 0 $ % | ! 0 : | ! * 1 * $ $ # * - 1 0 % </text>
-<text x="5" y="274" font-size="10" class="mono text-green">$ 1 = * ! - # 0 ! @ = | 1 1 | # 1 + 1 - + 0 # 1 + </text>
-<text x="5" y="286" font-size="10" class="mono text-green">% + = 1 # 0 ! | # 0 0 0 - % * @ # 0 # + # $ | 1 1 </text>
-<text x="5" y="298" font-size="10" class="mono text-green">1 ! * 1 ! - = + 1 1 ! 0 # = # 0 # - % | ! : = : 0 </text>
+<g class="matrix-layer matrix-layer-4"><text x="5" y="10" font-size="10" class="mono text-green">1 ! # 1 ! # : - + + = 0 @ 1 @ | 0 | 0 @ - * 1 * 1 </text>
+<text x="5" y="22" font-size="10" class="mono text-green">+ * | % ! $ + | $ * - - + # | 0 % 1 # : ! 0 $ % ! </text>
+<text x="5" y="34" font-size="10" class="mono text-green">0 % : + : 0 0 @ - 1 0 $ # 1 # $ $ + 0 - # 1 + * = </text>
+<text x="5" y="46" font-size="10" class="mono text-green">1 ! ! 0 0 @ = ! ! * 1 $ - 0 * 0 ! 0 0 + 1 : 0 | $ </text>
+<text x="5" y="58" font-size="10" class="mono text-green">* | $ | | 1 # = @ * : = 0 = # ! | - * # $ @ - 0 $ </text>
+<text x="5" y="70" font-size="10" class="mono text-green">* # 0 0 - % * 1 * @ * | @ % ! 1 ! * @ = @ ! 1 0 = </text>
+<text x="5" y="82" font-size="10" class="mono text-green"># : $ @ = 1 ! | 0 @ : 1 1 1 | 1 | % % 0 0 + 1 @ + </text>
+<text x="5" y="94" font-size="10" class="mono text-green">0 0 | = # * @ * 0 # $ + + | - # 0 0 * % 0 1 0 | + </text>
+<text x="5" y="106" font-size="10" class="mono text-green">0 1 1 = = + ! : $ - 0 * : $ 1 - @ 1 0 : * 0 : - ! </text>
+<text x="5" y="118" font-size="10" class="mono text-green">1 ! * + * = % * = @ 1 : 0 1 = @ 1 0 | : @ $ | : : </text>
+<text x="5" y="130" font-size="10" class="mono text-green">1 1 $ | 1 0 + 0 * @ 1 $ - @ | 1 0 1 ! + % 1 @ 0 1 </text>
+<text x="5" y="142" font-size="10" class="mono text-green">0 $ + - # | = = ! 1 - + : 1 # 1 = 0 1 0 = 0 0 * ! </text>
+<text x="5" y="154" font-size="10" class="mono text-green">1 + - - 0 * 0 0 | # * : : + | * 0 * : % * % | $ - </text>
+<text x="5" y="166" font-size="10" class="mono text-green">0 1 * = - @ @ + % 1 0 + 1 0 | * * | | 1 % = 0 + @ </text>
+<text x="5" y="178" font-size="10" class="mono text-green">0 | - @ ! % * : 1 : + = * | ! | + = $ * # # - = = </text>
+<text x="5" y="190" font-size="10" class="mono text-green"># $ = $ ! * @ 1 1 * $ : # $ 0 * @ @ = # $ = 0 1 1 </text>
+<text x="5" y="202" font-size="10" class="mono text-green"># # $ - | ! ! | + # - 1 | 0 @ - - * 0 % | 1 + : - </text>
+<text x="5" y="214" font-size="10" class="mono text-green">* = ! - % + * 1 % $ + | : @ * | @ @ 0 1 ! + 0 ! = </text>
+<text x="5" y="226" font-size="10" class="mono text-green">: % 0 $ # 1 + | : : * : : ! : | = | 0 $ @ 0 ! 0 # </text>
+<text x="5" y="238" font-size="10" class="mono text-green">1 + | $ % 1 = = ! = # + $ 0 0 : 0 # 1 = + | + | : </text>
+<text x="5" y="250" font-size="10" class="mono text-green"># 1 $ + = ! + + 1 1 | 0 - 1 : @ : + : @ - $ ! 0 | </text>
+<text x="5" y="262" font-size="10" class="mono text-green">: @ : @ 0 1 % = ! | : # $ 1 # | 0 * % : @ 0 1 : @ </text>
+<text x="5" y="274" font-size="10" class="mono text-green">- 0 0 ! $ = $ - = % # | 1 1 1 = 1 0 | 1 + 1 = * 1 </text>
+<text x="5" y="286" font-size="10" class="mono text-green">@ 1 1 | - $ + # + | ! - * : 1 * = | 0 @ * : + + = </text>
+<text x="5" y="298" font-size="10" class="mono text-green">0 % = ! + : # * # @ : # 1 0 1 + % 1 | : : @ @ * = </text>
 </g>
 
           

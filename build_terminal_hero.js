@@ -35,13 +35,13 @@ async function generateTerminalHero() {
       @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
       
       :root {
-        --bg: #0a0a0a;
-        --card-bg: #121212;
-        --text-main: #ffffff;
-        --text-muted: #a1a1aa;
-        --accent: #a3e635; /* Neon green */
-        --accent-dark: #4d7c0f;
-        --border: #27272a;
+        --bg: #ffffff;
+        --card-bg: #f8fafc;
+        --text-main: #0f172a;
+        --text-muted: #64748b;
+        --accent: #2563eb; /* Portfolio Blue */
+        --accent-dark: #1d4ed8;
+        --border: #e2e8f0;
       }
       
       .bg { fill: var(--bg); }
