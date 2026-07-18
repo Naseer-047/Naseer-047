@@ -87,7 +87,7 @@
     <!-- Text -->
     <text x="85" y="40" class="title">CNS Cloud Nexus</text>
     <text x="85" y="68" class="desc">Personal secure cloud infrastructure</text>
-    <text x="85" y="88" class="desc">built with Node & Docker.</text>
+    <text x="85" y="88" class="desc">built with Node &amp; Docker.</text>
     
     <!-- Bottom Tech Dot -->
     <circle cx="85" cy="104" r="4" fill="#38bdf8" />

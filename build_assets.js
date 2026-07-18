@@ -128,7 +128,7 @@ const icons = {
 };
 
 const projects = [
-  { name: 'project-cns.svg', title: 'CNS Cloud Nexus', icon: icons.server, desc: ['Personal secure cloud infrastructure', 'built with Node & Docker.', 'Node.js'], color: '#38bdf8' },
+  { name: 'project-cns.svg', title: 'CNS Cloud Nexus', icon: icons.server, desc: ['Personal secure cloud infrastructure', 'built with Node &amp; Docker.', 'Node.js'], color: '#38bdf8' },
   { name: 'project-gcc.svg', title: 'GCC Developer OS', icon: icons.terminal, desc: ['A minimal, developer-focused OS', 'environment and tools.', 'C++'], color: '#a3e635' },
   { name: 'project-smart.svg', title: 'Smart Study Buddy', icon: icons.sparkles, desc: ['AI-powered learning assistant for', 'students and self-learners.', 'Python'], color: '#f472b6' },
   { name: 'project-resume.svg', title: 'AI Resume Analyzer', icon: icons.code, desc: ['Automated resume parsing and ATS', 'scoring system using OpenAI.', 'React'], color: '#fbbf24' }
