@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/blueprint-hero.svg?v=3" width="100%" alt="System Architecture Blueprint">
+  <img src="assets/blueprint-hero.svg?v=4" width="100%" alt="System Architecture Blueprint">
 </div>
 
 <br>
