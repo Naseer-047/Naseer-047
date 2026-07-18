@@ -69,9 +69,10 @@ const svg = `
     <text x="0" y="0" font-size="24" class="mono text-green" font-weight="700">
       &lt;/&gt;
     </text>
-    <text x="0" y="30" font-size="16" class="mono text-grey">
-      crafted with <tspan class="text-green">code</tspan> by <tspan font-weight="700" class="text-main">Naseer Pasha</tspan>
-    </text>
+    <text x="-95" y="30" font-size="16" class="mono text-grey">crafted with</text>
+    <text x="-25" y="30" font-size="16" class="mono text-green">code</text>
+    <text x="5" y="30" font-size="16" class="mono text-grey">by</text>
+    <text x="75" y="30" font-size="16" class="mono text-main" font-weight="700">Naseer Pasha</text>
   </g>
 
 </svg>
