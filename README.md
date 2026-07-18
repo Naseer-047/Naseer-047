@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/retro-header.svg?v=4" width="100%" alt="Naseer Pasha - Retro Terminal Profile">
+  <img src="assets/retro-header.svg?v=5" width="100%" alt="Naseer Pasha - Retro Terminal Profile">
 </div>
 
 <br>
@@ -45,7 +45,7 @@
 
 <h3 align="left"><code>## GITHUB STATS</code></h3>
 
-<div align="center"style="border: none; background: #0000;>
+<div align="center"style="border: none; background: #0000;">
   <img src="https://github-readme-stats.vercel.app/api?username=naseer-047&title_color=A3E635&text_color=c9d1d9&icon_color=A3E635&bg_color=09090b&hide_border=true&border_radius=8&show_icons=true" height="170" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=naseer-047&layout=donut&title_color=A3E635&text_color=c9d1d9&bg_color=09090b&hide_border=true&border_radius=8" height="170" />
 </div>
