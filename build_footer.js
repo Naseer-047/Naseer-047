@@ -1,0 +1,66 @@
+import fs from 'fs';
+
+const svg = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&amp;display=swap');
+      
+      :root {
+        --bg: #000000;
+        --accent: #a3e635;
+        --wave1: rgba(163, 230, 53, 0.1);
+        --wave2: rgba(163, 230, 53, 0.2);
+        --wave3: rgba(163, 230, 53, 0.4);
+      }
+      
+      .bg { fill: var(--bg); }
+      .mono { font-family: 'JetBrains Mono', monospace; }
+      .text-green { fill: var(--accent); }
+      .text-grey { fill: #a1a1aa; }
+      
+      @keyframes move_wave {
+        0% { transform: translateX(0) translateZ(0) scaleY(1); }
+        50% { transform: translateX(-25%) translateZ(0) scaleY(0.9); }
+        100% { transform: translateX(-50%) translateZ(0) scaleY(1); }
+      }
+      
+      .wave {
+        animation: move_wave 15s linear infinite;
+        transform-origin: bottom center;
+      }
+      .wave2 {
+        animation: move_wave 20s linear infinite;
+        transform-origin: bottom center;
+      }
+      .wave3 {
+        animation: move_wave 25s linear infinite;
+        transform-origin: bottom center;
+      }
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" class="bg" />
+
+  <!-- Animated Waves -->
+  <g transform="translate(0, 100)">
+    <path class="wave3" fill="var(--wave1)" d="M0,50 Q150,20 300,50 T600,50 T900,50 T1200,50 T1500,50 T1800,50 T2100,50 T2400,50 V150 H0 Z" />
+    <path class="wave2" fill="var(--wave2)" d="M0,60 Q150,80 300,60 T600,60 T900,60 T1200,60 T1500,60 T1800,60 T2100,60 T2400,60 V150 H0 Z" />
+    <path class="wave" fill="var(--wave3)" d="M0,70 Q150,40 300,70 T600,70 T900,70 T1200,70 T1500,70 T1800,70 T2100,70 T2400,70 V150 H0 Z" />
+  </g>
+
+  <!-- Content -->
+  <g transform="translate(600, 80)" text-anchor="middle">
+    <text x="0" y="0" font-size="24" class="mono text-green" font-weight="700">
+      &lt;/&gt;
+    </text>
+    <text x="0" y="30" font-size="16" class="mono text-grey">
+      crafted with <tspan class="text-green">code</tspan> by <tspan font-weight="700" fill="#fff">Naseer Pasha</tspan>
+    </text>
+  </g>
+
+</svg>
+`;
+
+fs.writeFileSync('assets/footer.svg', svg);
+console.log('Footer SVG generated');

@@ -114,8 +114,5 @@ const naseer = {
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=Naseer-047&color=a3e635&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
   <br><br>
-  <p>
-    <code>&lt;/&gt;</code> with 💚 by <strong>Naseer Pasha</strong><br>
-    <a href="https://github.com/Naseer-047"><img src="https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
-  </p>
+  <img src="assets/footer.svg?v=1" width="100%" alt="Footer" />
 </div>
