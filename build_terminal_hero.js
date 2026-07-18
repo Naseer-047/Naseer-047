@@ -5,12 +5,27 @@ async function generateTerminalHero() {
   let userImageBase64 = '';
   try {
     const image = await Jimp.read('assets/me.png');
-    // Compress heavily so the SVG size stays small and GitHub renders it
     image.resize({ w: 250 });
     const buffer = await image.getBuffer(JimpMime.jpeg, { quality: 70 });
     userImageBase64 = `data:image/jpeg;base64,${buffer.toString('base64')}`;
   } catch (err) {
     console.error('Error reading/compressing assets/me.png', err);
+  }
+
+  // Generate ASCII Matrix Grids
+  let matrixLayers = '';
+  const safeChars = '0101#*!%@$=+-|:';
+  for(let layer=1; layer<=4; layer++) {
+    let asciiGrid = '';
+    for(let row=0; row<25; row++) {
+      let rowStr = '';
+      for(let col=0; col<25; col++) {
+        rowStr += safeChars.charAt(Math.floor(Math.random() * safeChars.length)) + ' ';
+      }
+      // y-offset 12px per row to fill a 300x300 area
+      asciiGrid += `<text x="5" y="${row * 12 + 10}" font-size="10" class="mono text-green">${rowStr}</text>\n`;
+    }
+    matrixLayers += `<g class="matrix-layer matrix-layer-${layer}">${asciiGrid}</g>\n`;
   }
 
   const svgContent = `
@@ -61,7 +76,33 @@ async function generateTerminalHero() {
       .rain-delay-1 { animation-delay: 1s; }
       .rain-delay-2 { animation-delay: 2s; }
       .rain-delay-3 { animation-delay: 3s; }
+      
+      /* ASCII Decode Image Sequence (Runs for 8 seconds) */
+      @keyframes decode1 { 0%, 10% { opacity: 1; } 11%, 100% { opacity: 0; } }
+      @keyframes decode2 { 0%, 10% { opacity: 0; } 11%, 20% { opacity: 1; } 21%, 100% { opacity: 0; } }
+      @keyframes decode3 { 0%, 20% { opacity: 0; } 21%, 30% { opacity: 1; } 31%, 100% { opacity: 0; } }
+      @keyframes decode4 { 0%, 30% { opacity: 0; } 31%, 40% { opacity: 1; } 41%, 100% { opacity: 0; } }
+      @keyframes revealImage { 
+        0%, 40% { opacity: 0; }
+        45%, 90% { opacity: 1; }
+        95%, 100% { opacity: 0; }
+      }
+      .matrix-layer-1 { animation: decode1 8s infinite; }
+      .matrix-layer-2 { animation: decode2 8s infinite; }
+      .matrix-layer-3 { animation: decode3 8s infinite; }
+      .matrix-layer-4 { animation: decode4 8s infinite; }
+      .profile-image { animation: revealImage 8s infinite; }
     </style>
+    
+    <clipPath id="type-clip">
+      <!-- 9s loop: 3 titles, each gets 3s (type 1s, hold 1s, delete 1s) -->
+      <rect x="30" y="-30" width="0" height="40">
+        <animate attributeName="width" 
+                 values="0; 250; 250; 0;   0; 220; 220; 0;   0; 340; 340; 0" 
+                 keyTimes="0; 0.11; 0.22; 0.33;   0.333; 0.44; 0.55; 0.66;   0.666; 0.77; 0.88; 1" 
+                 dur="9s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
   </defs>
 
   <!-- Background -->
@@ -80,10 +121,38 @@ async function generateTerminalHero() {
       NASEER <tspan class="text-green">PASHA</tspan>
     </text>
 
-    <!-- Sub Title / Role -->
-    <text x="0" y="160" font-size="24" class="mono text-white" font-weight="500">
-      [ <tspan class="text-green">&gt; Software Engineer</tspan> ]
-    </text>
+    <!-- Sub Title / Role Typewriter Effect -->
+    <g transform="translate(0, 160)">
+      <text x="0" y="0" font-size="24" class="mono text-white" font-weight="500">[ <tspan class="text-green">&gt;</tspan></text>
+      
+      <!-- Container for typing text with clip path -->
+      <g clip-path="url(#type-clip)">
+        <text x="35" y="0" font-size="24" class="mono text-green" font-weight="500">
+          <animate attributeName="opacity" values="1;1;0;0;0;0" dur="9s" repeatCount="indefinite" />
+          Software Engineer
+        </text>
+        <text x="35" y="0" font-size="24" class="mono text-green" font-weight="500" opacity="0">
+          <animate attributeName="opacity" values="0;0;1;1;0;0" dur="9s" repeatCount="indefinite" />
+          System Designer
+        </text>
+        <text x="35" y="0" font-size="24" class="mono text-green" font-weight="500" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;1;1" dur="9s" repeatCount="indefinite" />
+          Open Source Contributor
+        </text>
+      </g>
+      
+      <!-- Blinking Cursor matching typing width -->
+      <rect x="35" y="-20" width="12" height="24" fill="var(--accent)">
+        <animate attributeName="x" 
+                 values="35; 285; 285; 35;   35; 255; 255; 35;   35; 375; 375; 35" 
+                 keyTimes="0; 0.11; 0.22; 0.33;   0.333; 0.44; 0.55; 0.66;   0.666; 0.77; 0.88; 1" 
+                 dur="9s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1;0" dur="0.8s" repeatCount="indefinite" />
+      </rect>
+      
+      <!-- Static right bracket (pushed out slightly to make room for longest string) -->
+      <text x="400" y="0" font-size="24" class="mono text-white" font-weight="500"> ]</text>
+    </g>
 
     <!-- Small Attributes -->
     <text x="0" y="210" font-size="16" class="mono text-grey">
@@ -176,32 +245,10 @@ async function generateTerminalHero() {
       <path d="M 0 370 L 0 380 L 10 380" fill="none" stroke="var(--accent)" stroke-width="2" />
       <path d="M 410 370 L 410 380 L 400 380" fill="none" stroke="var(--accent)" stroke-width="2" />
 
-      <!-- Matrix digital rain dots (Background) -->
-      <g font-size="10" class="mono text-green matrix-rain" opacity="0.3">
-        <text x="30" y="40">|</text> <text x="30" y="55">:</text> <text x="30" y="70">.</text>
-        <text x="70" y="30">!</text> <text x="70" y="60">|</text> <text x="70" y="90">.</text>
-        <text x="120" y="50">:</text> <text x="120" y="80">|</text>
-      </g>
-      <g font-size="10" class="mono text-green matrix-rain rain-delay-1" opacity="0.2">
-        <text x="50" y="60">.</text> <text x="50" y="75">|</text> <text x="50" y="100">:</text>
-        <text x="100" y="40">|</text> <text x="100" y="70">.</text> <text x="100" y="110">!</text>
-      </g>
-      <g font-size="10" class="mono text-green matrix-rain rain-delay-2" opacity="0.4">
-        <text x="140" y="50">!</text> <text x="140" y="80">:</text> <text x="140" y="120">|</text>
-        <text x="80" y="120">.</text> <text x="80" y="150">|</text>
-      </g>
-
-      <!-- Animated Image Generation inside Terminal (Like a GIF video) -->
+      <!-- ASCII Decode / Morphing Animation -->
       <g transform="translate(60, 40)">
         
         <defs>
-          <clipPath id="reveal-clip">
-            <rect x="0" y="0" width="300" height="0">
-              <!-- This makes the image slowly scan down, like a generation animation -->
-              <animate attributeName="height" values="0;20;40;60;80;100;120;140;160;180;200;220;240;260;280;300;300;300;300" dur="4s" repeatCount="indefinite" calcMode="discrete" />
-            </rect>
-          </clipPath>
-          
           <clipPath id="circle-clip-dark">
             <circle cx="150" cy="150" r="140" />
           </clipPath>
@@ -213,47 +260,33 @@ async function generateTerminalHero() {
           <animateTransform attributeName="transform" type="rotate" from="0 150 150" to="360 150 150" dur="10s" repeatCount="indefinite" />
         </circle>
         
-        <!-- Animated "gif" image overlay -->
+        <!-- The ASCII Layers wrapped in the circular mask -->
         <g clip-path="url(#circle-clip-dark)">
-          <image href="${userImageBase64}" x="0" y="0" width="300" height="300" preserveAspectRatio="xMidYMid slice" clip-path="url(#reveal-clip)" />
+          ${matrixLayers}
           
-          <!-- Scanning Laser line that drops down with the image reveal -->
-          <rect x="0" y="0" width="300" height="2" fill="var(--accent)" clip-path="url(#reveal-clip)">
-            <!-- <animate attributeName="y" values="0;20;40;60;80;100;120;140;160;180;200;220;240;260;280;300;300;300;300" dur="4s" repeatCount="indefinite" calcMode="discrete" /> -->
-          </rect>
+          <!-- The actual high-res profile picture that morphs/fades in -->
+          <image href="${userImageBase64}" x="0" y="0" width="300" height="300" preserveAspectRatio="xMidYMid slice" class="profile-image" />
         </g>
         
         <!-- Terminal Loading text below the photo -->
         <text x="150" y="320" font-size="12" class="mono text-green" text-anchor="middle">
-          Generating Profile Data...
+          Decrypting Matrix Stream...
           <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
         </text>
         
       </g>
 
-
       <g transform="translate(35, 65)">
-        <!-- Digital Rain / Matrix effect -->
+        <!-- Digital Rain side-decorators -->
         <g font-size="10" class="mono text-green matrix-rain" opacity="0.3">
           <text x="0" y="10">|</text> <text x="0" y="30">:</text> <text x="0" y="50">.</text>
           <text x="20" y="20">!</text> <text x="20" y="40">|</text> <text x="20" y="60">.</text>
-          <text x="40" y="10">:</text> <text x="40" y="30">|</text>
-          <text x="60" y="50">.</text> <text x="60" y="70">|</text> <text x="60" y="90">:</text>
-        </g>
-        <g font-size="10" class="mono text-green matrix-rain rain-delay-1" opacity="0.2">
-          <text x="10" y="60">.</text> <text x="10" y="80">|</text> <text x="10" y="100">:</text>
-          <text x="30" y="30">|</text> <text x="30" y="50">.</text> <text x="30" y="70">!</text>
-          <text x="50" y="20">!</text> <text x="50" y="40">:</text> <text x="50" y="60">|</text>
-        </g>
-        <g font-size="10" class="mono text-green matrix-rain rain-delay-2" opacity="0.4">
-          <text x="70" y="40">!</text> <text x="70" y="60">:</text> <text x="70" y="80">|</text>
-          <text x="90" y="70">.</text> <text x="90" y="90">|</text>
         </g>
       </g>
       
       <!-- Bottom right SYSTEM ONLINE -->
       <circle cx="270" cy="365" r="4" fill="var(--accent)" class="pulse-dot" />
-      <text x="282" y="369" font-size="12" class="mono text-green">SYSTEM ONLINE</text>
+      <text x="282" y="369" font-size="12" class="mono text-green">DECRYPTION SUCCESS</text>
     </g>
 
   </g>
