@@ -47,11 +47,11 @@ const svg = `
     <style>
       @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap');
       
-      .bg { fill: #000000; stroke: #a3e635; stroke-width: 2; rx: 8; ry: 8; }
+      .bg { fill: #ffffff; stroke: #e2e8f0; stroke-width: 2; rx: 8; ry: 8; }
       .mono { font-family: 'JetBrains Mono', monospace; }
-      .text-green { fill: #a3e635; }
-      .text-white { fill: #ffffff; }
-      .text-grey { fill: #a1a1aa; }
+      .text-green { fill: #2563eb; }
+      .text-white { fill: #0f172a; }
+      .text-grey { fill: #64748b; }
       
       .blink { animation: blinker 1s linear infinite; }
       @keyframes blinker { 50% { opacity: 0; } }
@@ -68,7 +68,7 @@ const svg = `
     <text x="70" y="5" font-size="14" class="mono text-grey" font-weight="700">~/quote-of-the-day.sh</text>
   </g>
 
-  <line x1="0" y1="40" x2="800" y2="40" stroke="#333" stroke-width="1" />
+  <line x1="0" y1="40" x2="800" y2="40" stroke="#e2e8f0" stroke-width="1" />
 
   <!-- Quote Text -->
   ${textElements}

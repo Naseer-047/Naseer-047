@@ -24,7 +24,7 @@
 <table>
   <tr>
     <td valign="top" width="50%">
-      <h3><img src="https://cdn.simpleicons.org/react/A3E635" width="22" height="22" /> About Me</h3>
+      <h3><img src="https://cdn.simpleicons.org/react/2563eb" width="22" height="22" /> About Me</h3>
 <pre lang="js">
 const naseer = {
   pronouns: "he" | "him",
@@ -46,7 +46,7 @@ const naseer = {
 </pre>
     </td>
     <td valign="top" width="50%">
-      <h3><img src="https://cdn.simpleicons.org/github/A3E635" width="22" height="22" /> GitHub Stats</h3>
+      <h3><img src="https://cdn.simpleicons.org/github/2563eb" width="22" height="22" /> GitHub Stats</h3>
       <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Naseer-047&amp;theme=tokyonight&amp;hide_border=true&amp;border_radius=8&amp;show_icons=true&amp;v=2" width="100%" alt="GitHub Stats" />
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=Naseer-047&theme=tokyonight&hide_border=true&border_radius=8" width="100%" alt="GitHub Streak" />
       <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Naseer-047&theme=tokyonight&hide_border=true&border_radius=8&layout=compact" width="100%" alt="Top Languages" />
@@ -57,7 +57,7 @@ const naseer = {
 
 <br>
 
-### <img src="https://cdn.simpleicons.org/nodedotjs/A3E635" width="22" height="22" /> Tech Arsenal
+### <img src="https://cdn.simpleicons.org/nodedotjs/2563eb" width="22" height="22" /> Tech Arsenal
 
 <div align="center">
   <p><b>Languages</b></p>
@@ -94,7 +94,7 @@ const naseer = {
 
 <br>
 
-### <img src="https://cdn.simpleicons.org/opensourceinitiative/A3E635" width="22" height="22" /> Open Source Journey
+### <img src="https://cdn.simpleicons.org/opensourceinitiative/2563eb" width="22" height="22" /> Open Source Journey
 
 <div align="center">
   <a href="https://github.com/Naseer-047/CNS"><img src="assets/project-cns.svg?v=5" width="48%" /></a>
@@ -106,24 +106,13 @@ const naseer = {
 
 <br>
 
-### <img src="https://cdn.simpleicons.org/googleanalytics/A3E635" width="22" height="22" /> Analytics &amp; Metrics
+### <img src="https://cdn.simpleicons.org/googleanalytics/2563eb" width="22" height="22" /> Analytics &amp; Metrics
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Naseer-047&theme=tokyo-night&bg_color=09090b&color=A3E635&line=A3E635&point=A3E635&hide_border=true" width="100%" alt="Contribution Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Naseer-047&bg_color=ffffff&color=0f172a&line=2563eb&point=2563eb&hide_border=true" width="100%" alt="Contribution Graph" />
 </div>
 
-<br>
 
-### 🤝 Connect & Collaborate
-
-<div align="center">
-  <a href="mailto:youremail@example.com"><img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://github.com/Naseer-047"><img src="https://img.shields.io/badge/GitHub-Naseer--047-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="https://linkedin.com/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://twitter.com/"><img src="https://img.shields.io/badge/X-Follow-000000?style=flat-square&logo=x&logoColor=white" alt="X" /></a>
-</div>
-
-<br>
 
 ### 💭 Random Dev Quote
 
@@ -137,7 +126,7 @@ const naseer = {
 <br>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Naseer-047&color=a3e635&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=Naseer-047&color=2563eb&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
   <br><br>
   <img src="assets/footer.svg?v=1" width="100%" alt="Footer" />
 </div>

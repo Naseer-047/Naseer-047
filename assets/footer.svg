@@ -5,17 +5,18 @@
       @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&amp;display=swap');
       
       :root {
-        --bg: #000000;
-        --accent: #a3e635;
-        --wave1: rgba(163, 230, 53, 0.1);
-        --wave2: rgba(163, 230, 53, 0.2);
-        --wave3: rgba(163, 230, 53, 0.4);
+        --bg: #ffffff;
+        --accent: #2563eb;
+        --wave1: rgba(37, 99, 235, 0.1);
+        --wave2: rgba(37, 99, 235, 0.2);
+        --wave3: rgba(37, 99, 235, 0.4);
+        --wave4: rgba(37, 99, 235, 1);
       }
       
       .bg { fill: var(--bg); }
       .mono { font-family: 'JetBrains Mono', monospace; }
       .text-green { fill: var(--accent); }
-      .text-grey { fill: #a1a1aa; }
+      .text-grey { fill: #64748b; }
       
       @keyframes move_wave {
         0% { transform: translateX(0) translateZ(0) scaleY(1); }

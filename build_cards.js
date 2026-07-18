@@ -6,10 +6,10 @@ const height = 180;
 const style = `
   @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
   :root {
-    --bg: #09090b;
-    --text-main: #e4e4e7;
-    --text-muted: #a1a1aa;
-    --accent: #a3e635;
+    --bg: #ffffff;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --accent: #2563eb;
     --accent-blue: #3b82f6;
     --accent-purple: #8b5cf6;
   }
@@ -93,7 +93,7 @@ createCard(
   ["Developer ecosystem platform", "for my college coding club."],
   ["MERN", "Redis", "BullMQ", "AI"],
   "85", "21",
-  "#a3e635",
+  "#2563eb",
   `<rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="var(--accent)" stroke-width="2"/><path d="M6 10l3 3-3 3M12 16h6" fill="none" stroke="var(--accent)" stroke-width="2"/>`,
   "assets/project-gcc.svg"
 );
