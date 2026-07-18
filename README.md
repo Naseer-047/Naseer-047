@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/terminal-hero.svg?v=999" width="100%" alt="Naseer Pasha - Terminal Profile">
+  <img src="assets/blueprint-hero.svg?v=1" width="100%" alt="System Architecture Blueprint">
 </div>
 
 <br>

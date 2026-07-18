@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 380" width="850" height="380">
+  <defs>
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;700;800&display=swap');
+  
+  :root {
+    --bg: #ffffff;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --text-faint: #cbd5e1;
+    --accent: #2563eb;
+    --accent-light: #eff6ff;
+    --accent-blue: #3b82f6;
+    --grid-color: rgba(15, 23, 42, 0.06);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117;
+      --text-main: #c9d1d9;
+      --text-muted: #8b949e;
+      --text-faint: #30363d;
+      --accent: #58a6ff;
+      --accent-light: #1f2937;
+      --accent-blue: #3b82f6;
+      --grid-color: rgba(201, 209, 217, 0.05);
+    }
+  }
+
+  .bg { fill: var(--bg); transition: fill 0.3s; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .sans { font-family: 'Inter', sans-serif; }
+  
+  .text-main { fill: var(--text-main); }
+  .text-muted { fill: var(--text-muted); }
+  .text-faint { fill: var(--text-faint); }
+  .text-accent { fill: var(--accent); }
+  
+  .text-xs { font-size: 10px; }
+  .text-sm { font-size: 12px; }
+  .text-md { font-size: 16px; }
+  .text-lg { font-size: 24px; }
+  .text-xl { font-size: 32px; font-weight: 800; letter-spacing: -0.5px; }
+  
+  .line { fill: none; stroke: var(--accent-blue); stroke-width: 1.5; stroke-dasharray: 4 2; opacity: 0.6; }
+  .line-solid { fill: none; stroke: var(--accent-blue); stroke-width: 1.5; opacity: 0.8; }
+  .node { fill: var(--bg); stroke: var(--accent-blue); stroke-width: 1.5; }
+  .node-fill { fill: var(--accent-light); stroke: var(--accent-blue); stroke-width: 1.5; }
+  
+  .arrow { fill: var(--accent-blue); opacity: 0.8; }
+</style>
+    <!-- 5-8% opacity grid -->
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="var(--grid-color)" />
+    </pattern>
+  </defs>
+  
+  <rect width="100%" height="100%" class="bg" />
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- Top-left subtle monospace code banner -->
+  <text x="30" y="40" class="mono text-xs text-muted">
+    <tspan x="30" dy="0">// Engineering elegant systems.</tspan>
+    <tspan x="30" dy="16">// Solving complex problems.</tspan>
+  </text>
+
+  <!-- Left Side: Typography -->
+  <g transform="translate(40, 180)">
+    <text x="0" y="0" class="mono text-sm text-accent" letter-spacing="3">SYSTEM DESIGN</text>
+    <text x="0" y="30" class="sans text-xl text-main">
+      <tspan x="0" dy="0">Complex Systems.</tspan>
+      <tspan x="0" dy="36">Simple Experiences.</tspan>
+    </text>
+  </g>
+
+  <!-- Background Subtle Annotations (Senior Eng Terms) -->
+  <text x="350" y="30" class="mono text-xs text-faint" opacity="0.4" font-weight="700">SCALABILITY</text>
+  <text x="650" y="40" class="mono text-xs text-faint" opacity="0.4" font-weight="700">OBSERVABILITY</text>
+  <text x="450" y="350" class="mono text-xs text-faint" opacity="0.4" font-weight="700">FAULT TOLERANCE</text>
+  <text x="700" y="340" class="mono text-xs text-faint" opacity="0.4" font-weight="700">CONSISTENCY</text>
+  <text x="40" y="340" class="mono text-xs text-faint" opacity="0.4" font-weight="700">PERFORMANCE</text>
+
+  <!-- Tiny Details (Micro Text scattered) -->
+  <text x="320" y="90" class="mono text-xs text-muted" opacity="0.6">Latency: 12ms</text>
+  <text x="500" y="70" class="mono text-xs text-muted" opacity="0.6">99.99%</text>
+  <text x="760" y="155" class="mono text-xs text-muted" opacity="0.6">Cache Hit</text>
+  <text x="660" y="170" class="mono text-xs text-muted" opacity="0.6">Async</text>
+  <text x="500" y="220" class="mono text-xs text-muted" opacity="0.6">Queue Depth: 0</text>
+  <text x="760" y="320" class="mono text-xs text-muted" opacity="0.6">Event Bus</text>
+  <text x="560" y="280" class="mono text-xs text-muted" opacity="0.6">P95: &lt;50ms</text>
+
+  <!-- Right Side: Architecture Diagram -->
+  <g transform="translate(0, 0)">
+    
+    <!-- Paths / Routing -->
+    <path d="M 300 110 L 330 110" class="line-solid" /><polygon points="325,106 331,110 325,114" class="arrow" transform="rotate(0 330 110)" />
+    <path d="M 380 110 L 420 110" class="line-solid" /><polygon points="415,106 421,110 415,114" class="arrow" transform="rotate(0 420 110)" />
+    <path d="M 490 110 L 530 110" class="line-solid" /><polygon points="525,106 531,110 525,114" class="arrow" transform="rotate(0 530 110)" />
+    <path d="M 590 110 L 610 110 L 610 70 L 650 70" class="line-solid" /><polygon points="645,66 651,70 645,74" class="arrow" transform="rotate(0 650 70)" /> <!-- API to Auth -->
+    <path d="M 590 110 L 630 110 L 630 150 L 665 150" class="line-solid" /><polygon points="660,146 666,150 660,154" class="arrow" transform="rotate(0 665 150)" /> <!-- API to Redis -->
+    <path d="M 590 110 L 610 110 L 610 220 L 650 220" class="line-solid" /><polygon points="645,216 651,220 645,224" class="arrow" transform="rotate(0 650 220)" /> <!-- API to Queue -->
+    
+    <path d="M 730 220 L 750 220" class="line-solid" /><polygon points="745,216 751,220 745,224" class="arrow" transform="rotate(0 750 220)" /> <!-- Queue to Workers -->
+    <path d="M 790 240 L 790 260" class="line-solid" /><polygon points="785,256 791,260 785,264" class="arrow" transform="rotate(90 790 260)" /> <!-- Workers to Primary DB -->
+    
+    <path d="M 730 280 L 660 280" class="line" /><polygon points="655,276 661,280 655,284" class="arrow" transform="rotate(180 660 280)" /> <!-- Primary DB to Replica (Async Sync) -->
+    
+    <!-- Nodes -->
+    <polygon points="280,85 301.65,97.5 301.65,122.5 280,135 258.35,122.5 258.35,97.5" class="node" /><text x="280" y="113" class="mono text-xs text-main" text-anchor="middle">Users</text>
+    <polygon points="355,85 376.65,97.5 376.65,122.5 355,135 333.35,122.5 333.35,97.5" class="node" /><text x="355" y="113" class="mono text-xs text-main" text-anchor="middle">CDN</text>
+    
+    <rect x="420" y="95" width="70" height="30" rx="4" class="node" /><text x="455" y="113" class="mono text-xs text-main" text-anchor="middle">Load Bal.</text>
+    <rect x="530" y="85" width="60" height="50" rx="4" class="node" /><text x="560" y="113" class="mono text-xs text-main" text-anchor="middle">API Gateway</text>
+    
+    <rect x="650" y="55" width="60" height="30" rx="4" class="node-fill" /><text x="680" y="73" class="mono text-xs text-main" text-anchor="middle">Auth</text>
+    <path d="M 665 140 C 665 128, 715 128, 715 140 L 715 160 C 715 172, 665 172, 665 160 Z" class="node-fill" /><path d="M 665 140 C 665 152, 715 152, 715 140" class="line-solid" /><text x="690" y="155" class="mono text-xs text-main" text-anchor="middle">Redis</text>
+    
+    <rect x="650" y="205" width="80" height="30" rx="4" class="node-fill" /><text x="690" y="223" class="mono text-xs text-main" text-anchor="middle">Queue</text>
+    <rect x="750" y="200" width="80" height="40" rx="4" class="node" /><text x="790" y="223" class="mono text-xs text-main" text-anchor="middle">Workers</text>
+    
+    <path d="M 730 270 C 730 258, 850 258, 850 270 L 850 300 C 850 312, 730 312, 730 300 Z" class="node-fill" /><path d="M 730 270 C 730 282, 850 282, 850 270" class="line-solid" /><text x="790" y="290" class="mono text-xs text-main" text-anchor="middle">Primary DB</text>
+    <path d="M 580 270 C 580 258, 660 258, 660 270 L 660 290 C 660 302, 580 302, 580 290 Z" class="node-fill" /><path d="M 580 270 C 580 282, 660 282, 660 270" class="line-solid" /><text x="620" y="285" class="mono text-xs text-main" text-anchor="middle">Replica</text>
+
+  </g>
+</svg>
