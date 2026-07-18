@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/modern-hero.svg?v=1" width="100%" alt="Naseer Pasha - Modern Whiteboard Profile">
+  <img src="assets/modern-hero.svg?v=2" width="100%" alt="Naseer Pasha - Modern Whiteboard Profile">
 </div>
 
 <br>
