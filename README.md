@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/terminal-hero.svg?v=4" width="100%" alt="Naseer Pasha - Terminal Profile">
+  <img src="assets/terminal-hero.svg?v=5" width="100%" alt="Naseer Pasha - Terminal Profile">
 </div>
 
 <br>
