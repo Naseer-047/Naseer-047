@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+      
+      :root {
+        --bg: #FAFAFA;
+        --border: rgba(0, 0, 0, 0.08);
+        --text-primary: #111111;
+        --text-secondary: #666666;
+        --icon-bg: rgba(0, 0, 0, 0.04);
+        --tag-bg: rgba(0, 0, 0, 0.03);
+        --tag-border: rgba(0, 0, 0, 0.08);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000000;
+          --border: rgba(255, 255, 255, 0.12);
+          --text-primary: #EDEDED;
+          --text-secondary: #888888;
+          --icon-bg: rgba(255, 255, 255, 0.05);
+          --tag-bg: rgba(255, 255, 255, 0.04);
+          --tag-border: rgba(255, 255, 255, 0.1);
+        }
+      }
+
+      .bg { fill: var(--bg); stroke: var(--border); stroke-width: 1; rx: 12; ry: 12; }
+      .text-primary { fill: var(--text-primary); font-family: 'Inter', -apple-system, sans-serif; }
+      .text-mono { fill: var(--text-secondary); font-family: 'JetBrains Mono', ui-monospace, monospace; }
+      .icon-bg { fill: var(--icon-bg); rx: 8; ry: 8; }
+      .icon { stroke: var(--text-primary); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      
+      .tag { fill: var(--tag-bg); stroke: var(--tag-border); stroke-width: 1; rx: 6; ry: 6; }
+      .tag-text { fill: var(--text-primary); font-family: 'Inter', -apple-system, sans-serif; font-size: 13px; font-weight: 500; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Container -->
+  <rect x="1" y="1" width="798" height="198" class="bg" />
+
+  <!-- Content -->
+  <g transform="translate(48, 32)">
+    <!-- Header with Icon -->
+    <rect x="0" y="0" width="32" height="32" class="icon-bg" />
+    <path class="icon" d="M12 10l-4 4 4 4M20 10l4 4-4 4" />
+    
+    <text x="44" y="21" font-size="14" font-weight="600" class="text-primary">Tech Arsenal</text>
+    
+    <!-- Stack Grid -->
+    <g transform="translate(0, 60)">
+      
+      <!-- Row 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="100" height="36" class="tag" />
+        <text x="50" y="23" class="tag-text">TypeScript</text>
+      </g>
+      <g transform="translate(112, 0)">
+        <rect x="0" y="0" width="100" height="36" class="tag" />
+        <text x="50" y="23" class="tag-text">React</text>
+      </g>
+      <g transform="translate(224, 0)">
+        <rect x="0" y="0" width="100" height="36" class="tag" />
+        <text x="50" y="23" class="tag-text">Next.js</text>
+      </g>
+      <g transform="translate(336, 0)">
+        <rect x="0" y="0" width="100" height="36" class="tag" />
+        <text x="50" y="23" class="tag-text">Node.js</text>
+      </g>
+      <g transform="translate(448, 0)">
+        <rect x="0" y="0" width="100" height="36" class="tag" />
+        <text x="50" y="23" class="tag-text">Python</text>
+      </g>
+      <g transform="translate(560, 0)">
+        <rect x="0" y="0" width="100" height="36" class="tag" />
+        <text x="50" y="23" class="tag-text">Rust</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 48)">
+        <rect x="0" y="0" width="100" height="36" class="tag" />
+        <text x="50" y="23" class="tag-text">PostgreSQL</text>
+      </g>
+      <g transform="translate(112, 48)">
+        <rect x="0" y="0" width="100" height="36" class="tag" />
+        <text x="50" y="23" class="tag-text">Redis</text>
+      </g>
+      <g transform="translate(224, 48)">
+        <rect x="0" y="0" width="100" height="36" class="tag" />
+        <text x="50" y="23" class="tag-text">MongoDB</text>
+      </g>
+      <g transform="translate(336, 48)">
+        <rect x="0" y="0" width="100" height="36" class="tag" />
+        <text x="50" y="23" class="tag-text">Docker</text>
+      </g>
+      <g transform="translate(448, 48)">
+        <rect x="0" y="0" width="100" height="36" class="tag" />
+        <text x="50" y="23" class="tag-text">AWS</text>
+      </g>
+      <g transform="translate(560, 48)">
+        <rect x="0" y="0" width="100" height="36" class="tag" />
+        <text x="50" y="23" class="tag-text">Linux</text>
+      </g>
+
+    </g>
+  </g>
+</svg>

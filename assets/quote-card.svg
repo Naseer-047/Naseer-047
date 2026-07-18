@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 160" width="250" height="160">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+      .bg { fill: #0D1117; }
+      .text-main { fill: #c9d1d9; font-family: 'Inter', sans-serif; }
+      .text-accent { fill: #A3E635; font-family: 'Inter', sans-serif; }
+    </style>
+  </defs>
+  
+  <rect width="100%" height="100%" class="bg" rx="8"/>
+  
+  <g transform="translate(20, 30)">
+    <text x="0" y="0" font-size="12" font-weight="600" class="text-main" letter-spacing="1">QUOTE</text>
+    <text x="0" y="30" font-size="30" font-weight="800" class="text-accent">“</text>
+    
+    <text x="30" y="30" font-size="13" class="text-main" font-weight="500">
+      <tspan x="30" dy="0">Code is not just</tspan>
+      <tspan x="30" dy="20">what I write,</tspan>
+      <tspan x="30" dy="20">it's how I solve</tspan>
+      <tspan x="30" dy="20">problems.</tspan>
+    </text>
+    
+    <text x="210" y="110" font-size="11" class="text-accent" text-anchor="end">- Naseer Pasha</text>
+  </g>
+</svg>

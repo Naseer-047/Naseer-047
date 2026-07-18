@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@100;400&amp;display=swap');
+      
+      :root {
+        --grid: #EAEAEA;
+        --text-primary: #111111;
+        --text-secondary: #666666;
+        --accent: #000000;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --grid: #222222;
+          --text-primary: #F2F2F2;
+          --text-secondary: #888888;
+          --accent: #FFFFFF;
+        }
+      }
+
+      .line { stroke: var(--grid); stroke-width: 0.5; }
+      .text-primary { fill: var(--text-primary); font-family: 'Inter', -apple-system, sans-serif; }
+      .text-secondary { fill: var(--text-secondary); font-family: 'Inter', -apple-system, sans-serif; }
+      .text-mono { fill: var(--text-secondary); font-family: 'JetBrains Mono', ui-monospace, monospace; }
+      .accent-box { fill: var(--accent); }
+      .accent-text { fill: var(--bg, #FFF); font-family: 'JetBrains Mono', ui-monospace, monospace; }
+      
+      @media (prefers-color-scheme: dark) {
+        .accent-text { fill: #000; }
+      }
+    </style>
+  </defs>
+
+  <!-- Borders -->
+  <rect x="20" y="10" width="760" height="180" fill="none" class="line" />
+  <line x1="400" y1="10" x2="400" y2="190" class="line" />
+  <line x1="20" y1="100" x2="780" y2="100" class="line" />
+
+  <!-- Principle 1 -->
+  <g transform="translate(60, 45)">
+    <text x="0" y="0" font-size="12" class="text-mono" letter-spacing="1">01 / ENGINEERING</text>
+    <text x="0" y="25" font-size="16" font-weight="400" class="text-primary">Architecture over hacks.</text>
+  </g>
+
+  <!-- Principle 2 -->
+  <g transform="translate(440, 45)">
+    <text x="0" y="0" font-size="12" class="text-mono" letter-spacing="1">02 / DESIGN</text>
+    <text x="0" y="25" font-size="16" font-weight="400" class="text-primary">Every pixel matters.</text>
+  </g>
+
+  <!-- Principle 3 -->
+  <g transform="translate(60, 135)">
+    <text x="0" y="0" font-size="12" class="text-mono" letter-spacing="1">03 / PRODUCT</text>
+    <text x="0" y="25" font-size="16" font-weight="400" class="text-primary">User outcomes first.</text>
+  </g>
+
+  <!-- Principle 4 -->
+  <g transform="translate(440, 135)">
+    <text x="0" y="0" font-size="12" class="text-mono" letter-spacing="1">04 / OPEN SOURCE</text>
+    <text x="0" y="25" font-size="16" font-weight="400" class="text-primary">Building in public.</text>
+  </g>
+
+  <!-- Subtle corner accents -->
+  <rect x="18" y="8" width="4" height="4" class="accent-box" />
+  <rect x="778" y="8" width="4" height="4" class="accent-box" />
+  <rect x="18" y="188" width="4" height="4" class="accent-box" />
+  <rect x="778" y="188" width="4" height="4" class="accent-box" />
+
+</svg>

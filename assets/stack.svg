@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 150" width="800" height="150">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700&amp;display=swap');
+      
+      :root {
+        --grid: #EAEAEA;
+        --text-primary: #111111;
+        --text-secondary: #666666;
+        --accent: #AAAAAA;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --grid: #222222;
+          --text-primary: #F2F2F2;
+          --text-secondary: #888888;
+          --accent: #555555;
+        }
+      }
+
+      .line { stroke: var(--grid); stroke-width: 0.5; }
+      .text-primary { fill: var(--text-primary); font-family: 'JetBrains Mono', ui-monospace, monospace; }
+      .text-secondary { fill: var(--text-secondary); font-family: 'JetBrains Mono', ui-monospace, monospace; }
+      .accent { fill: var(--accent); }
+    </style>
+  </defs>
+
+  <!-- Box -->
+  <rect x="20" y="10" width="760" height="130" fill="none" class="line" />
+
+  <!-- Header -->
+  <g transform="translate(40, 40)">
+    <text x="0" y="0" font-size="12" class="text-secondary" letter-spacing="1">// TECHNICAL_ARSENAL</text>
+  </g>
+
+  <!-- Stack Grid -->
+  <g transform="translate(40, 80)" font-size="14" class="text-primary">
+    <!-- Row 1 -->
+    <text x="0" y="0"><tspan class="accent">&gt; </tspan>TypeScript</text>
+    <text x="250" y="0"><tspan class="accent">&gt; </tspan>Rust</text>
+    <text x="500" y="0"><tspan class="accent">&gt; </tspan>Go</text>
+    
+    <!-- Row 2 -->
+    <text x="0" y="30"><tspan class="accent">&gt; </tspan>React</text>
+    <text x="250" y="30"><tspan class="accent">&gt; </tspan>Next.js</text>
+    <text x="500" y="30"><tspan class="accent">&gt; </tspan>Node.js</text>
+    
+    <!-- Row 3 -->
+    <text x="0" y="60"><tspan class="accent">&gt; </tspan>PostgreSQL</text>
+    <text x="250" y="60"><tspan class="accent">&gt; </tspan>Redis</text>
+    <text x="500" y="60"><tspan class="accent">&gt; </tspan>Kafka</text>
+  </g>
+
+</svg>

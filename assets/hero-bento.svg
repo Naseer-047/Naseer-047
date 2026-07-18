@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+      
+      :root {
+        --bg: #FAFAFA;
+        --border: rgba(0, 0, 0, 0.08);
+        --text-primary: #111111;
+        --text-secondary: #666666;
+        --pill-bg: rgba(0, 0, 0, 0.04);
+        --pill-border: rgba(0, 0, 0, 0.1);
+        --glow: rgba(0, 0, 0, 0.03);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000000;
+          --border: rgba(255, 255, 255, 0.12);
+          --text-primary: #EDEDED;
+          --text-secondary: #888888;
+          --pill-bg: rgba(255, 255, 255, 0.05);
+          --pill-border: rgba(255, 255, 255, 0.1);
+          --glow: rgba(255, 255, 255, 0.05);
+        }
+      }
+
+      body { margin: 0; }
+      .bg { fill: var(--bg); stroke: var(--border); stroke-width: 1; rx: 12; ry: 12; }
+      .text-primary { fill: var(--text-primary); font-family: 'Inter', -apple-system, sans-serif; }
+      .text-secondary { fill: var(--text-secondary); font-family: 'Inter', -apple-system, sans-serif; }
+      
+      .pill { fill: var(--pill-bg); stroke: var(--pill-border); stroke-width: 1; rx: 14; ry: 14; }
+      .pill-text { fill: var(--text-primary); font-family: 'Inter', -apple-system, sans-serif; font-size: 12px; font-weight: 500; }
+    </style>
+    
+    <radialGradient id="glow" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="var(--glow)" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect x="1" y="1" width="798" height="248" class="bg" />
+  <rect x="1" y="1" width="798" height="248" fill="url(#glow)" rx="12" ry="12" pointer-events="none" />
+
+  <!-- Content -->
+  <g transform="translate(48, 60)">
+    <text x="0" y="0" font-size="16" font-weight="500" class="text-secondary" letter-spacing="1.5">SOFTWARE ENGINEER</text>
+    
+    <text x="0" y="55" font-size="52" font-weight="700" class="text-primary" letter-spacing="-1.5">Naseer Pasha</text>
+    
+    <text x="0" y="95" font-size="18" font-weight="400" class="text-secondary">Building Digital Experiences That Feel Effortless.</text>
+    
+    <!-- Focus Tags -->
+    <g transform="translate(0, 130)">
+      <!-- Tag 1 -->
+      <rect x="0" y="0" width="105" height="28" class="pill" />
+      <text x="14" y="18" class="pill-text">Full Stack</text>
+      
+      <!-- Tag 2 -->
+      <rect x="115" y="0" width="45" height="28" class="pill" />
+      <text x="129" y="18" class="pill-text">AI</text>
+      
+      <!-- Tag 3 -->
+      <rect x="170" y="0" width="130" height="28" class="pill" />
+      <text x="184" y="18" class="pill-text">System Design</text>
+    </g>
+  </g>
+</svg>

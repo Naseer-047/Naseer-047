@@ -1,0 +1,67 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 180" width="450" height="180">
+  <defs><style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+  :root {
+    --bg: #09090b;
+    --text-main: #e4e4e7;
+    --text-muted: #a1a1aa;
+    --accent: #a3e635;
+    --accent-blue: #3b82f6;
+    --accent-purple: #8b5cf6;
+  }
+  .bg { fill: var(--bg); }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .text-main { fill: var(--text-main); }
+  .text-muted { fill: var(--text-muted); }
+  .text-accent { fill: var(--accent); }
+  .border { stroke: var(--text-muted); stroke-width: 1; stroke-dasharray: 4 4; fill: none; opacity: 0.4; }
+  .tag { fill: transparent; stroke: var(--text-muted); stroke-width: 1; opacity: 0.5; rx: 4; }
+  .tag-text { fill: var(--text-muted); font-size: 10px; }
+</style></defs>
+  <rect width="100%" height="100%" class="bg" />
+  
+  <!-- Dashed Border -->
+  <rect x="5" y="5" width="440" height="170" class="border" />
+  
+  <!-- Icon -->
+  <g transform="translate(25, 20)">
+    <rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="var(--accent)" stroke-width="2"/><path d="M6 10l3 3-3 3M12 16h6" fill="none" stroke="var(--accent)" stroke-width="2"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="25" y="75" font-size="14" font-weight="700" class="mono text-accent">GCC Developer OS</text>
+  
+  <!-- Description -->
+  <text x="25" y="95" font-size="12" class="mono text-muted">
+    <tspan x="25" dy="0">Developer ecosystem platform</tspan><tspan x="25" dy="16">for my college coding club.</tspan>
+  </text>
+  
+  <!-- Tags -->
+  <g>
+    
+      <rect x="25" y="115" width="38" height="20" class="tag" />
+      <text x="30" y="129" class="mono tag-text">MERN</text>
+    
+      <rect x="73" y="115" width="45" height="20" class="tag" />
+      <text x="78" y="129" class="mono tag-text">Redis</text>
+    
+      <rect x="128" y="115" width="52" height="20" class="tag" />
+      <text x="133" y="129" class="mono tag-text">BullMQ</text>
+    
+      <rect x="190" y="115" width="24" height="20" class="tag" />
+      <text x="195" y="129" class="mono tag-text">AI</text>
+    
+  </g>
+  
+  <!-- Stats -->
+  <g transform="translate(25, 155)">
+    <!-- Star -->
+    <path d="M8 2l1.83 3.71 4.09.59-2.96 2.89.7 4.08-3.66-1.92L4.34 13.27l.7-4.08-2.96-2.89 4.09-.59L8 2z" fill="none" stroke="var(--text-muted)" stroke-width="1.5"/>
+    <text x="20" y="10" font-size="12" class="mono text-muted">85</text>
+    
+    <!-- Fork -->
+    <path d="M48 2c-1.1 0-2 .9-2 2v2.59l3 3V12h-2v2h6v-2h-2V9.59l3-3V4c0-1.1-.9-2-2-2z" fill="none" stroke="var(--text-muted)" stroke-width="1.5" transform="scale(0.8) translate(50, 0)"/>
+    <text x="65" y="10" font-size="12" class="mono text-muted">21</text>
+  </g>
+</svg>

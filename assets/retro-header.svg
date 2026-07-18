@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 350" width="1000" height="350">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&amp;display=swap');
+      
+      :root {
+        --bg: #09090b;
+        --text-main: #e4e4e7;
+        --text-muted: #a1a1aa;
+        --accent: #a3e635;
+      }
+      
+      .bg { fill: var(--bg); }
+      .mono { font-family: 'JetBrains Mono', monospace; }
+      
+      .text-main { fill: var(--text-main); }
+      .text-muted { fill: var(--text-muted); }
+      .text-accent { fill: var(--accent); }
+      
+      .border-line { stroke: var(--text-muted); stroke-width: 1; stroke-dasharray: 4 4; fill: none; opacity: 0.5; }
+      .border-solid { stroke: var(--text-muted); stroke-width: 1; fill: none; opacity: 0.5; }
+    </style>
+  </defs>
+  
+  <rect width="100%" height="100%" class="bg"/>
+
+  <!-- LEFT SECTION -->
+  <g transform="translate(40, 40)">
+    
+    <!-- Top line -->
+    <text x="0" y="0" font-size="12" class="mono text-muted">
+      <tspan class="text-accent">&gt;</tspan> Building the future, one commit at a time.
+    </text>
+    
+    <!-- Title -->
+    <text x="0" y="60" font-size="64" font-weight="800" class="mono text-main">NASEER <tspan class="text-accent">PASHA</tspan></text>
+    
+    <!-- Role Tag -->
+    <text x="0" y="105" font-size="18" font-weight="700" class="mono text-muted">
+      [ <tspan class="text-accent">&gt; Software Engineer</tspan> ]
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="145" font-size="13" class="mono text-muted">
+      <tspan class="text-accent">&gt;</tspan> Full Stack Developer • Problem Solver • Tech Enthusiast
+    </text>
+    
+    <!-- Bio -->
+    <text x="15" y="180" font-size="13" class="mono text-muted">
+      <tspan x="15" dy="0">I build fast, scalable and beautiful digital products</tspan>
+      <tspan x="15" dy="20">that solve real-world problems using clean code,</tspan>
+      <tspan x="15" dy="20">modern architectures and thoughtful design.</tspan>
+    </text>
+    
+    <!-- Social Links (Retro Brackets) -->
+    <g transform="translate(0, 260)">
+      <text x="0" y="15" font-size="20" class="mono text-muted">[</text>
+      
+      <!-- GitHub Icon -->
+      <g transform="translate(20, 0)">
+        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.085.636-1.334-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z" fill="var(--text-main)" transform="scale(0.8)"/>
+      </g>
+      
+      <text x="50" y="15" font-size="20" class="mono text-muted">|</text>
+      
+      <!-- LinkedIn Icon -->
+      <g transform="translate(65, -1)">
+        <path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zm-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79zM6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68zm1.39 9.94v-8.37H5.5v8.37h2.77z" fill="var(--text-main)" transform="scale(0.8)"/>
+      </g>
+      
+      <text x="95" y="15" font-size="20" class="mono text-muted">|</text>
+      
+      <!-- Web Icon -->
+      <g transform="translate(110, -2)">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="var(--text-main)" transform="scale(0.85)"/>
+      </g>
+      
+      <text x="145" y="15" font-size="20" class="mono text-muted">|</text>
+      
+      <!-- Mail Icon -->
+      <g transform="translate(160, 0)">
+        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="var(--text-main)" transform="scale(0.8)"/>
+      </g>
+      
+      <text x="195" y="15" font-size="20" class="mono text-muted">]</text>
+    </g>
+  </g>
+
+  <!-- RIGHT SECTION (ASTRONAUT ASCII) -->
+  <g transform="translate(650, 40)">
+    <!-- Retro terminal frame corners -->
+    <path d="M 0,10 L 0,0 L 10,0" class="border-solid" />
+    <path d="M 270,0 L 280,0 L 280,10" class="border-solid" />
+    <path d="M 280,240 L 280,250 L 270,250" class="border-solid" />
+    <path d="M 10,250 L 0,250 L 0,240" class="border-solid" />
+    
+    <!-- Dashed borders -->
+    <line x1="20" y1="0" x2="260" y2="0" class="border-line" />
+    <line x1="280" y1="20" x2="280" y2="230" class="border-line" />
+    <line x1="20" y1="250" x2="260" y2="250" class="border-line" />
+    <line x1="0" y1="20" x2="0" y2="230" class="border-line" />
+    
+    <rect x="275" y="5" width="4" height="4" fill="var(--accent)"/>
+    <text x="270" y="235" font-size="10" font-weight="700" class="mono text-accent" text-anchor="end">SYSTEM ONLINE</text>
+
+    <!-- ASCII Art -->
+    <g transform="translate(30, 30)" font-size="10" class="mono text-muted" xml:space="preserve">
+      <text y="0">           _..._</text>
+      <text y="12">         .'     '.      _</text>
+      <text y="24">        /    .-""-\   _/ \</text>
+      <text y="36">      .-|   /:.   |  |   |</text>
+      <text y="48">      |  \  |:.   /.-'-./</text>
+      <text y="60">      | .-'-;:__.'    =/</text>
+      <text y="72">      .'=  *=|     _.='</text>
+      <text y="84">     /   _.  |    ;</text>
+      <text y="96">    ;-.-'|    \   |</text>
+      <text y="108">   /   | \    _\  _\</text>
+      <text y="120">   \__/'._;.  ==' ==\</text>
+      <text y="132">            \    \   |</text>
+      <text y="144">            /    /   /</text>
+      <text y="156">            /-._/-._/</text>
+      <text y="168">            \   `\  \</text>
+      <text y="180">             `-._/._/</text>
+    </g>
+    
+    <!-- Decorative moon surface -->
+    <path d="M 20,200 Q 100,180 180,220 T 260,200" stroke="var(--text-muted)" stroke-dasharray="2 4" fill="none" opacity="0.3"/>
+  </g>
+
+</svg>

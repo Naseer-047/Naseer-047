@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 250" width="390" height="250">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap');
+      
+      :root {
+        --bg: #FAFAFA;
+        --border: rgba(0, 0, 0, 0.08);
+        --text-primary: #111111;
+        --text-secondary: #666666;
+        --icon-bg: rgba(0, 0, 0, 0.04);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000000;
+          --border: rgba(255, 255, 255, 0.12);
+          --text-primary: #EDEDED;
+          --text-secondary: #888888;
+          --icon-bg: rgba(255, 255, 255, 0.05);
+        }
+      }
+
+      .bg { fill: var(--bg); stroke: var(--border); stroke-width: 1; rx: 12; ry: 12; }
+      .text-primary { fill: var(--text-primary); font-family: 'Inter', -apple-system, sans-serif; }
+      .text-secondary { fill: var(--text-secondary); font-family: 'Inter', -apple-system, sans-serif; }
+      .icon-bg { fill: var(--icon-bg); rx: 8; ry: 8; }
+      .icon { stroke: var(--text-primary); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Container -->
+  <rect x="1" y="1" width="388" height="248" class="bg" />
+
+  <!-- Content -->
+  <g transform="translate(32, 32)">
+    <!-- Header with Icon -->
+    <rect x="0" y="0" width="32" height="32" class="icon-bg" />
+    <path class="icon" d="M10 12h12M10 16h12M10 20h6" />
+    
+    <text x="44" y="21" font-size="14" font-weight="600" class="text-primary">About Me</text>
+    
+    <!-- Body Text (Simulated wrapping with tspans) -->
+    <text x="0" y="75" font-size="15" font-weight="400" class="text-secondary" line-height="1.6">
+      <tspan x="0" dy="0">I am a full-stack engineer who loves</tspan>
+      <tspan x="0" dy="24">bridging the gap between complex</tspan>
+      <tspan x="0" dy="24">backend systems and pixel-perfect</tspan>
+      <tspan x="0" dy="24">interfaces.</tspan>
+      <tspan x="0" dy="36">Currently focused on building</tspan>
+      <tspan x="0" dy="24">scalable platforms and exploring</tspan>
+      <tspan x="0" dy="24">artificial intelligence.</tspan>
+    </text>
+  </g>
+</svg>

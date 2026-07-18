@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 250" width="390" height="250">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap');
+      
+      :root {
+        --bg: #FAFAFA;
+        --border: rgba(0, 0, 0, 0.08);
+        --text-primary: #111111;
+        --text-secondary: #666666;
+        --icon-bg: rgba(0, 0, 0, 0.04);
+        --accent: rgba(0, 0, 0, 0.1);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000000;
+          --border: rgba(255, 255, 255, 0.12);
+          --text-primary: #EDEDED;
+          --text-secondary: #888888;
+          --icon-bg: rgba(255, 255, 255, 0.05);
+          --accent: rgba(255, 255, 255, 0.1);
+        }
+      }
+
+      .bg { fill: var(--bg); stroke: var(--border); stroke-width: 1; rx: 12; ry: 12; }
+      .text-primary { fill: var(--text-primary); font-family: 'Inter', -apple-system, sans-serif; }
+      .text-secondary { fill: var(--text-secondary); font-family: 'Inter', -apple-system, sans-serif; }
+      .icon-bg { fill: var(--icon-bg); rx: 8; ry: 8; }
+      .icon { stroke: var(--text-primary); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .bullet { fill: var(--text-primary); }
+      
+      /* Abstract Graphic */
+      .geo-line { stroke: var(--accent); stroke-width: 1; fill: none; }
+      .geo-point { fill: var(--text-primary); }
+    </style>
+  </defs>
+
+  <!-- Container -->
+  <rect x="1" y="1" width="388" height="248" class="bg" />
+
+  <!-- Content -->
+  <g transform="translate(32, 32)">
+    <!-- Header with Icon -->
+    <rect x="0" y="0" width="32" height="32" class="icon-bg" />
+    <path class="icon" d="M16 10l-4 4 4 4M20 10l4 4-4 4" />
+    
+    <text x="44" y="21" font-size="14" font-weight="600" class="text-primary">Philosophy</text>
+    
+    <!-- Philosophy Points -->
+    <g transform="translate(0, 60)" font-size="15" font-weight="500" class="text-secondary">
+      <circle cx="4" cy="11" r="2" class="bullet"/>
+      <text x="16" y="16">Architecture over hacks.</text>
+      
+      <circle cx="4" cy="47" r="2" class="bullet"/>
+      <text x="16" y="52">Every pixel matters.</text>
+      
+      <circle cx="4" cy="83" r="2" class="bullet"/>
+      <text x="16" y="88">User outcomes first.</text>
+
+      <circle cx="4" cy="119" r="2" class="bullet"/>
+      <text x="16" y="124">Building in public.</text>
+    </g>
+
+    <!-- Abstract Graphic on the right -->
+    <g transform="translate(240, 70)">
+      <circle cx="40" cy="40" r="40" class="geo-line" stroke-dasharray="2 4"/>
+      <circle cx="40" cy="40" r="20" class="geo-line"/>
+      <line x1="0" y1="40" x2="80" y2="40" class="geo-line" />
+      <line x1="40" y1="0" x2="40" y2="80" class="geo-line" />
+      <circle cx="40" cy="40" r="3" class="geo-point" />
+    </g>
+  </g>
+</svg>
