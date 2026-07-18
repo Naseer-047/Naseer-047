@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/blueprint-hero.svg?v=4" width="100%" alt="System Architecture Blueprint">
+  <img src="assets/new%20hero.png" width="100%" alt="Naseer Pasha - Hero">
 </div>
 
 <br>
