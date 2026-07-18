@@ -42,6 +42,7 @@ const naseer = {
       <h3><img src="https://cdn.simpleicons.org/github/A3E635" width="22" height="22" /> GitHub Stats</h3>
       <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Naseer-047&amp;theme=tokyonight&amp;hide_border=true&amp;border_radius=8&amp;show_icons=true&amp;v=2" width="100%" alt="GitHub Stats" />
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=Naseer-047&theme=tokyonight&hide_border=true&border_radius=8" width="100%" alt="GitHub Streak" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Naseer-047&theme=tokyonight&hide_border=true&border_radius=8&layout=compact" width="100%" alt="Top Languages" />
     </td>
   </tr>
 </table>
