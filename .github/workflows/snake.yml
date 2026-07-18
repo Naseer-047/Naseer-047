@@ -16,6 +16,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
+      # Install dependencies (only required for some local build scripts if any)
+      - run: npm install jimp
+
+      # Run the asset generation scripts
+      - run: node build_quote.js
+      # (Add other scripts here in the future if you want them to run daily)
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}

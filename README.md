@@ -120,10 +120,10 @@ const naseer = {
 ### 🤝 Connect & Collaborate
 
 <div align="center">
-  <a href="mailto:youremail@example.com"><img src="https://img.shields.io/badge/EMAIL-CONTACT_ME-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://github.com/Naseer-047"><img src="https://img.shields.io/badge/GITHUB-NASEER--047-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="https://linkedin.com/"><img src="https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://twitter.com/"><img src="https://img.shields.io/badge/X-FOLLOW-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+  <a href="mailto:youremail@example.com"><img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://github.com/Naseer-047"><img src="https://img.shields.io/badge/GitHub-Naseer--047-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://linkedin.com/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://twitter.com/"><img src="https://img.shields.io/badge/X-Follow-000000?style=flat-square&logo=x&logoColor=white" alt="X" /></a>
 </div>
 
 <br>
@@ -131,7 +131,7 @@ const naseer = {
 ### 💭 Random Dev Quote
 
 <div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyo-night" alt="Random Dev Quote" />
+  <img src="assets/quote.svg" alt="Random Dev Quote" />
 </div>
 
 <br>
