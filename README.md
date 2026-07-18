@@ -100,11 +100,11 @@ const naseer = {
 ### <img src="https://cdn.simpleicons.org/opensourceinitiative/2563eb" width="22" height="22" /> Open Source Journey
 
 <div align="center">
-  <a href="https://github.com/Naseer-047/CNS"><img src="assets/project-cns.svg?v=999" width="48%" /></a>
-  <a href="https://github.com/Naseer-047/GCC-Developer-OS"><img src="assets/project-gcc.svg?v=999" width="48%" /></a>
+  <a href="https://github.com/Naseer-047/CNS"><img src="assets/project-cns.svg?v=9999" width="48%" /></a>
+  <a href="https://github.com/Naseer-047/GCC-Developer-OS"><img src="assets/project-gcc.svg?v=9999" width="48%" /></a>
   <br><br>
-  <a href="https://github.com/Naseer-047/Smart-Study-Buddy"><img src="assets/project-smart.svg?v=999" width="48%" /></a>
-  <a href="https://github.com/Naseer-047/AI-Resume-Analyzer"><img src="assets/project-resume.svg?v=999" width="48%" /></a>
+  <a href="https://github.com/Naseer-047/Smart-Study-Buddy"><img src="assets/project-smart.svg?v=9999" width="48%" /></a>
+  <a href="https://github.com/Naseer-047/AI-Resume-Analyzer"><img src="assets/project-resume.svg?v=9999" width="48%" /></a>
 </div>
 
 <br>

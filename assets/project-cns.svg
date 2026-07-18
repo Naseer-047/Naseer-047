@@ -1,7 +1,7 @@
-
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 180" width="450" height="180">
   <defs><style>
   @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+  
   :root {
     --bg: #ffffff;
     --text-main: #0f172a;
@@ -9,20 +9,50 @@
     --accent: #2563eb;
     --accent-blue: #3b82f6;
     --accent-purple: #8b5cf6;
+    --border-color: #cbd5e1;
   }
-  .bg { fill: var(--bg); }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117;
+      --text-main: #c9d1d9;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-blue: #79c0ff;
+      --accent-purple: #d2a8ff;
+      --border-color: #30363d;
+    }
+  }
+
+  .bg { fill: var(--bg); transition: fill 0.3s; }
   .mono { font-family: 'JetBrains Mono', monospace; }
   .text-main { fill: var(--text-main); }
   .text-muted { fill: var(--text-muted); }
   .text-accent { fill: var(--accent); }
-  .border { stroke: var(--text-muted); stroke-width: 1; stroke-dasharray: 4 4; fill: none; opacity: 0.4; }
-  .tag { fill: transparent; stroke: var(--text-muted); stroke-width: 1; opacity: 0.5; rx: 4; }
-  .tag-text { fill: var(--text-muted); font-size: 10px; }
+  
+  .border { 
+    stroke: var(--border-color); 
+    stroke-width: 1; 
+    stroke-dasharray: 4 4; 
+    fill: none; 
+  }
+  
+  .tag { 
+    fill: transparent; 
+    stroke: var(--border-color); 
+    stroke-width: 1; 
+    rx: 4; 
+  }
+  
+  .tag-text { 
+    fill: var(--text-muted); 
+    font-size: 10px; 
+  }
 </style></defs>
-  <rect width="100%" height="100%" class="bg" />
+  <rect width="100%" height="100%" class="bg" rx="8" />
   
   <!-- Dashed Border -->
-  <rect x="5" y="5" width="440" height="170" class="border" />
+  <rect x="5" y="5" width="440" height="170" rx="6" class="border" />
   
   <!-- Icon -->
   <g transform="translate(25, 20)">
@@ -34,7 +64,7 @@
   
   <!-- Description -->
   <text x="25" y="95" font-size="12" class="mono text-muted">
-    <tspan x="25" dy="0">Personal media cloud platform</tspan><tspan x="25" dy="16">for seamless streaming, sync</tspan><tspan x="25" dy="16">&amp; sharing.</tspan>
+    <tspan x="25" dy="0">Personal media cloud platform</tspan><tspan x="25" dy="16">for seamless streaming, sync</tspan><tspan x="25" dy="16">and sharing.</tspan>
   </text>
   
   <!-- Tags -->
