@@ -30,62 +30,28 @@
       <h3><img src="https://cdn.simpleicons.org/react/2563eb" width="22" height="22" /> About Me</h3>
 <pre lang="js">
 const naseer = {
-  name: "Naseer Pasha",
+  role: "Full Stack Engineer",
 
-  pronouns: ["he", "him"],
-
-  location: "Bangalore, India",
-
-  education: {
-    degree: "Computer Science Engineering",
-    focus: "Software Engineering"
-  },
-
-  roles: [
-    "Full Stack Engineer",
-    "System Designer",
-    "Open Source Contributor",
-    "Problem Solver"
-  ],
-
-  currentlyBuilding: [
-    "Cloud Applications",
+  building: [
+    "Scalable Products",
     "Developer Tools",
-    "AI Powered Products"
+    "AI Applications"
   ],
 
-  expertise: [
-    "Frontend Architecture",
-    "Backend Systems",
-    "REST APIs",
-    "Databases",
-    "Authentication",
-    "System Design"
-  ],
-
-  principles: [
-    "Scalability",
-    "Maintainability",
-    "Performance",
-    "Developer Experience"
-  ],
-
-  currentlyLearning: [
-    "Distributed Systems",
-    "Cloud Architecture",
-    "DevOps",
-    "AI Engineering"
-  ],
-
-  interests: [
+  learning: [
     "System Design",
-    "Product Engineering",
-    "Open Source",
-    "UI Engineering"
+    "Cloud",
+    "Distributed Systems"
+  ],
+
+  interestedIn: [
+    "Backend Architecture",
+    "Frontend Engineering",
+    "Open Source"
   ],
 
   philosophy:
-    "Design systems that are simple to use, scalable to grow, and enjoyable to build."
+    "Design systems that feel simple, even when the engineering behind them is complex."
 };
 </pre>
     </td>
