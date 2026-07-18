@@ -17,7 +17,7 @@
 <table>
   <tr>
     <td valign="top" width="50%">
-      <h3>👨‍💻 About Me</h3>
+      <h3><img src="https://cdn.simpleicons.org/react/A3E635" width="22" height="22" /> About Me</h3>
 <pre lang="js">
 const naseer = {
   pronouns: "he" | "him",
@@ -39,8 +39,8 @@ const naseer = {
 </pre>
     </td>
     <td valign="top" width="50%">
-      <h3>📈 GitHub Stats</h3>
-      <img src="https://github-readme-stats.vercel.app/api?username=Naseer-047&theme=tokyonight&hide_border=true&border_radius=8&show_icons=true" width="100%" alt="GitHub Stats" />
+      <h3><img src="https://cdn.simpleicons.org/github/A3E635" width="22" height="22" /> GitHub Stats</h3>
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Naseer-047&amp;theme=tokyonight&amp;hide_border=true&amp;border_radius=8&amp;show_icons=true&amp;v=2" width="100%" alt="GitHub Stats" />
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=Naseer-047&theme=tokyonight&hide_border=true&border_radius=8" width="100%" alt="GitHub Streak" />
     </td>
   </tr>
@@ -49,7 +49,7 @@ const naseer = {
 
 <br>
 
-### ⚔️ Tech Arsenal
+### <img src="https://cdn.simpleicons.org/nodedotjs/A3E635" width="22" height="22" /> Tech Arsenal
 
 <div align="center">
   <p><b>Languages</b></p>
@@ -74,7 +74,7 @@ const naseer = {
 
 <br>
 
-### 💻 Open Source Journey
+### <img src="https://cdn.simpleicons.org/opensourceinitiative/A3E635" width="22" height="22" /> Open Source Journey
 
 <div align="center">
   <a href="https://github.com/Naseer-047/CNS"><img src="assets/project-cns.svg?v=3" width="48%" /></a>
@@ -86,7 +86,7 @@ const naseer = {
 
 <br>
 
-### 📊 Analytics & Metrics
+### <img src="https://cdn.simpleicons.org/googleanalytics/A3E635" width="22" height="22" /> Analytics &amp; Metrics
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Naseer-047&theme=tokyo-night&bg_color=09090b&color=A3E635&line=A3E635&point=A3E635&hide_border=true" width="100%" alt="Contribution Graph" />
