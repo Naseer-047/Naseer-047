@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/retro-header.svg?v=5" width="100%" alt="Naseer Pasha - Retro Terminal Profile">
+  <img src="assets/modern-hero.svg?v=1" width="100%" alt="Naseer Pasha - Modern Whiteboard Profile">
 </div>
 
 <br>
@@ -12,9 +12,9 @@
 
 <br>
 
-<h3 align="left"><code>##     FEATURED PROJECTS</code></h3>
+<h3 align="left"><code>## FEATURED PROJECTS</code></h3>
 
-<table width="100%" style="border: none; background: transparent;">
+<table width="100%" style="border: none; background: transparent; ">
   <tr style="border: none;">
     <td width="50%" align="center" style="border: none;">
       <a href="https://github.com/Naseer-047/CNS">
