@@ -5,6 +5,16 @@
 <br>
 
 <div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Naseer-047/Naseer-047/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Naseer-047/Naseer-047/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Naseer-047/Naseer-047/output/github-contribution-grid-snake-dark.svg">
+  </picture>
+</div>
+
+<br>
+
+<div align="center">
   <a href="https://naseerpasha.me"><img src="https://img.shields.io/badge/Portfolio-121212?style=for-the-badge&logo=vercel&logoColor=A3E635&labelColor=0d1117&color=121212" alt="Portfolio" /></a>
   <a href="https://linkedin.com/in/naseer-pasha"><img src="https://img.shields.io/badge/LinkedIn-121212?style=for-the-badge&logo=linkedin&logoColor=A3E635&labelColor=0d1117&color=121212" alt="LinkedIn" /></a>
   <a href="mailto:contact@naseerpasha.com"><img src="https://img.shields.io/badge/Email-121212?style=for-the-badge&logo=minutemailer&logoColor=A3E635&labelColor=0d1117&color=121212" alt="Email" /></a>
@@ -95,15 +105,7 @@ const naseer = {
 
 <br>
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Naseer-047/Naseer-047/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Naseer-047/Naseer-047/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Naseer-047/Naseer-047/output/github-contribution-grid-snake-dark.svg">
-  </picture>
-</div>
 
-<br>
 
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=Naseer-047&color=a3e635&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
