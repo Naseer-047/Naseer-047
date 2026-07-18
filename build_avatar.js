@@ -2,7 +2,7 @@ import fs from 'fs';
 import { Jimp, JimpMime } from 'jimp';
 
 async function run() {
-  const image = await Jimp.read('assets/me.png');
+  const image = await Jimp.read('assets/my neww theme profolio pic (1).png');
   image.resize({ w: 250 });
   const buffer = await image.getBuffer(JimpMime.jpeg, { quality: 50 });
   const base64 = 'data:image/jpeg;base64,' + buffer.toString('base64');

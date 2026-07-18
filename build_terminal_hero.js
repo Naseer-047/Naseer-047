@@ -4,7 +4,7 @@ import { Jimp, JimpMime } from 'jimp';
 async function generateTerminalHero() {
   let userImageBase64 = '';
   try {
-    const image = await Jimp.read('assets/me.png');
+    const image = await Jimp.read('assets/my neww theme profolio pic (1).png');
     image.resize({ w: 250 });
     const buffer = await image.getBuffer(JimpMime.jpeg, { quality: 50 });
     userImageBase64 = `data:image/jpeg;base64,${buffer.toString('base64')}`;
