@@ -47,9 +47,9 @@ const naseer = {
     </td>
     <td valign="top" width="50%">
       <h3><img src="https://cdn.simpleicons.org/github/2563eb" width="22" height="22" /> GitHub Stats</h3>
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Naseer-047&amp;theme=tokyonight&amp;hide_border=true&amp;border_radius=8&amp;show_icons=true&amp;v=2" width="100%" alt="GitHub Stats" />
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Naseer-047&theme=tokyonight&hide_border=true&border_radius=8" width="100%" alt="GitHub Streak" />
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Naseer-047&theme=tokyonight&hide_border=true&border_radius=8&layout=compact" width="100%" alt="Top Languages" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Naseer-047&amp;bg_color=ffffff&amp;title_color=2563eb&amp;text_color=0f172a&amp;icon_color=2563eb&amp;hide_border=true&amp;border_radius=8&amp;show_icons=true&amp;v=2" width="100%" alt="GitHub Stats" />
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Naseer-047&background=ffffff&ring=2563eb&fire=2563eb&currStreakNum=2563eb&currStreakLabel=0f172a&sideNums=0f172a&sideLabels=64748b&dates=64748b&hide_border=true&border_radius=8" width="100%" alt="GitHub Streak" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Naseer-047&bg_color=ffffff&title_color=2563eb&text_color=0f172a&hide_border=true&border_radius=8&layout=compact" width="100%" alt="Top Languages" />
     </td>
   </tr>
 </table>
@@ -97,11 +97,11 @@ const naseer = {
 ### <img src="https://cdn.simpleicons.org/opensourceinitiative/2563eb" width="22" height="22" /> Open Source Journey
 
 <div align="center">
-  <a href="https://github.com/Naseer-047/CNS"><img src="assets/project-cns.svg?v=5" width="48%" /></a>
-  <a href="https://github.com/Naseer-047/GCC-Developer-OS"><img src="assets/project-gcc.svg?v=4" width="48%" /></a>
+  <a href="https://github.com/Naseer-047/CNS"><img src="assets/project-cns.svg?v=6" width="48%" /></a>
+  <a href="https://github.com/Naseer-047/GCC-Developer-OS"><img src="assets/project-gcc.svg?v=6" width="48%" /></a>
   <br><br>
-  <a href="https://github.com/Naseer-047/Smart-Study-Buddy"><img src="assets/project-smart.svg?v=4" width="48%" /></a>
-  <a href="https://github.com/Naseer-047/AI-Resume-Analyzer"><img src="assets/project-resume.svg?v=4" width="48%" /></a>
+  <a href="https://github.com/Naseer-047/Smart-Study-Buddy"><img src="assets/project-smart.svg?v=6" width="48%" /></a>
+  <a href="https://github.com/Naseer-047/AI-Resume-Analyzer"><img src="assets/project-resume.svg?v=6" width="48%" /></a>
 </div>
 
 <br>

@@ -4,7 +4,7 @@ const width = 450;
 const height = 180;
 
 const style = `
-  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
   :root {
     --bg: #ffffff;
     --text-main: #0f172a;
