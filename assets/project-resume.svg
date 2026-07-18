@@ -2,18 +2,95 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
-      .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; rx: 6; }
-      .text-green { fill: #58a6ff; font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: bold; }
-      .text-grey { fill: #8b949e; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
-      .icon { fill: #58a6ff; }
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&amp;display=swap');
+      
+      .card {
+        fill: #09090b;
+        stroke: #27272a;
+        stroke-width: 1.5;
+        rx: 12;
+      }
+      
+      .title {
+        fill: #fafafa;
+        font-family: 'Outfit', sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+      }
+      
+      .desc {
+        fill: #a1a1aa;
+        font-family: 'Outfit', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+      }
+
+      .icon-bg {
+        fill: #fbbf2420;
+        rx: 10;
+      }
+      
+      .icon-path {
+        fill: none;
+        stroke: #fbbf24;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      
+      /* Subtle CSS Animation */
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-3px); }
+        100% { transform: translateY(0px); }
+      }
+      
+      .container {
+        cursor: pointer;
+      }
+      
+      .container:hover .card {
+        stroke: #fbbf24;
+        stroke-width: 2;
+        transition: all 0.3s ease;
+      }
+      
+      .container:hover .icon-group {
+        animation: float 2s ease-in-out infinite;
+      }
     </style>
+    
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#18181b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#09090b;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Glowing shadow for icon -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
   </defs>
-  <rect x="2" y="2" width="396" height="116" class="bg" />
-  <g transform="translate(20, 25) scale(1.2)">
-    <path class="icon" d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6Zm2 16H8v-2h8v2Zm0-4H8v-2h8v2Zm-3-5V3.5L18.5 9H13Z" />
+
+  <g class="container">
+    <!-- Background Card -->
+    <rect x="2" y="2" width="396" height="116" class="card" fill="url(#grad1)" />
+    
+    <!-- Icon Box -->
+    <rect x="20" y="20" width="45" height="45" class="icon-bg" />
+    
+    <g class="icon-group" transform="translate(30, 30)" filter="url(#glow)">
+      <path class="icon-path" d="M16 18l6-6-6-6" /><path class="icon-path" d="M8 6l-6 6 6 6" />
+    </g>
+    
+    <!-- Text -->
+    <text x="85" y="40" class="title">AI Resume Analyzer</text>
+    <text x="85" y="68" class="desc">Automated resume parsing and ATS</text>
+    <text x="85" y="88" class="desc">scoring system using OpenAI.</text>
+    
+    <!-- Bottom Tech Dot -->
+    <circle cx="85" cy="104" r="4" fill="#fbbf24" />
+    <text x="95" y="108" class="desc" style="font-size: 11px; fill: #fbbf24">React</text>
   </g>
-  <text x="60" y="40" class="text-green">> AI Resume Analyzer</text>
-  <text x="20" y="75" class="text-grey">Automated resume parsing and ATS</text>
-  <text x="20" y="95" class="text-grey">scoring system using OpenAI.</text>
 </svg>
