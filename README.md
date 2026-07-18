@@ -15,10 +15,7 @@
 <br>
 
 <div align="center">
-  <a href="https://naseerpasha.me"><img src="https://img.shields.io/badge/Portfolio-121212?style=for-the-badge&logo=vercel&logoColor=A3E635&labelColor=0d1117&color=121212" alt="Portfolio" /></a>
-  <a href="https://linkedin.com/in/naseer-pasha"><img src="https://img.shields.io/badge/LinkedIn-121212?style=for-the-badge&logo=linkedin&logoColor=A3E635&labelColor=0d1117&color=121212" alt="LinkedIn" /></a>
-  <a href="mailto:contact@naseerpasha.com"><img src="https://img.shields.io/badge/Email-121212?style=for-the-badge&logo=minutemailer&logoColor=A3E635&labelColor=0d1117&color=121212" alt="Email" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Based_In-121212?style=for-the-badge&logo=googlemaps&logoColor=A3E635&labelColor=0d1117&color=121212" alt="Location" /></a>
+  <img src="assets/contact-badges.svg?v=1" width="100%" alt="Connect with me" />
 </div>
 
 <br>
@@ -120,10 +117,10 @@ const naseer = {
 ### 🤝 Connect & Collaborate
 
 <div align="center">
-  <a href="mailto:youremail@example.com"><img src="https://img.shields.io/badge/-EMAIL-111111?style=for-the-badge&logo=minutemailer&logoColor=a3e635" alt="Email" /></a>
-  <a href="https://github.com/Naseer-047"><img src="https://img.shields.io/badge/-GITHUB-111111?style=for-the-badge&logo=github&logoColor=a3e635" alt="GitHub" /></a>
-  <a href="https://linkedin.com/"><img src="https://img.shields.io/badge/-LINKEDIN-111111?style=for-the-badge&logo=linkedin&logoColor=a3e635" alt="LinkedIn" /></a>
-  <a href="https://twitter.com/"><img src="https://img.shields.io/badge/-X-111111?style=for-the-badge&logo=x&logoColor=a3e635" alt="X" /></a>
+  <a href="mailto:youremail@example.com"><img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://github.com/Naseer-047"><img src="https://img.shields.io/badge/GitHub-Naseer--047-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://linkedin.com/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://twitter.com/"><img src="https://img.shields.io/badge/X-Follow-000000?style=flat-square&logo=x&logoColor=white" alt="X" /></a>
 </div>
 
 <br>

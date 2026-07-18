@@ -21,6 +21,7 @@ jobs:
 
       # Run the asset generation scripts
       - run: node build_quote.js
+      - run: node build_contact_badges.js
       # (Add other scripts here in the future if you want them to run daily)
       - uses: Platane/snk/svg-only@v3
         with:
