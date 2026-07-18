@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/new%20hero.png" width="100%" alt="Naseer Pasha - Hero">
+  <img src="assets/blueprint-hero.svg?v=5" width="100%" alt="System Architecture Blueprint">
 </div>
 
 <br>
@@ -131,5 +131,5 @@ const naseer = {
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=Naseer-047&color=2563eb&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
   <br><br>
-  <img src="assets/footer.svg?v=1001" width="100%" alt="Footer" />
+  <img src="assets/footer.svg?v=2000" width="100%" alt="Footer" />
 </div>

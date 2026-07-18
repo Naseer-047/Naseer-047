@@ -1,76 +1,40 @@
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="1200" height="180">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&amp;display=swap');
-      
-      :root {
-        --bg: #ffffff;
-        --text-main: #0f172a;
-        --accent: #2563eb;
-        --wave1: rgba(37, 99, 235, 0.1);
-        --wave2: rgba(37, 99, 235, 0.2);
-        --wave3: rgba(37, 99, 235, 0.4);
-        --wave4: rgba(37, 99, 235, 1);
-      }
-      
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #0d1117;
-          --text-main: #c9d1d9;
-          --accent: #58a6ff;
-          --wave1: rgba(88, 166, 255, 0.1);
-          --wave2: rgba(88, 166, 255, 0.2);
-          --wave3: rgba(88, 166, 255, 0.4);
-          --wave4: rgba(88, 166, 255, 1);
-        }
-      }
-      
-      .bg { fill: var(--bg); }
-      .mono { font-family: 'JetBrains Mono', monospace; }
-      .text-green { fill: var(--accent); }
-      .text-grey { fill: #64748b; }
-      .text-main { fill: var(--text-main); }
-      
       @keyframes move_wave {
-        0% { transform: translateX(0) translateZ(0) scaleY(1); }
-        50% { transform: translateX(-25%) translateZ(0) scaleY(0.9); }
-        100% { transform: translateX(-50%) translateZ(0) scaleY(1); }
+        0%   { transform: translateX(0) scaleY(1); }
+        50%  { transform: translateX(-25%) scaleY(0.9); }
+        100% { transform: translateX(-50%) scaleY(1); }
       }
-      
-      .wave {
-        animation: move_wave 15s linear infinite;
-        transform-origin: bottom center;
-      }
-      .wave2 {
-        animation: move_wave 20s linear infinite;
-        transform-origin: bottom center;
-      }
-      .wave3 {
-        animation: move_wave 25s linear infinite;
-        transform-origin: bottom center;
-      }
+      .wave  { animation: move_wave 15s linear infinite; transform-origin: bottom center; }
+      .wave2 { animation: move_wave 20s linear infinite; transform-origin: bottom center; }
+      .wave3 { animation: move_wave 25s linear infinite; transform-origin: bottom center; }
     </style>
+
+    <!-- Light and dark patterns -->
+    <pattern id="gridLight" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="rgba(15,23,42,0.06)" />
+    </pattern>
   </defs>
 
-  <rect width="100%" height="100%" class="bg" />
+  <!-- Light mode background -->
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect width="100%" height="100%" fill="url(#gridLight)" />
 
-  <!-- Animated Waves -->
-  <g transform="translate(0, 100)">
-    <path class="wave3" fill="var(--wave1)" d="M0,50 Q150,20 300,50 T600,50 T900,50 T1200,50 T1500,50 T1800,50 T2100,50 T2400,50 V150 H0 Z" />
-    <path class="wave2" fill="var(--wave2)" d="M0,60 Q150,80 300,60 T600,60 T900,60 T1200,60 T1500,60 T1800,60 T2100,60 T2400,60 V150 H0 Z" />
-    <path class="wave" fill="var(--wave3)" d="M0,70 Q150,40 300,70 T600,70 T900,70 T1200,70 T1500,70 T1800,70 T2100,70 T2400,70 V150 H0 Z" />
+  <!-- Animated waves (light) -->
+  <g transform="translate(0, 80)">
+    <path class="wave3" fill="rgba(37,99,235,0.10)" d="M0,50 Q150,20 300,50 T600,50 T900,50 T1200,50 T1500,50 T1800,50 T2100,50 T2400,50 V120 H0 Z" />
+    <path class="wave2" fill="rgba(37,99,235,0.20)" d="M0,60 Q150,80 300,60 T600,60 T900,60 T1200,60 T1500,60 T1800,60 T2100,60 T2400,60 V120 H0 Z" />
+    <path class="wave"  fill="rgba(37,99,235,0.40)" d="M0,70 Q150,40 300,70 T600,70 T900,70 T1200,70 T1500,70 T1800,70 T2100,70 T2400,70 V120 H0 Z" />
   </g>
 
-  <!-- Content -->
-  <g transform="translate(600, 80)" text-anchor="middle">
-    <text x="0" y="0" font-size="24" class="mono text-green" font-weight="700">
-      &lt;/&gt;
-    </text>
-    <text x="-95" y="30" font-size="16" class="mono text-grey">crafted with</text>
-    <text x="-25" y="30" font-size="16" class="mono text-green">code</text>
-    <text x="5" y="30" font-size="16" class="mono text-grey">by</text>
-    <text x="75" y="30" font-size="16" class="mono text-main" font-weight="700">Naseer Pasha</text>
-  </g>
+  <!-- Icon: </> -->
+  <text x="600" y="55" font-size="22" font-family="monospace" font-weight="700" fill="#2563eb" text-anchor="middle">&lt;/&gt;</text>
+
+  <!-- Text: crafted with code by Naseer Pasha -->
+  <text x="470" y="80" font-size="14" font-family="monospace" fill="#64748b" text-anchor="middle">crafted with</text>
+  <text x="556" y="80" font-size="14" font-family="monospace" fill="#2563eb" text-anchor="middle">code</text>
+  <text x="590" y="80" font-size="14" font-family="monospace" fill="#64748b" text-anchor="middle">by</text>
+  <text x="670" y="80" font-size="14" font-family="monospace" font-weight="700" fill="#0f172a" text-anchor="middle">Naseer Pasha</text>
 
 </svg>
