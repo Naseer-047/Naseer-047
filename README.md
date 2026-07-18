@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/new%20hero.png" width="100%" alt="Naseer Pasha Hero">
+  <img src="assets/hero101.png" width="100%" alt="Naseer Pasha Hero">
 </div>
 
 <br>
