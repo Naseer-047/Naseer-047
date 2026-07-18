@@ -13,5 +13,5 @@
   <text x="20" y="40" class="emoji">☁️</text>
   <text x="60" y="40" class="text-green">> CNS Cloud Nexus</text>
   <text x="20" y="75" class="text-grey">Personal secure cloud infrastructure</text>
-  <text x="20" y="95" class="text-grey">built with Node & Docker.</text>
+  <text x="20" y="95" class="text-grey">built with Node &amp; Docker.</text>
 </svg>

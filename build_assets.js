@@ -68,7 +68,7 @@ const quoteSvg = `
 `;
 
 const projects = [
-  { name: 'project-cns.svg', title: '> CNS Cloud Nexus', emoji: '☁️', desc: ['Personal secure cloud infrastructure', 'built with Node & Docker.'] },
+  { name: 'project-cns.svg', title: '> CNS Cloud Nexus', emoji: '☁️', desc: ['Personal secure cloud infrastructure', 'built with Node &amp; Docker.'] },
   { name: 'project-gcc.svg', title: '> GCC Developer OS', emoji: '💻', desc: ['A minimal, developer-focused OS', 'environment and tools.'] },
   { name: 'project-smart.svg', title: '> Smart Study Buddy', emoji: '🧠', desc: ['AI-powered learning assistant for', 'students and self-learners.'] },
   { name: 'project-resume.svg', title: '> AI Resume Analyzer', emoji: '📄', desc: ['Automated resume parsing and ATS', 'scoring system using OpenAI.'] }
