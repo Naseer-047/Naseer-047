@@ -95,5 +95,15 @@ const naseer = {
 <br>
 
 <div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Naseer-047/Naseer-047/output/dist/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Naseer-047/Naseer-047/output/dist/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Naseer-047/Naseer-047/output/dist/github-contribution-grid-snake-dark.svg">
+  </picture>
+</div>
+
+<br>
+
+<div align="center">
   <img src="https://komarev.com/ghpvc/?username=Naseer-047&color=a3e635&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
 </div>
