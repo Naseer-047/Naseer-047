@@ -15,7 +15,7 @@
 <br>
 
 <div align="center">
-  <img src="assets/contact-badges.svg?v=1" width="100%" alt="Connect with me" />
+  <img src="assets/contact-badges.svg?v=2" width="100%" alt="Connect with me" />
 </div>
 
 <br>
