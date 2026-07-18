@@ -15,7 +15,10 @@
 <br>
 
 <div align="center">
-  <img src="assets/contact-badges.svg?v=2" width="100%" alt="Connect with me" />
+  <a href="https://naseerpasha.me" target="_blank"><img src="assets/badge-portfolio.svg?v=1" height="40" /></a>&nbsp;&nbsp;
+  <a href="https://linkedin.com/in/naseer-pasha" target="_blank"><img src="assets/badge-linkedin.svg?v=1" height="40" /></a>&nbsp;&nbsp;
+  <a href="mailto:contact@naseerpasha.com" target="_blank"><img src="assets/badge-email.svg?v=1" height="40" /></a>&nbsp;&nbsp;
+  <a href="#" style="pointer-events: none;"><img src="assets/badge-location.svg?v=1" height="40" /></a>
 </div>
 
 <br>

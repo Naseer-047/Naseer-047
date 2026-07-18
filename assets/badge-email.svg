@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" width="160" height="40">
+  <defs>
+    <style>
+      
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&amp;display=swap');
+  
+  .btn {
+    stroke-width: 1;
+    rx: 6;
+    ry: 6;
+  }
+  
+  .text-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    fill: #ffffff;
+  }
+  
+  .text-dark {
+    fill: #0d1117;
+  }
+
+  .icon {
+    fill: #ffffff;
+  }
+
+      .btn-email { fill: #EA4335; stroke: #EA4335; }
+    </style>
+  </defs>
+
+  <rect x="2" y="2" width="156" height="36" class="btn btn-email" />
+  
+  
+  <path d="M42 25l12-8-12-5v5l8 2-8 2v4z" class="icon" />
+  
+  <text x="62" y="25" class="text-mono ">EMAIL</text>
+</svg>

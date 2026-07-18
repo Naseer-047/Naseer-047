@@ -4,113 +4,103 @@ import fs from 'fs';
 const logoBuffer = fs.readFileSync('assets/np-logo-custom.webp');
 const base64Logo = 'data:image/webp;base64,' + logoBuffer.toString('base64');
 
-const svg = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 80" width="800" height="80">
+const style = `
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&amp;display=swap');
+  
+  .btn {
+    stroke-width: 1;
+    rx: 6;
+    ry: 6;
+  }
+  
+  .text-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    fill: #ffffff;
+  }
+  
+  .text-dark {
+    fill: #0d1117;
+  }
+
+  .icon {
+    fill: #ffffff;
+  }
+`;
+
+function createBadge(filename, className, fill, stroke, iconSvg, text, textX, textClass, hasLogo = false) {
+  const content = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" width="160" height="40">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&amp;display=swap');
-      
-      .btn {
-        stroke-width: 2;
-        rx: 8;
-        ry: 8;
-        transition: all 0.3s ease;
-      }
-      
-      .btn-portfolio {
-        fill: #ffffff;
-        stroke: #e5e7eb;
-        filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
-      }
-      .btn-portfolio:hover {
-        stroke: #a3e635;
-        transform: translateY(-2px);
-      }
-
-      .btn-linkedin {
-        fill: #0A66C2;
-        stroke: #0A66C2;
-        filter: drop-shadow(0 4px 6px rgba(10,102,194,0.3));
-      }
-      .btn-linkedin:hover {
-        stroke: #60A5FA;
-        transform: translateY(-2px);
-      }
-
-      .btn-email {
-        fill: #EA4335;
-        stroke: #EA4335;
-        filter: drop-shadow(0 4px 6px rgba(234,67,53,0.3));
-      }
-      .btn-email:hover {
-        stroke: #F87171;
-        transform: translateY(-2px);
-      }
-
-      .btn-location {
-        fill: #10B981;
-        stroke: #10B981;
-        filter: drop-shadow(0 4px 6px rgba(16,185,129,0.3));
-      }
-      .btn-location:hover {
-        stroke: #34D399;
-        transform: translateY(-2px);
-      }
-
-      .text-mono {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 14px;
-        font-weight: 700;
-        fill: #ffffff;
-      }
-      
-      .text-dark {
-        fill: #0d1117;
-      }
-
-      .icon {
-        fill: #ffffff;
-      }
-      
-      a {
-        cursor: pointer;
-      }
+      ${style}
+      .${className} { fill: ${fill}; stroke: ${stroke}; }
     </style>
   </defs>
 
-  <!-- Button 1: Portfolio -->
-  <a href="https://naseerpasha.me" target="_blank" class="btn-group">
-    <rect x="40" y="20" width="160" height="40" class="btn btn-portfolio" />
-    <image href="${base64Logo}" x="55" y="26" width="28" height="28" />
-    <text x="90" y="45" class="text-mono text-dark">PORTFOLIO</text>
-  </a>
+  <rect x="2" y="2" width="156" height="36" class="btn ${className}" />
+  
+  ${hasLogo ? `<image href="${base64Logo}" x="12" y="6" width="28" height="28" />` : ''}
+  ${iconSvg}
+  
+  <text x="${textX}" y="25" class="text-mono ${textClass}">${text}</text>
+</svg>`;
 
-  <!-- Button 2: LinkedIn -->
-  <a href="https://linkedin.com/in/naseer-pasha" target="_blank" class="btn-group">
-    <rect x="220" y="20" width="160" height="40" class="btn btn-linkedin" />
-    <!-- LinkedIn Logo approximation -->
-    <path d="M250 48h-4V36h4v12zm-2-13.4c-1.3 0-2.4-1.1-2.4-2.4s1.1-2.4 2.4-2.4 2.4 1.1 2.4 2.4-1.1 2.4-2.4 2.4zm16 13.4h-4v-6.3c0-1.5-.6-2.5-1.9-2.5-1 0-1.6.7-1.9 1.4-.1.2-.1.5-.1.8v6.6h-4s.1-10.9 0-12h4v1.7c.5-.8 1.5-2 3.6-2 2.6 0 4.6 1.7 4.6 5.4v6.9z" class="icon" />
-    <text x="275" y="45" class="text-mono">LINKEDIN</text>
-  </a>
+  fs.writeFileSync(filename, content.trim());
+  console.log(`Generated ${filename}`);
+}
 
-  <!-- Button 3: Email -->
-  <a href="mailto:contact@naseerpasha.com" target="_blank" class="btn-group">
-    <rect x="400" y="20" width="160" height="40" class="btn btn-email" />
-    <!-- Paper Plane Logo -->
-    <path d="M425 45l14-10-14-6v6l10 2-10 2v6z" class="icon" />
-    <text x="455" y="45" class="text-mono">EMAIL</text>
-  </a>
+// 1. Portfolio Badge
+createBadge(
+  'assets/badge-portfolio.svg',
+  'btn-portfolio',
+  '#ffffff',
+  '#e5e7eb',
+  '',
+  'PORTFOLIO',
+  '55',
+  'text-dark',
+  true
+);
 
-  <!-- Button 4: Based In -->
-  <a href="#" class="btn-group">
-    <rect x="580" y="20" width="160" height="40" class="btn btn-location" />
-    <!-- Map Pin Logo -->
-    <path d="M605 32c-3.3 0-6 2.7-6 6 0 4.5 6 10 6 10s6-5.5 6-10c0-3.3-2.7-6-6-6zm0 8.5c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5z" class="icon" />
-    <text x="635" y="45" class="text-mono">BASED IN</text>
-  </a>
+// 2. LinkedIn Badge
+createBadge(
+  'assets/badge-linkedin.svg',
+  'btn-linkedin',
+  '#0A66C2',
+  '#0A66C2',
+  '<path d="M42 28h-4V16h4v12zm-2-13.4c-1.3 0-2.4-1.1-2.4-2.4s1.1-2.4 2.4-2.4 2.4 1.1 2.4 2.4-1.1 2.4-2.4 2.4zm16 13.4h-4v-6.3c0-1.5-.6-2.5-1.9-2.5-1 0-1.6.7-1.9 1.4-.1.2-.1.5-.1.8v6.6h-4s.1-10.9 0-12h4v1.7c.5-.8 1.5-2 3.6-2 2.6 0 4.6 1.7 4.6 5.4v6.9z" class="icon" />',
+  'LINKEDIN',
+  '65',
+  '',
+  false
+);
 
-</svg>
-`;
+// 3. Email Badge
+createBadge(
+  'assets/badge-email.svg',
+  'btn-email',
+  '#EA4335',
+  '#EA4335',
+  '<path d="M42 25l12-8-12-5v5l8 2-8 2v4z" class="icon" />',
+  'EMAIL',
+  '62',
+  '',
+  false
+);
 
-fs.writeFileSync('assets/contact-badges.svg', svg);
-console.log('Contact badges SVG generated');
+// 4. Location Badge
+createBadge(
+  'assets/badge-location.svg',
+  'btn-location',
+  '#10B981',
+  '#10B981',
+  '<path d="M42 16c0-3.3 2.7-6 6-6s6 2.7 6 6c0 4.5-6 10-6 10s-6-5.5-6-10zm6-2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z" class="icon" />',
+  'BASED IN',
+  '60',
+  '',
+  false
+);
+
+console.log('All individual contact badges generated successfully.');

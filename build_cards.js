@@ -79,7 +79,7 @@ function createCard(title, desc, tags, stars, forks, iconColor, iconSvg, filenam
 // 1. CNS
 createCard(
   "CNS - Cloud Nexus Stream",
-  ["Personal media cloud platform", "for seamless streaming, sync", "& sharing."],
+  ["Personal media cloud platform", "for seamless streaming, sync", "&amp; sharing."],
   ["MERN", "Socket.io", "FFmpeg", "Docker"],
   "120", "32",
   "#3b82f6",

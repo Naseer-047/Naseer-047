@@ -34,7 +34,7 @@
   
   <!-- Description -->
   <text x="25" y="95" font-size="12" class="mono text-muted">
-    <tspan x="25" dy="0">Personal media cloud platform</tspan><tspan x="25" dy="16">for seamless streaming, sync</tspan><tspan x="25" dy="16">& sharing.</tspan>
+    <tspan x="25" dy="0">Personal media cloud platform</tspan><tspan x="25" dy="16">for seamless streaming, sync</tspan><tspan x="25" dy="16">&amp; sharing.</tspan>
   </text>
   
   <!-- Tags -->
