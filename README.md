@@ -51,8 +51,8 @@ const naseer = {
   ],
 
   philosophy:
-    "Design systems that feel simple, 
-    even when the engineering 
+    "Design systems that feel simple, even when the
+     engineering 
     behind them is complex."
 };
 </pre>
