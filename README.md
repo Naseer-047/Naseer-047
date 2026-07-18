@@ -30,21 +30,62 @@
       <h3><img src="https://cdn.simpleicons.org/react/2563eb" width="22" height="22" /> About Me</h3>
 <pre lang="js">
 const naseer = {
-  pronouns: "he" | "him",
-  location: "Earth",
-  
+  name: "Naseer Pasha",
+
+  pronouns: ["he", "him"],
+
+  location: "Bangalore, India",
+
   education: {
-    degree: "Computer Science",
+    degree: "Computer Science Engineering",
     focus: "Software Engineering"
   },
-  
+
   roles: [
-    "Full Stack Developer",
+    "Full Stack Engineer",
+    "System Designer",
     "Open Source Contributor",
     "Problem Solver"
   ],
-  
-  philosophy: "Make it work, make it right, make it fast."
+
+  currentlyBuilding: [
+    "Cloud Applications",
+    "Developer Tools",
+    "AI Powered Products"
+  ],
+
+  expertise: [
+    "Frontend Architecture",
+    "Backend Systems",
+    "REST APIs",
+    "Databases",
+    "Authentication",
+    "System Design"
+  ],
+
+  principles: [
+    "Scalability",
+    "Maintainability",
+    "Performance",
+    "Developer Experience"
+  ],
+
+  currentlyLearning: [
+    "Distributed Systems",
+    "Cloud Architecture",
+    "DevOps",
+    "AI Engineering"
+  ],
+
+  interests: [
+    "System Design",
+    "Product Engineering",
+    "Open Source",
+    "UI Engineering"
+  ],
+
+  philosophy:
+    "Design systems that are simple to use, scalable to grow, and enjoyable to build."
 };
 </pre>
     </td>
