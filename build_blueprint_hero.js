@@ -4,7 +4,8 @@ const width = 850;
 const height = 380;
 
 const style = `
-  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;family=Inter:wght@400;700;800&amp;display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;display=swap');
   
   :root {
     --bg: #ffffff;
@@ -136,7 +137,7 @@ const svg = `
   <text x="660" y="170" class="mono text-xs text-muted" opacity="0.6">Async</text>
   <text x="500" y="220" class="mono text-xs text-muted" opacity="0.6">Queue Depth: 0</text>
   <text x="760" y="320" class="mono text-xs text-muted" opacity="0.6">Event Bus</text>
-  <text x="560" y="280" class="mono text-xs text-muted" opacity="0.6">P95: &lt;50ms</text>
+  <text x="560" y="280" class="mono text-xs text-muted" opacity="0.6">P95: 50ms</text>
 
   <!-- Right Side: Architecture Diagram -->
   <g transform="translate(0, 0)">
