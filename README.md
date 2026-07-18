@@ -12,7 +12,7 @@
 
 <br>
 
-<h3 align="left"><code>## FEATURED PROJECTS</code></h3>
+<h3 align="left"><code>##     FEATURED PROJECTS</code></h3>
 
 <table width="100%" style="border: none; background: transparent;">
   <tr style="border: none;">
@@ -62,7 +62,7 @@
 
 <h3 align="left"><code>## CURRENTLY</code></h3>
 
-<table width="100%" style="border: none; background: transparent;">
+<table width="100%" style="border: none; background: #0000;">
   <tr style="border: none;">
     <td width="60%" valign="top" style="border: none; padding-top: 15px;">
       <ul style="list-style-type: none;">
