@@ -1,14 +1,16 @@
 import fs from 'fs';
 
 function generateTerminalHero() {
+  let userImageBase64 = '';
+  try {
+    const buffer = fs.readFileSync('assets/me.png');
+    userImageBase64 = `data:image/png;base64,${buffer.toString('base64')}`;
+  } catch (err) {
+    console.error('Error reading assets/me.png', err);
+  }
+
   const svgContent = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="1200" height="650">
-  <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
-      
-      :root {
-        --bg: #0a0a0a;
         --card-bg: #121212;
         --text-main: #ffffff;
         --text-muted: #a1a1aa;
@@ -92,13 +94,15 @@ function generateTerminalHero() {
 
     <!-- Socials Box -->
     <g transform="translate(0, 390)">
-      <rect x="-5" y="-5" width="410" height="55" rx="8" fill="var(--bg)" stroke="var(--border)" stroke-width="1.5" />
+      <rect x="-5" y="-5" width="310" height="55" rx="8" fill="var(--bg)" stroke="var(--border)" stroke-width="1.5" />
       <text x="15" y="28" font-size="20" class="mono text-green">&gt;</text>
       
       <!-- GitHub -->
       <a href="https://github.com/Naseer-047" target="_blank">
         <rect x="50" y="5" width="36" height="36" rx="6" fill="#18181b" />
-        <path d="M68 11.5c-3.6 0-6.5 2.9-6.5 6.5 0 2.9 1.9 5.3 4.4 6.2.3.1.4-.1.4-.3v-1.1c-1.8.4-2.2-.9-2.2-.9-.3-.8-.7-1-.7-1-.6-.4.1-.4.1-.4.7.1 1 .7 1 .7.6 1 1.5.7 1.9.5.1-.4.2-.7.4-.9-1.4-.2-3-.7-3-3.2 0-.7.3-1.3.7-1.8-.1-.2-.3-.8.1-1.7 0 0 .6-.2 1.9.7.5-.1 1.1-.2 1.7-.2.6 0 1.2.1 1.7.2 1.3-.9 1.9-.7 1.9-.7.4.9.2 1.5.1 1.7.4.5.7 1.1.7 1.8 0 2.5-1.5 3-3 3.2.2.2.4.6.4 1.2v1.8c0 .2.1.4.5.3 2.6-.9 4.4-3.3 4.4-6.2 0-3.6-2.9-6.5-6.5-6.5z" fill="#ffffff"/>
+        <svg x="56" y="11" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
       </a>
       
       <line x1="100" y1="12" x2="100" y2="34" stroke="var(--border)" stroke-width="1" />
@@ -106,7 +110,9 @@ function generateTerminalHero() {
       <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/naseer-pasha" target="_blank">
         <rect x="114" y="5" width="36" height="36" rx="6" fill="#18181b" />
-        <path d="M123.8 14.2h-1.5v4.5h1.5v-4.5zm-.8-2.2c-.5 0-.8.3-.8.8s.3.8.8.8.8-.3.8-.8-.4-.8-.8-.8zm4.5 2.2h-1.5v2.2c0 .6-.5 1.1-1.1 1.1s-1.1-.5-1.1-1.1v-2.2h-1.5v4.5h1.5v-.8c.3.5.8.9 1.5.9 1.1 0 1.9-.8 1.9-1.9v-2.7z" fill="#ffffff" transform="scale(1.5) translate(-42, -5.5)"/>
+        <svg x="120" y="11" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
       </a>
 
       <line x1="164" y1="12" x2="164" y2="34" stroke="var(--border)" stroke-width="1" />
@@ -114,7 +120,9 @@ function generateTerminalHero() {
       <!-- Website / Globe -->
       <a href="https://naseerpasha.vercel.app" target="_blank">
         <rect x="178" y="5" width="36" height="36" rx="6" fill="#18181b" />
-        <path d="M196 14a8 8 0 100 16 8 8 0 000-16zm-5.5 8c.2-2.1 1.3-4 2.8-5.2A6.5 6.5 0 00190.5 22zm5.5-6.5c1.2 0 2.3 1.9 2.8 4h-5.6c.5-2.1 1.6-4 2.8-4zm-2.8 5.5h5.6c-.1 1.6-.7 3-1.6 4a4.4 4.4 0 01-1.2-4zm5.6 0a6.5 6.5 0 00-2.8 5.2 6.5 6.5 0 002.8-5.2z" fill="#ffffff" transform="scale(1.15) translate(-27, -2.5)"/>
+        <svg x="184" y="11" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6.974 6.045c.846 1.583 1.354 3.393 1.48 5.305h-4.996c-.198-2.193-.724-4.226-1.516-6.027 1.954.218 3.738.995 5.032 2.027v-.005zm-6.974-4.49c1.439 1.355 2.502 3.197 3.05 5.295H8.95c.548-2.098 1.611-3.94 3.05-5.295zm-5.49 1.705c-.792 1.801-1.318 3.834-1.516 6.027H.544c.126-1.912.634-3.722 1.48-5.305 1.294-1.032 3.078-1.809 5.032-2.027h-.006zm-4.966 6.785h4.86c.148 2.302.724 4.437 1.636 6.305-2.034-.238-3.886-1.07-5.232-2.185-.757-1.442-1.22-3.12-1.34-4.912h.076zm6.822 7.025c-1.356-1.394-2.355-3.287-2.87-5.425h5.816c-.515 2.138-1.514 4.031-2.87 5.425h-.076zm5.816-6.925H8.62c-.158-2.187-.714-4.22-1.615-6h9.99c-.9 1.78-1.457 3.813-1.615 6zm1.18 5.525c.912-1.868 1.488-4.003 1.636-6.305h4.86c-.12 1.792-.583 3.47-1.34 4.912-1.346 1.115-3.198 1.947-5.232 2.185v-.005z"/>
+        </svg>
       </a>
 
       <line x1="228" y1="12" x2="228" y2="34" stroke="var(--border)" stroke-width="1" />
@@ -122,7 +130,9 @@ function generateTerminalHero() {
       <!-- Email -->
       <a href="mailto:contact@naseer.com" target="_blank">
         <rect x="242" y="5" width="36" height="36" rx="6" fill="#18181b" />
-        <path d="M260 15c-3 0-5.5 2-5.5 4.5v5c0 1.4 1.1 2.5 2.5 2.5h6c1.4 0 2.5-1.1 2.5-2.5v-5c0-2.5-2.5-4.5-5.5-4.5zm4 9.5c0 .6-.4 1-1 1h-6c-.6 0-1-.4-1-1v-4.6l3.5 2.3c.3.2.7.2 1 0l3.5-2.3v4.6zm-4-3.5L256 18c.3-.6.9-1 1.5-1h5c.6 0 1.2.4 1.5 1l-4 3z" fill="#ffffff" transform="scale(1.15) translate(-38, -3.5)"/>
+        <svg x="248" y="11" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
       </a>
       
       <text x="295" y="28" font-size="20" class="mono text-green cursor">_</text>
@@ -171,96 +181,46 @@ function generateTerminalHero() {
         <text x="80" y="120">.</text> <text x="80" y="150">|</text>
       </g>
 
-      <!-- The ASCII Art Coder -->
-      <g transform="translate(60, 90)">
-        <text font-size="12" class="mono text-white" xml:space="preserve">
-<tspan x="0" y="0">                     ____</tspan>
-<tspan x="0" y="15">                   /____ \</tspan>
-<tspan x="0" y="30">                   |    | |</tspan>
-<tspan x="0" y="45">                   |____|/</tspan>
-<tspan x="0" y="60">                  /      \       _</tspan>
-<tspan x="0" y="75">            _____/        \_____/ \</tspan>
-<tspan x="0" y="90">           |    /          \    | |</tspan>
-<tspan x="0" y="105">           |___/   <tspan class="text-green">&lt; / &gt;</tspan>    \___|/|</tspan>
-<tspan x="0" y="120">           |____________________| |</tspan>
-<tspan x="0" y="135">                   |  |</tspan>
-<tspan x="0" y="150">                  /    \</tspan>
-<tspan x="0" y="165">                 /      \</tspan>
+      <!-- Animated Image Generation inside Terminal (Like a GIF video) -->
+      <g transform="translate(60, 40)">
+        
+        <defs>
+          <clipPath id="reveal-clip">
+            <rect x="0" y="0" width="300" height="0">
+              <!-- This makes the image slowly scan down, like a generation animation -->
+              <animate attributeName="height" values="0;20;40;60;80;100;120;140;160;180;200;220;240;260;280;300;300;300;300" dur="4s" repeatCount="indefinite" calcMode="discrete" />
+            </rect>
+          </clipPath>
+          
+          <clipPath id="circle-clip-dark">
+            <circle cx="150" cy="150" r="140" />
+          </clipPath>
+        </defs>
+
+        <!-- Static dark avatar frame -->
+        <circle cx="150" cy="150" r="142" fill="none" stroke="var(--border)" stroke-width="4" />
+        <circle cx="150" cy="150" r="142" fill="none" stroke="var(--accent)" stroke-width="1" stroke-dasharray="10 5">
+          <animateTransform attributeName="transform" type="rotate" from="0 150 150" to="360 150 150" dur="10s" repeatCount="indefinite" />
+        </circle>
+        
+        <!-- Animated "gif" image overlay -->
+        <g clip-path="url(#circle-clip-dark)">
+          <image href="${userImageBase64}" x="0" y="0" width="300" height="300" preserveAspectRatio="xMidYMid slice" clip-path="url(#reveal-clip)" />
+          
+          <!-- Scanning Laser line that drops down with the image reveal -->
+          <rect x="0" y="0" width="300" height="2" fill="var(--accent)" clip-path="url(#reveal-clip)">
+            <!-- <animate attributeName="y" values="0;20;40;60;80;100;120;140;160;180;200;220;240;260;280;300;300;300;300" dur="4s" repeatCount="indefinite" calcMode="discrete" /> -->
+          </rect>
+        </g>
+        
+        <!-- Terminal Loading text below the photo -->
+        <text x="150" y="320" font-size="12" class="mono text-green" text-anchor="middle">
+          Generating Profile Data...
+          <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
         </text>
         
-        <!-- The desk -->
-        <text font-size="12" class="mono text-grey" xml:space="preserve">
-<tspan x="0" y="135">     _______________________________</tspan>
-<tspan x="0" y="150">    |                               |</tspan>
-<tspan x="0" y="165">    |                               |</tspan>
-<tspan x="0" y="180">    |                               |</tspan>
-<tspan x="0" y="195">    |                               |</tspan>
-        </text>
       </g>
-      
-      <!-- Better Coder Art closely matching screenshot -->
-      <g transform="translate(30, 80)">
-        <text font-size="11.5" class="mono text-white" xml:space="preserve" fill="var(--text-main)" opacity="0.9">
-<tspan x="0" y="0"> </tspan>
-<tspan x="0" y="12"> </tspan>
-<tspan x="0" y="24">                                        ____</tspan>
-<tspan x="0" y="36">                                      /____  \</tspan>
-<tspan x="0" y="48">                                      |    |  |</tspan>
-<tspan x="0" y="60">                                      |____| /</tspan>
-<tspan x="0" y="72">                                     /      \</tspan>
-<tspan x="0" y="84">                                    /        \       __</tspan>
-<tspan x="0" y="96">                                  /|          \_____/  |</tspan>
-<tspan x="0" y="108">                                 / |           |    | /</tspan>
-<tspan x="0" y="120">                   ___________  /__|           |____|/</tspan>
-<tspan x="0" y="132">                  |  <tspan class="text-green">&lt; / &gt;</tspan>    |    |___________|</tspan>
-<tspan x="0" y="144">                  |___________|        |   |</tspan>
-<tspan x="0" y="156">          _____________________________|___|________________</tspan>
-<tspan x="0" y="168">         |                                                  |</tspan>
-<tspan x="0" y="180">         |                                   ____           |</tspan>
-<tspan x="0" y="192">         |                                  /    \          |</tspan>
-<tspan x="0" y="204">         |                                 /      \         |</tspan>
-<tspan x="0" y="216">         |                                /________\        |</tspan>
-        </text>
-      </g>
-      
-      <!-- Just use the exact one from the image to be safe -->
-      <!-- Hiding the above test one by moving it outside view or overriding -->
-      
-    </g>
-    
-    <g transform="translate(20, 50)" fill="var(--bg)">
-      <rect x="0" y="0" width="410" height="380" />
-    </g>
 
-    <g transform="translate(20, 50)">
-      <!-- Crosshairs -->
-      <path d="M 0 10 L 0 0 L 10 0" fill="none" stroke="var(--accent)" stroke-width="2" />
-      <path d="M 400 0 L 410 0 L 410 10" fill="none" stroke="var(--accent)" stroke-width="2" />
-      <path d="M 0 370 L 0 380 L 10 380" fill="none" stroke="var(--accent)" stroke-width="2" />
-      <path d="M 410 370 L 410 380 L 400 380" fill="none" stroke="var(--accent)" stroke-width="2" />
-
-      <!-- The ASCII Art Coder (Matching Screenshot) -->
-      <g transform="translate(15, 60)">
-        <text font-size="12" class="mono text-white" xml:space="preserve" fill="var(--text-main)" line-height="1.2">
-<tspan x="0" y="0"> </tspan>
-<tspan x="0" y="15">                                          ____</tspan>
-<tspan x="0" y="30">                                        /____ \</tspan>
-<tspan x="0" y="45">                                        |    | |</tspan>
-<tspan x="0" y="60">                                        |____|/</tspan>
-<tspan x="0" y="75">                                       /      \      _</tspan>
-<tspan x="0" y="90">                 _____                /        \____/ |</tspan>
-<tspan x="0" y="105">                /    /               /          \   |/ </tspan>
-<tspan x="0" y="120">               /    /  <tspan class="text-green">&lt; / &gt;</tspan>        _\          |   /</tspan>
-<tspan x="0" y="135">               \___/_______________/  \________/___/ </tspan>
-<tspan x="0" y="150">        ___________________________________________ </tspan>
-<tspan x="0" y="165">       |                                           |</tspan>
-<tspan x="0" y="180">       |                                  |   |    |</tspan>
-<tspan x="0" y="195">       |                                 /     \   |</tspan>
-<tspan x="0" y="210">       |                                /       \  |</tspan>
-<tspan x="0" y="225">       |                               /_________\ |</tspan>
-<tspan x="0" y="240">       |                                           |</tspan>
-        </text>
-      </g>
 
       <g transform="translate(35, 65)">
         <!-- Digital Rain / Matrix effect -->
