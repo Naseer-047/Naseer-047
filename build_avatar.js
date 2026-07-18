@@ -22,7 +22,7 @@ async function run() {
   }
   
   const svg = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400" width="400" height="400">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&amp;display=swap');
@@ -42,8 +42,8 @@ async function run() {
       @keyframes decode3 { 0%, 20% { opacity: 0; } 21%, 30% { opacity: 1; } 31%, 100% { opacity: 0; } }
       @keyframes decode4 { 0%, 30% { opacity: 0; } 31%, 40% { opacity: 1; } 41%, 100% { opacity: 0; } }
       @keyframes revealImage { 
-        0%, 40% { opacity: 0; }
-        45%, 90% { opacity: 1; }
+        0%, 30% { opacity: 0; }
+        35%, 90% { opacity: 1; }
         95%, 100% { opacity: 0; }
       }
       
@@ -68,7 +68,7 @@ async function run() {
   
   <g clip-path="url(#circle-clip-dark)">
     ${matrixLayers}
-    <image href="${base64}" x="10" y="10" width="380" height="380" preserveAspectRatio="xMidYMid slice" class="profile-image" />
+    <image xlink:href="${base64}" href="${base64}" x="10" y="10" width="380" height="380" preserveAspectRatio="xMidYMid slice" class="profile-image" />
   </g>
 </svg>
 `;

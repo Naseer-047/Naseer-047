@@ -29,7 +29,7 @@ async function generateTerminalHero() {
   }
 
   const svgContent = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="1200" height="650">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 650" width="1200" height="650">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
@@ -265,7 +265,7 @@ async function generateTerminalHero() {
           ${matrixLayers}
           
           <!-- The actual high-res profile picture that morphs/fades in -->
-          <image href="${userImageBase64}" x="0" y="0" width="300" height="300" preserveAspectRatio="xMidYMid slice" class="profile-image" />
+          <image xlink:href="${userImageBase64}" href="${userImageBase64}" x="0" y="0" width="300" height="300" preserveAspectRatio="xMidYMid slice" class="profile-image" />
         </g>
         
         <!-- Terminal Loading text below the photo -->
