@@ -30,28 +30,16 @@
       <h3><img src="https://cdn.simpleicons.org/react/2563eb" width="22" height="22" /> About Me</h3>
 <pre lang="js">
 const naseer = {
-  role: "Full Stack Engineer",
+  role   : "Full Stack Engineer",
+  from   : "Bangalore, India",
 
-  building: [
-    "Scalable Products",
-    "Developer Tools",
-    "AI Applications"
-  ],
+  stack  : ["React", "Node", "MongoDB"],
 
-  learning: [
-    "System Design",
-    "Cloud",
-    "Distributed Systems"
-  ],
+  building  : ["Dev Tools", "AI Apps"],
+  learning  : ["Systems", "Cloud"],
 
-  interestedIn: [
-    "Backend Architecture",
-    "Frontend Engineering",
-    "Open Source"
-  ],
-
-  philosophy:
-    "Design systems that feel simple, even when the engineering behind them is complex."
+  philosophy: "Simple surfaces,
+               complex engines."
 };
 </pre>
     </td>
