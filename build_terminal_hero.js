@@ -1,12 +1,16 @@
 import fs from 'fs';
+import { Jimp, JimpMime } from 'jimp';
 
-function generateTerminalHero() {
+async function generateTerminalHero() {
   let userImageBase64 = '';
   try {
-    const buffer = fs.readFileSync('assets/me.png');
-    userImageBase64 = `data:image/png;base64,${buffer.toString('base64')}`;
+    const image = await Jimp.read('assets/me.png');
+    // Compress heavily so the SVG size stays small and GitHub renders it
+    image.resize({ w: 250 });
+    const buffer = await image.getBuffer(JimpMime.jpeg, { quality: 70 });
+    userImageBase64 = `data:image/jpeg;base64,${buffer.toString('base64')}`;
   } catch (err) {
-    console.error('Error reading assets/me.png', err);
+    console.error('Error reading/compressing assets/me.png', err);
   }
 
   const svgContent = `

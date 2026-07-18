@@ -1,80 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 180" width="1000" height="180">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 150" width="800" height="150">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
-      :root {
-        --bg: #09090b;
-        --text-main: #e4e4e7;
-        --text-muted: #a1a1aa;
-        --accent: #a3e635;
-      }
-      .bg { fill: var(--bg); }
-      .mono { font-family: 'JetBrains Mono', monospace; }
-      .text-main { fill: var(--text-main); }
-      .text-muted { fill: var(--text-muted); }
-      .text-accent { fill: var(--accent); }
-      .border-line { stroke: var(--text-muted); stroke-width: 1.5; stroke-dasharray: 4 4; opacity: 0.5; }
-      .node { fill: var(--bg); stroke: var(--accent); stroke-width: 2; }
+      .text-green { fill: #a3e635; font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: bold; }
+      .text-grey { fill: #a1a1aa; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+      .line { stroke: #27272a; stroke-width: 2; }
+      .dot { fill: #121212; stroke: #a3e635; stroke-width: 2; r: 6; }
     </style>
   </defs>
+  <line x1="50" y1="75" x2="750" y2="75" class="line" />
   
-  <rect width="100%" height="100%" class="bg" />
+  <circle cx="100" cy="75" class="dot" />
+  <text x="100" y="45" class="text-green" text-anchor="middle">2021</text>
+  <text x="100" y="105" class="text-grey" text-anchor="middle">Hello World</text>
 
-  <!-- Timeline Line -->
-  <line x1="50" y1="30" x2="950" y2="30" class="border-line" />
-  
-  <g transform="translate(100, 30)">
-    <circle cx="0" cy="0" r="5" class="node" />
-    <text x="0" y="30" font-size="12" font-weight="700" class="mono text-accent" text-anchor="middle">2023</text>
-    <text x="0" y="55" font-size="12" class="mono text-main" text-anchor="middle">Started Coding</text>
-    <text x="0" y="75" font-size="10" class="mono text-muted" text-anchor="middle">
-      <tspan x="0" dy="0">Began my journey with</tspan>
-      <tspan x="0" dy="16">C, Data Structures and</tspan>
-      <tspan x="0" dy="16">problem solving.</tspan>
-    </text>
-  </g>
+  <circle cx="300" cy="75" class="dot" />
+  <text x="300" y="45" class="text-green" text-anchor="middle">2023</text>
+  <text x="300" y="105" class="text-grey" text-anchor="middle">First Freelance</text>
 
-  <g transform="translate(285, 30)">
-    <circle cx="0" cy="0" r="5" class="node" />
-    <text x="0" y="30" font-size="12" font-weight="700" class="mono text-accent" text-anchor="middle">2024</text>
-    <text x="0" y="55" font-size="12" class="mono text-main" text-anchor="middle">Web Development</text>
-    <text x="0" y="75" font-size="10" class="mono text-muted" text-anchor="middle">
-      <tspan x="0" dy="0">Discovered full-stack</tspan>
-      <tspan x="0" dy="16">development and built</tspan>
-      <tspan x="0" dy="16">my first projects.</tspan>
-    </text>
-  </g>
+  <circle cx="500" cy="75" class="dot" />
+  <text x="500" y="45" class="text-green" text-anchor="middle">2024</text>
+  <text x="500" y="105" class="text-grey" text-anchor="middle">Full Stack Eng</text>
 
-  <g transform="translate(485, 30)">
-    <circle cx="0" cy="0" r="5" class="node" />
-    <text x="0" y="30" font-size="12" font-weight="700" class="mono text-accent" text-anchor="middle">2024</text>
-    <text x="0" y="55" font-size="12" class="mono text-main" text-anchor="middle">Open Source</text>
-    <text x="0" y="75" font-size="10" class="mono text-muted" text-anchor="middle">
-      <tspan x="0" dy="0">Started contributing to</tspan>
-      <tspan x="0" dy="16">open source and built</tspan>
-      <tspan x="0" dy="16">developer tools.</tspan>
-    </text>
-  </g>
-
-  <g transform="translate(685, 30)">
-    <circle cx="0" cy="0" r="5" class="node" />
-    <text x="0" y="30" font-size="12" font-weight="700" class="mono text-accent" text-anchor="middle">2025</text>
-    <text x="0" y="55" font-size="12" class="mono text-main" text-anchor="middle">AI + Systems</text>
-    <text x="0" y="75" font-size="10" class="mono text-muted" text-anchor="middle">
-      <tspan x="0" dy="0">Exploring AI, System</tspan>
-      <tspan x="0" dy="16">Design and building</tspan>
-      <tspan x="0" dy="16">intelligent apps.</tspan>
-    </text>
-  </g>
-
-  <g transform="translate(885, 30)">
-    <circle cx="0" cy="0" r="5" class="node" />
-    <text x="0" y="30" font-size="12" font-weight="700" class="mono text-accent" text-anchor="middle">2026</text>
-    <text x="0" y="55" font-size="12" class="mono text-main" text-anchor="middle">Building Impact</text>
-    <text x="0" y="75" font-size="10" class="mono text-muted" text-anchor="middle">
-      <tspan x="0" dy="0">Building products that</tspan>
-      <tspan x="0" dy="16">solve real problems and</tspan>
-      <tspan x="0" dy="16">create real impact.</tspan>
-    </text>
-  </g>
+  <circle cx="700" cy="75" class="dot" />
+  <text x="700" y="45" class="text-green" text-anchor="middle">Present</text>
+  <text x="700" y="105" class="text-grey" text-anchor="middle">Building CNS</text>
 </svg>

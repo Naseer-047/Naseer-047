@@ -1,64 +1,17 @@
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 180" width="450" height="180">
-  <defs><style>
-  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
-  :root {
-    --bg: #09090b;
-    --text-main: #e4e4e7;
-    --text-muted: #a1a1aa;
-    --accent: #a3e635;
-    --accent-blue: #3b82f6;
-    --accent-purple: #8b5cf6;
-  }
-  .bg { fill: var(--bg); }
-  .mono { font-family: 'JetBrains Mono', monospace; }
-  .text-main { fill: var(--text-main); }
-  .text-muted { fill: var(--text-muted); }
-  .text-accent { fill: var(--accent); }
-  .border { stroke: var(--text-muted); stroke-width: 1; stroke-dasharray: 4 4; fill: none; opacity: 0.4; }
-  .tag { fill: transparent; stroke: var(--text-muted); stroke-width: 1; opacity: 0.5; rx: 4; }
-  .tag-text { fill: var(--text-muted); font-size: 10px; }
-</style></defs>
-  <rect width="100%" height="100%" class="bg" />
-  
-  <!-- Dashed Border -->
-  <rect x="5" y="5" width="440" height="170" class="border" />
-  
-  <!-- Icon -->
-  <g transform="translate(25, 20)">
-    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 2l5 5h-5V4zm-7 8h8m-8 4h8" fill="none" stroke="var(--text-main)" stroke-width="2"/>
-  </g>
-  
-  <!-- Title -->
-  <text x="25" y="75" font-size="14" font-weight="700" class="mono text-accent">AI Resume Analyzer</text>
-  
-  <!-- Description -->
-  <text x="25" y="95" font-size="12" class="mono text-muted">
-    <tspan x="25" dy="0">Analyze resumes and get AI</tspan><tspan x="25" dy="16">powered suggestions.</tspan>
-  </text>
-  
-  <!-- Tags -->
-  <g>
-    
-      <rect x="25" y="115" width="59" height="20" class="tag" />
-      <text x="30" y="129" class="mono tag-text">Next.js</text>
-    
-      <rect x="94" y="115" width="66" height="20" class="tag" />
-      <text x="99" y="129" class="mono tag-text">Groq API</text>
-    
-      <rect x="170" y="115" width="87" height="20" class="tag" />
-      <text x="175" y="129" class="mono tag-text">TailwindCSS</text>
-    
-  </g>
-  
-  <!-- Stats -->
-  <g transform="translate(25, 155)">
-    <!-- Star -->
-    <path d="M8 2l1.83 3.71 4.09.59-2.96 2.89.7 4.08-3.66-1.92L4.34 13.27l.7-4.08-2.96-2.89 4.09-.59L8 2z" fill="none" stroke="var(--text-muted)" stroke-width="1.5"/>
-    <text x="20" y="10" font-size="12" class="mono text-muted">47</text>
-    
-    <!-- Fork -->
-    <path d="M48 2c-1.1 0-2 .9-2 2v2.59l3 3V12h-2v2h6v-2h-2V9.59l3-3V4c0-1.1-.9-2-2-2z" fill="none" stroke="var(--text-muted)" stroke-width="1.5" transform="scale(0.8) translate(50, 0)"/>
-    <text x="65" y="10" font-size="12" class="mono text-muted">11</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+      .bg { fill: #121212; stroke: #27272a; stroke-width: 2; rx: 8; }
+      .text-green { fill: #a3e635; font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: bold; }
+      .text-grey { fill: #a1a1aa; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+      .emoji { font-size: 24px; }
+    </style>
+  </defs>
+  <rect x="2" y="2" width="396" height="116" class="bg" />
+  <text x="20" y="40" class="emoji">📄</text>
+  <text x="60" y="40" class="text-green">> AI Resume Analyzer</text>
+  <text x="20" y="75" class="text-grey">Automated resume parsing and ATS</text>
+  <text x="20" y="95" class="text-grey">scoring system using OpenAI.</text>
 </svg>
