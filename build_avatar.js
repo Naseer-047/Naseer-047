@@ -3,8 +3,8 @@ import { Jimp, JimpMime } from 'jimp';
 
 async function run() {
   const image = await Jimp.read('assets/me.png');
-  image.resize({ w: 400 });
-  const buffer = await image.getBuffer(JimpMime.jpeg, { quality: 80 });
+  image.resize({ w: 250 });
+  const buffer = await image.getBuffer(JimpMime.jpeg, { quality: 50 });
   const base64 = 'data:image/jpeg;base64,' + buffer.toString('base64');
   
   let matrixLayers = '';

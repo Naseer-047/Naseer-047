@@ -6,7 +6,7 @@ async function generateTerminalHero() {
   try {
     const image = await Jimp.read('assets/me.png');
     image.resize({ w: 250 });
-    const buffer = await image.getBuffer(JimpMime.jpeg, { quality: 70 });
+    const buffer = await image.getBuffer(JimpMime.jpeg, { quality: 50 });
     userImageBase64 = `data:image/jpeg;base64,${buffer.toString('base64')}`;
   } catch (err) {
     console.error('Error reading/compressing assets/me.png', err);
@@ -90,9 +90,9 @@ async function generateTerminalHero() {
     
     <clipPath id="type-clip">
       <!-- 9s loop: 3 titles, each gets 3s (type 1s, hold 1s, delete 1s) -->
-      <rect x="30" y="-30" width="0" height="40">
+      <rect x="50" y="-30" width="0" height="40">
         <animate attributeName="width" 
-                 values="0; 250; 250; 0;   0; 220; 220; 0;   0; 340; 340; 0" 
+                 values="0; 260; 260; 0;   0; 230; 230; 0;   0; 350; 350; 0" 
                  keyTimes="0; 0.11; 0.22; 0.33;   0.333; 0.44; 0.55; 0.66;   0.666; 0.77; 0.88; 1" 
                  dur="9s" repeatCount="indefinite" />
       </rect>
@@ -121,24 +121,24 @@ async function generateTerminalHero() {
       
       <!-- Container for typing text with clip path -->
       <g clip-path="url(#type-clip)">
-        <text x="35" y="0" font-size="24" class="mono text-green" font-weight="500">
+        <text x="55" y="0" font-size="24" class="mono text-green" font-weight="500">
           <animate attributeName="opacity" values="1;1;0;0;0;0" dur="9s" repeatCount="indefinite" />
           Software Engineer
         </text>
-        <text x="35" y="0" font-size="24" class="mono text-green" font-weight="500" opacity="0">
+        <text x="55" y="0" font-size="24" class="mono text-green" font-weight="500" opacity="0">
           <animate attributeName="opacity" values="0;0;1;1;0;0" dur="9s" repeatCount="indefinite" />
           System Designer
         </text>
-        <text x="35" y="0" font-size="24" class="mono text-green" font-weight="500" opacity="0">
+        <text x="55" y="0" font-size="24" class="mono text-green" font-weight="500" opacity="0">
           <animate attributeName="opacity" values="0;0;0;0;1;1" dur="9s" repeatCount="indefinite" />
           Open Source Contributor
         </text>
       </g>
       
       <!-- Blinking Cursor matching typing width -->
-      <rect x="35" y="-20" width="12" height="24" fill="var(--accent)">
+      <rect x="55" y="-20" width="12" height="24" fill="var(--accent)">
         <animate attributeName="x" 
-                 values="35; 285; 285; 35;   35; 255; 255; 35;   35; 375; 375; 35" 
+                 values="55; 305; 305; 55;   55; 275; 275; 55;   55; 395; 395; 55" 
                  keyTimes="0; 0.11; 0.22; 0.33;   0.333; 0.44; 0.55; 0.66;   0.666; 0.77; 0.88; 1" 
                  dur="9s" repeatCount="indefinite" />
         <animate attributeName="opacity" values="1;0" dur="0.8s" repeatCount="indefinite" />
