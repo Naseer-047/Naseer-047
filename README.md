@@ -61,7 +61,7 @@ const naseer = {
 
 <div align="center">
   <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Naseer-047&bg_color=ffffff&title_color=2563eb&text_color=0f172a&icon_color=2563eb&hide_border=true&border_radius=8&show_icons=true&v=999" width="49%" alt="GitHub Stats" />
-  <img src="https://streak-stats.demolab.com/?user=Naseer-047&background=ffffff&ring=2563eb&fire=2563eb&currStreakNum=2563eb&currStreakLabel=0f172a&sideNums=0f172a&sideLabels=64748b&dates=64748b&hide_border=true&border_radius=8&v=999" width="49%" alt="GitHub Streak" />
+  <img src="assets/streak.svg" width="49%" alt="GitHub Streak" />
 </div>
 <div align="center">
   <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Naseer-047&bg_color=ffffff&title_color=2563eb&text_color=0f172a&hide_border=true&border_radius=8&layout=compact&v=999" width="60%" alt="Top Languages" />
